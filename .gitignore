@@ -1,0 +1,10 @@
+# possible Python-generated files in scraper
+scraper/__pycache__/
+scraper/*.py[oc]
+scraper/build/
+scraper/dist/
+scraper/wheels/
+scraper/*.egg-info
+
+# Virtual environments possibly generated in scraper
+scraper/.venv
