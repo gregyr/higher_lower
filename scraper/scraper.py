@@ -10,6 +10,9 @@ import high_quality_img as hqi
 
 #---Helpers---#
 def clean_price(pricetag:str):
+    """
+    Säubert den Preis zu einem Floatformat
+    """
     remove_letters = "ab€"
     new_string = ""
     for i in pricetag:
@@ -22,6 +25,9 @@ def clean_price(pricetag:str):
     return new_string
             
 def remove_duplicates(list):
+    """
+    Entfernt doppelte Produkte
+    """
     new_list = []
 
     for item in list:
@@ -30,6 +36,9 @@ def remove_duplicates(list):
     return new_list
 
 def export_to_json(data, filename="data.json"):
+    """
+    Exportiert das dictionary an Artikeln in eine JSON
+    """
     try:
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
@@ -41,6 +50,11 @@ def export_to_json(data, filename="data.json"):
 #---Scraping funktionen---#
 
 def scraper(driver) :
+    """
+    Scraped die gerade geladene Seite <br>
+    Kann nicht eine komplette Seite scannen, da diese automatisch generiert wird und nicht preloaded ist. <br>
+    Preis sollte vielleicht als Float gespeichert werden statt eines Strings
+    """
     scraped_data = []
     try:
         articles = WebDriverWait(driver, 10).until(
@@ -85,6 +99,9 @@ def scraper(driver) :
 
 
 def scrape_full_page(url, driver):
+    """
+    Scraped eine komplette Seite indem sie sie durchscrollt
+    """
     driver.get(url)
 
     max_height = driver.execute_script("return document.body.scrollHeight")
@@ -113,8 +130,19 @@ def scrape_full_page(url, driver):
 
 
 #---Main execute---#
-def main(search_terms:list):
 
+def main(search_terms:list):
+    """
+    Scraped die gegebenen Suchterme <br>
+    gibt eine JSON mit folgenden Produktdaten aus:
+    - Name ("name")
+    - Preis ("price")
+    - original Bild ("img")
+    - high-res Bild ("high_q_img")
+
+    Das high-res Bild ist möglicherweise eine falsche URL, da sie generiert ist um traffic zu reduzieren. <br>
+    
+    """
     total_data = []
 
     options = webdriver.ChromeOptions()
