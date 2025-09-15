@@ -4,6 +4,8 @@ import urllib.parse
 Genutzt um den Link zu einem high-res Bild aus den low-res Bildern der Produkt übersicht zu erstellen
 nutzt die <alt> Beschreibung des <img> um auf high-res Link zu schließen
 """
+# ^^^ Das macht nix ig
+
 
 def parse_alt_img_link(link):
     """
