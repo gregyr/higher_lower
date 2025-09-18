@@ -8,3 +8,6 @@ scraper/*.egg-info
 
 # Virtual environments possibly generated in scraper
 scraper/.venv
+
+# VsCode settings
+server/.vscode/
