@@ -107,3 +107,16 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
+/* Media Queries (for phone screens)*/
+
+@media (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .arrow-container {
+        transform: rotate(90deg);
+    }
+}
