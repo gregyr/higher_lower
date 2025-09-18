@@ -1,0 +1,68 @@
+/* Allgemeines */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #c62c8a;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Produkt Container */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-box {
+    width: 300px; /* Size */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Pfeil & Fragezeichen */
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px; /* Abstand */
+    position: relative;
+}
+
+.arrow, .question-mark {
+    font-size: 6em;
+    color: red;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Soft Übergang */
+    user-select: none;
+    position: absolute; /* Überlagerung */
+}
+
+.question-mark {
+    display: none; /* standard versteckt */
+}
