@@ -1,304 +1,280 @@
 {
-    "multimedia": [
+    "kostueme": [
         {
-            "name": "43E6NT LED-Fernseher",
-            "price": 449.0,
-            "img": "https://i.otto.de/i/otto/b526a55c-e43f-54fd-8155-652b8d4688df?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/b526a55c-e43f-54fd-8155-652b8d4688df/hisense-43e6nt-led-fernseher-108-cm-43-zoll-4k-ultra-hd-smart-tv-4k-uhd.jpg?$formatz$"
-        },
-        {
-            "name": "40E4QT LED-Fernseher",
-            "price": 349.0,
-            "img": "https://i.otto.de/i/otto/53ba9a23-f15b-5a8b-aa30-acbcec472fa4?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/53ba9a23-f15b-5a8b-aa30-acbcec472fa4/hisense-40e4qt-led-fernseher-100-cm-40-zoll-full-hd-smart-tv-2k-fhd.jpg?$formatz$"
-        },
-        {
-            "name": "IdeaPad 3 Chrome 15IJL6 8GB RAM / 128GB eMMC Chromebook",
-            "price": 299.0,
-            "img": "https://i.otto.de/i/otto/4ed95405-d686-586f-8639-97b5119d5fc6?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/4ed95405-d686-586f-8639-97b5119d5fc6/lenovo-ideapad-3-chrome-15ijl6-8gb-ram-128gb-emmc-chromebook-39-6-cm-15-6-zoll-intel-celeron-n4500-uhd-graphics-chromeos-clamshell-laptop-with-full-hd-panel.jpg?$formatz$"
-        },
-        {
-            "name": "9/10 Zoll Doppel 2 DIN Android 14 Wireless Carplay Android Auto Autoradio",
-            "price": 179.99,
-            "img": "https://i.otto.de/i/otto/f7ab0781-c980-41c1-8c8e-c940aeee42a6?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/f7ab0781-c980-41c1-8c8e-c940aeee42a6/essgoo-9-10-zoll-doppel-2-din-android-14-wireless-carplay-android-auto-autoradio-dab-optional-fm-rds-4-64gb-optional-fm-rds-bluetooth-eq-usb-gps-navi-wifi-ips-touchscreen-mirror-link-swc.jpg?$formatz$"
-        },
-        {
-            "name": "MegaDeal Multimedia-PC-Set PC-Komplettsystem",
-            "price": 1098.0,
-            "img": "https://i.otto.de/i/otto/5f47039c-9e63-5311-b7bd-9033724cba0f?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/5f47039c-9e63-5311-b7bd-9033724cba0f/gamemax-megadeal-multimedia-pc-set-pc-komplettsystem-27-amd-ryzen-5-5600gt-radeon-graphics-16-gb-ram-1000-gb-ssd-windows-11-msi-pro-mp273a-monitor-69cm-27.jpg?$formatz$"
-        },
-        {
-            "name": "50 VOE 73 AU6T00 LED-Fernseher",
-            "price": 599.0,
-            "img": "https://i.otto.de/i/otto/e8cfe0b2-57dd-5905-9f3c-5943b031416e?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/e8cfe0b2-57dd-5905-9f3c-5943b031416e/grundig-50-voe-73-au6t00-led-fernseher-126-cm-50-zoll-4k-ultra-hd-android-tv.jpg?$formatz$"
-        },
-        {
-            "name": "Kreativset 145-teiliger Einhorn Kunstkoffer für Kinder mit Zeichen und Malutensil, (Spar-Set)",
-            "price": 69.99,
-            "img": "https://i.otto.de/i/otto/7abdf151-4661-5174-b5aa-914acd8a58b4?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/7abdf151-4661-5174-b5aa-914acd8a58b4/wisam-kreativset-145-teiliger-einhorn-kunstkoffer-fuer-kinder-mit-zeichen-und-malutensil-spar-set.jpg?$formatz$"
-        },
-        {
-            "name": "HS205G 2.0 Kanal Soundbar, 120 Watt, schwarz Soundbar",
-            "price": 129.0,
-            "img": "https://i.otto.de/i/otto/ed1c8373-3587-5ce0-8ba6-8f4c4f823d51?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/ed1c8373-3587-5ce0-8ba6-8f4c4f823d51/hisense-hs205g-2-0-kanal-soundbar-120-watt-schwarz-soundbar-2-0-bluetooth-120-w.jpg?$formatz$"
-        },
-        {
-            "name": "WHCH520 Bluetooth-Kopfhörer",
-            "price": 69.99,
-            "img": "https://i.otto.de/i/otto/8a20ac07-a152-5f44-bcf1-0c2a1e0b236e?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/8a20ac07-a152-5f44-bcf1-0c2a1e0b236e/sony-whch520-bluetooth-kopfhoerer-freisprechfunktion-rauschunterdrueckung-sprachsteuerung-kompatibel-mit-siri-google-assistant-siri-bluetooth-200-std-max-akkulaufzeit-standby.jpg?$formatz$"
-        },
-        {
-            "name": "EVE Damen Smartwatch, extraflach, Sprachsteuerung, AMOLED Always-On Smartwatch",
-            "price": 149.9,
-            "img": "https://i.otto.de/i/otto/7cc6f611-b5f2-4c5d-bed3-dbfba42dd147?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/7cc6f611-b5f2-4c5d-bed3-dbfba42dd147/levowatch-eve-damen-smartwatch-extraflach-sprachsteuerung-amoled-always-on-smartwatch-4-cm-1-3-zoll-android-und-ios-fitness-tracker-uhr-blutdruck-periodenzyklus-wasserdicht-7mm-metallgehaeuse-4-teilig-anruf-funktion-41mm-damen-groe%C3%9Fe-sporterkennung-anrufe-schrittzaehler-puls-3-armbaender-stress-schlafueberwachung.jpg?$formatz$"
-        },
-        {
-            "name": "Auto Radio Multimedia Video Player Apple Car Play Bluetooth AUX USB Autoradio (Autoradio 10,26\" Full HD, Breite Kompatibilität, Sprachsteuerung)",
-            "price": 89.99,
-            "img": "https://i.otto.de/i/otto/f8838c3c-87d1-4136-8182-d09aaffba263?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/f8838c3c-87d1-4136-8182-d09aaffba263/athlix-auto-radio-multimedia-video-player-apple-car-play-bluetooth-aux-usb-autoradio-autoradio-10-26-full-hd-breite-kompatibilitaet-sprachsteuerung.jpg?$formatz$"
-        },
-        {
-            "name": "32E4QT LED-Fernseher",
-            "price": 249.0,
-            "img": "https://i.otto.de/i/otto/5a963103-1845-5146-9043-876557448065?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/5a963103-1845-5146-9043-876557448065/hisense-32e4qt-led-fernseher-80-cm-32-zoll-hd-smart-tv-hd.jpg?$formatz$"
-        },
-        {
-            "name": "Major IV Bluetooth-Kopfhörer",
-            "price": 149.0,
-            "img": "https://i.otto.de/i/otto/5d9c5f4c-5453-5ee6-8dd6-60d1215a163b?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/5d9c5f4c-5453-5ee6-8dd6-60d1215a163b/marshall-major-iv-bluetooth-kopfhoerer-integrierte-steuerung-fuer-anrufe-und-musik-bluetooth.jpg?$formatz$"
-        },
-        {
-            "name": "Tune 245NC TWS In-Ear-Kopfhörer",
-            "price": 99.99,
-            "img": "https://i.otto.de/i/otto/c15fbb5b-1661-5d8a-b5ca-410cf79294b6?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/c15fbb5b-1661-5d8a-b5ca-410cf79294b6/jbl-tune-245nc-tws-in-ear-kopfhoerer-active-noise-cancelling-anc-freisprechfunktion-a2dp-bluetooth-advanced-audio-distribution-profile-avrcp-bluetooth-audio-video-remote-control-profile-hfp.jpg?$formatz$"
-        },
-        {
-            "name": "Galaxy Watch 7 Smartwatch",
-            "price": 319.0,
-            "img": "https://i.otto.de/i/otto/bc6c8294-946d-5d9b-88b1-2716146586f8?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/bc6c8294-946d-5d9b-88b1-2716146586f8/samsung-galaxy-watch-7-smartwatch-wear-os-by-samsung.jpg?$formatz$"
-        },
-        {
-            "name": "LEDA24OSBT LED-Fernseher",
-            "price": 699.95,
-            "img": "https://i.otto.de/i/otto/75a4d7fb-453c-4573-a89a-4574a41d8093?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/75a4d7fb-453c-4573-a89a-4574a41d8093/reflexion-leda24osbt-led-fernseher-60-00-cm-24-zoll-full-hd-smart-tv-powered-by-webos-hub-lg-dc-12-volt-netzteil-230-volt-akku-tv-dvb-t2hd-s2-c-bluetooth-wlan.jpg?$formatz$"
-        },
-        {
-            "name": "11,3\" Tragbares 4K Android Auto Touchscreen kabellos BT CarPlay Radio",
-            "price": 229.99,
-            "img": "https://i.otto.de/i/otto/7f0ea177-520a-44bd-a4e4-91d5f43d0b3d?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/7f0ea177-520a-44bd-a4e4-91d5f43d0b3d/xgody-11-3-tragbares-4k-android-auto-touchscreen-kabellos-bt-carplay-radio.jpg?$formatz$"
-        },
-        {
-            "name": "50UA73006LA LED-Fernseher",
-            "price": 629.0,
-            "img": "https://i.otto.de/i/otto/957ed26b-2028-54b0-9859-cc37cfebfb06?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/957ed26b-2028-54b0-9859-cc37cfebfb06/lg-50ua73006la-led-fernseher-126-cm-50-zoll-4k-ultra-hd-smart-tv.jpg?$formatz$"
-        },
-        {
-            "name": "10,26\" IPS-Touchscreen Digitaler Medienempfänger Wireless Carplay/Auto Navigationsgerät (weltweit, Bluetooth/Airplay/Spiegelverbindung/SD/TF)",
-            "price": 239.99,
-            "img": "https://i.otto.de/i/otto/387ed76a-6088-4fca-8098-46e81f617da4?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/387ed76a-6088-4fca-8098-46e81f617da4/podofo-10-26-ips-touchscreen-digitaler-medienempfaenger-wireless-carplay-auto-navigationsgeraet-weltweit-bluetooth-airplay-spiegelverbindung-sd-tf.jpg?$formatz$"
-        },
-        {
-            "name": "Elektro-Kinderquad Kinder Elektro Quad Bumper Offroad 2 x 35 Watt Motoren, Belastbarkeit 35 kg, (1-tlg), Kinder Elektroauto mit Display - beleuchtete Armaturen - Multimedia",
-            "price": 229.99,
-            "img": "https://i.otto.de/i/otto/2108acda-a1f2-4ac4-bd59-e6c3c1c54cd8?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/2108acda-a1f2-4ac4-bd59-e6c3c1c54cd8/actionbikes-motors-elektro-kinderquad-kinder-elektro-quad-bumper-offroad-2-x-35-watt-motoren-belastbarkeit-35-kg-1-tlg-kinder-elektroauto-mit-display-beleuchtete-armaturen-multimedia.jpg?$formatz$"
-        },
-        {
-            "name": "HIGH Tablet 12 Zoll, 2560 x 1600 Pixel, 256GB, WLAN+LTE Premium Tablet",
-            "price": 314.9,
-            "img": "https://i.otto.de/i/otto/a8647675-8d47-405d-a94a-c8d2b3971a39?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/a8647675-8d47-405d-a94a-c8d2b3971a39/acepad-high-tablet-12-zoll-2560-x-1600-pixel-256gb-wlan-lte-premium-tablet-12-2-256-gb-android-15-4g-lte-wlan-8-16gb-ram-30-tage-standby-90hz-2-5k-display-erkennt-4096-stufen.jpg?$formatz$"
-        },
-        {
-            "name": "Multimedia-PC Rockstar SET02498 PC-Komplettsystem",
-            "price": 1098.0,
-            "img": "https://i.otto.de/i/otto/9066ab88-ae3b-552c-af99-ef7152dcd4ab?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/9066ab88-ae3b-552c-af99-ef7152dcd4ab/gamemax-multimedia-pc-rockstar-set02498-pc-komplettsystem-32-amd-ryzen-5-5600g-radeon-graphics-16-gb-ram-1000-gb-ssd-windows-11-msi-g32c4-e2-monitor-curved-80cm-32.jpg?$formatz$"
-        },
-        {
-            "name": "DAB Go Bluetooth Lautsprecher Digitalradio (DAB)",
-            "price": 89.99,
-            "img": "https://i.otto.de/i/otto/a1eebcfa-337e-5500-9fcd-11e0f2a09e2e?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/a1eebcfa-337e-5500-9fcd-11e0f2a09e2e/karcher-dab-go-bluetooth-lautsprecher-digitalradio-dab-digitalradio-dab-ukw-mit-rds-5-w-bluetooth-speaker-mit-trageschlaufe-bluetooth-stereo-farbdisplay.jpg?$formatz$"
-        },
-        {
-            "name": "10\" Android 15 Set WiFi Tablet",
-            "price": 249.99,
-            "img": "https://i.otto.de/i/otto/bd738867-a267-4985-ac8a-81f071823bcc?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/bd738867-a267-4985-ac8a-81f071823bcc/besttab-10-android-15-set-wifi-tablet-10-256-gb-android-15-mit-stift-maus-tastatur-gemini-al.jpg?$formatz$"
-        },
-        {
-            "name": "7\" Doppel 2 DIN Autoradio Stereo Bluetooth FM USB AUX MP5 MP3 Player Autoradio",
-            "price": 99.99,
-            "img": "https://i.otto.de/i/otto/33d7d31a-372e-4387-9de7-c6a4a7e105f0?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/33d7d31a-372e-4387-9de7-c6a4a7e105f0/hikity-7-doppel-2-din-autoradio-stereo-bluetooth-fm-usb-aux-mp5-mp3-player-autoradio.jpg?$formatz$"
-        },
-        {
-            "name": "10.1 Zoll Android Stereoton 2 DIN Stereo GPS mit AHD Rückfahrkamera Autoradio",
-            "price": 229.99,
-            "img": "https://i.otto.de/i/otto/c7c15a9e-fd30-4aca-91f9-9519e4cb98cd?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/c7c15a9e-fd30-4aca-91f9-9519e4cb98cd/hikity-10-1-zoll-android-stereoton-2-din-stereo-gps-mit-ahd-rueckfahrkamera-autoradio-hifi-bluetooth-rds-fm-radio-dvr-funktion-das-navigationssystem.jpg?$formatz$"
-        },
-        {
-            "name": "ULT Wear Kopfhörer",
-            "price": 199.99,
-            "img": "https://i.otto.de/i/otto/f1d214ec-44f1-58f7-8e14-84f1191e6fa4?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/f1d214ec-44f1-58f7-8e14-84f1191e6fa4/sony-ult-wear-kopfhoerer-multi-point-verbindung-noise-cancelling-sprachsteuerung-kompatibel-mit-siri-alexa-google-assistant-siri-a2dp-bluetooth-avrcp-bluetooth-bluetooth-hfp-hsp-tiefem-bass-geraeuschunterdrueckung-klare-anrufqualitaet-ios-android.jpg?$formatz$"
-        },
-        {
-            "name": "DOITX3 Herren Smartwatch, Sprachassistent, AMOLED Always-On Display Smartwatch",
-            "price": 149.9,
-            "img": "https://i.otto.de/i/otto/f902ede4-625d-4987-bace-6f267d404f97?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/f902ede4-625d-4987-bace-6f267d404f97/levowatch-doitx3-herren-smartwatch-sprachassistent-amoled-always-on-display-smartwatch-5-3-cm-2-1-zoll-android-und-ios-fitness-tracker-uhr-3-armbaender-bt5-3-wasserdicht-502x410p-realtek-chip-4-teilig-schrittzaehler-puls-spo2-blutdruck-schlafueberwachung-anruffunktion.jpg?$formatz$"
-        },
-        {
-            "name": "11,26 Zoll Wireless CarPlay & Android Auto mit 4K DVR & Bluetooth Navigationsgerät (weltweit, GPS, Intelligentes Display)",
-            "price": 255.99,
-            "img": "https://i.otto.de/i/otto/0ab9c44b-5d5c-494b-9deb-ea9b3580cf0c?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/0ab9c44b-5d5c-494b-9deb-ea9b3580cf0c/hikity-11-26-zoll-wireless-carplay-android-auto-mit-4k-dvr-bluetooth-navigationsgeraet-weltweit-gps-intelligentes-display.jpg?$formatz$"
-        },
-        {
-            "name": "Galaxy Buds3 Pro SM-R630 wireless In-Ear-Kopfhörer",
-            "price": 249.0,
-            "img": "https://i.otto.de/i/otto/fc0d3332-89af-5b72-9ff4-34db8bfee018?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/fc0d3332-89af-5b72-9ff4-34db8bfee018/samsung-galaxy-buds3-pro-sm-r630-wireless-in-ear-kopfhoerer-active-noise-cancelling-anc-a2dp-bluetooth-doppel-verstaerker-24-bit-hi-fi-sound-ip57.jpg?$formatz$"
-        },
-        {
-            "name": "55UA73006LA LED-Fernseher",
-            "price": 749.0,
-            "img": "https://i.otto.de/i/otto/9f108d52-f03c-57bc-8050-0bb21c347e05?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/9f108d52-f03c-57bc-8050-0bb21c347e05/lg-55ua73006la-led-fernseher-139-cm-55-zoll-4k-ultra-hd-smart-tv.jpg?$formatz$"
-        },
-        {
-            "name": "Streaming-Box Bluetooth Sprachfernbedienung, (Leistungsstarke 8K Android TV Box, Dolby Audio-Unterstützung), Dual-Band Wi-Fi, flexiblem Speicher und Dolby Audio",
-            "price": 69.99,
-            "img": "https://i.otto.de/i/otto/8c8a6293-8175-40dc-9652-f896435ddadb?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/8c8a6293-8175-40dc-9652-f896435ddadb/diyarts-streaming-box-bluetooth-sprachfernbedienung-leistungsstarke-8k-android-tv-box-dolby-audio-unterstuetzung-dual-band-wi-fi-flexiblem-speicher-und-dolby-audio.jpg?$formatz$"
-        },
-        {
-            "name": "Xemio-860 MP4-Player mit Display Akku BT 8GB MP4-Player",
-            "price": 59.99,
-            "img": "https://i.otto.de/i/otto/a2b8bec3-94fd-582a-a26c-4e146923eeec?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/a2b8bec3-94fd-582a-a26c-4e146923eeec/lenco-xemio-860-mp4-player-mit-display-akku-bt-8gb-mp4-player.jpg?$formatz$"
-        },
-        {
-            "name": "50UT73006LA LED-Fernseher",
-            "price": 629.0,
-            "img": "https://i.otto.de/i/otto/73f1fa42-22a9-52c8-bb3b-b86c7c588763?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/73f1fa42-22a9-52c8-bb3b-b86c7c588763/lg-50ut73006la-led-fernseher-126-cm-50-zoll-4k-ultra-hd-smart-tv.jpg?$formatz$"
-        },
-        {
-            "name": "Smartwatch 1,65“ (Telefonfunktion, WhatsApp, E-Mail etc., wasserdicht) Smartwatch (1,65 Zoll)",
-            "price": 59.0,
-            "img": "https://i.otto.de/i/otto/9d6ab937-a54f-53f1-b7c5-1d56059975f2?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/9d6ab937-a54f-53f1-b7c5-1d56059975f2/hama-smartwatch-1-65-telefonfunktion-whatsapp-e-mail-etc-wasserdicht-smartwatch-1-65-zoll.jpg?$formatz$"
-        },
-        {
-            "name": "Nova S80 Soundbar",
-            "price": 499.99,
-            "img": "https://i.otto.de/i/otto/90555a13-3d51-49ea-a435-1c1d54afa6dc?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/90555a13-3d51-49ea-a435-1c1d54afa6dc/ultimea-nova-s80-soundbar-5-1-2ch-hdmi-opt-bluetooth-520-w-mit-dolby-atmos-8-wireless-subwoofer-fuer-mitrei%C3%9Fenden-heimkino-sound.jpg?$formatz$"
-        },
-        {
-            "name": "AC910 Lautsprechersystem",
-            "price": 43.0,
-            "img": "https://i.otto.de/i/otto/fa238fc4-8d69-4c12-8745-c20b30d0d1ed?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/fa238fc4-8d69-4c12-8745-c20b30d0d1ed/audiocore-ac910-lautsprechersystem-2-1-bluetooth-55-w-bluetooth-55-w-aux-usb-sd-ukw-radio-inkl-fernbedienung.jpg?$formatz$"
-        },
-        {
-            "name": "Lautsprecher für PC Notebook Tablet- 3,5 mm Klinke USB 3.0 3 W aktiv PC-Lautsprecher",
+            "name": "Kostüm 5 in 1 - 20er Jahre Kostüm Accessoires Herren Mafia Fasching Karneval, Einheitsgröße",
             "price": 14.99,
-            "img": "https://i.otto.de/i/otto/2d8d3531-efef-5f5a-883c-600f6705f5b8?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/2d8d3531-efef-5f5a-883c-600f6705f5b8/hama-lautsprecher-fuer-pc-notebook-tablet-3-5-mm-klinke-usb-3-0-3-w-aktiv-pc-lautsprecher.jpg?$formatz$"
+            "img": "https://i.otto.de/i/otto/20a30c35-506b-4c20-a372-9805bbbdae75?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/20a30c35-506b-4c20-a372-9805bbbdae75/kostuemheld-kostuem-5-in-1-20er-jahre-kostuem-accessoires-herren-mafia-fasching-karneval-einheitsgroe%C3%9Fe.jpg?$formatz$"
         },
         {
-            "name": "Streaming-Stick IP TV-Stick (inkl. HD+ IP für 3 Monate gratis)",
-            "price": 69.0,
-            "img": "https://i.otto.de/i/otto/eb13aa71-bf04-585c-9d2f-bbbe2af11ec6?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/eb13aa71-bf04-585c-9d2f-bbbe2af11ec6/hd-plus-streaming-stick-ip-tv-stick-inkl-hd-ip-fuer-3-monate-gratis.jpg?$formatz$"
+            "name": "Umhang Umhang mit Kaputze - Vampir Dracula Kostüm - Halloween Kostüm Herren, Beidseitig",
+            "price": 9.99,
+            "img": "https://i.otto.de/i/otto/c8348e4d-4ac7-411c-b98e-74a26ff02e86?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/c8348e4d-4ac7-411c-b98e-74a26ff02e86/kostuemheld-umhang-umhang-mit-kaputze-vampir-dracula-kostuem-halloween-kostuem-herren-beidseitig.jpg?$formatz$"
         },
         {
-            "name": "Bluetooth-Lautsprecher",
-            "price": 198.99,
-            "img": "https://i.otto.de/i/otto/19e70812-b52c-4c5f-8c85-5fbaed69a16c?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/19e70812-b52c-4c5f-8c85-5fbaed69a16c/amazon-bluetooth-lautsprecher.jpg?$formatz$"
+            "name": "Kostüm Selbstaufblasbares Kostüm Hund, Batteriebetrieben, innerhalb von Sekunden aufgeblasen",
+            "price": 25.79,
+            "img": "https://i.otto.de/i/otto/398019b4-ba3f-5671-824d-f0255a638311?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/398019b4-ba3f-5671-824d-f0255a638311/dressforfun-kostuem-selbstaufblasbares-kostuem-hund-batteriebetrieben-innerhalb-von-sekunden-aufgeblasen.jpg?$formatz$"
         },
         {
-            "name": "Open Ear Kopfhörer, In Ear Ohrhörer, Bluetooth 5.3 Sport-Kopfhörer Open-Ear-Kopfhörer",
-            "price": 63.99,
-            "img": "https://i.otto.de/i/otto/bccb7515-9281-4dd8-b7be-ab0252d8c9bc?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/bccb7515-9281-4dd8-b7be-ab0252d8c9bc/ibettertec-open-ear-kopfhoerer-in-ear-ohrhoerer-bluetooth-5-3-sport-kopfhoerer-open-ear-kopfhoerer-reduzierung-des-anrufrauschens-und-intelligente-bassoptimierung-enc-noise-cancelling-earbuds-60-std-laufzeit-ipx7-wasserdichte-kabellose-sport-bluetooth-kopfhoerer-mit-ohrhaken-fuer-%C3%BCbung-buero-und-langzeitgebrauc-bluetooth-kopfhoerer.jpg?$formatz$"
+            "name": "Kostüm Voodoo Poncho Damen gruselig m Totenkopf Haarreif, Halloween Frauenkostüm mit Skelett Aufdruck Karneval Fasching",
+            "price": 34.95,
+            "img": "https://i.otto.de/i/otto/08008968-0292-556d-9930-ccc067772524?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/08008968-0292-556d-9930-ccc067772524/karneval-klamotten-kostuem-voodoo-poncho-damen-gruselig-m-totenkopf-haarreif-halloween-frauenkostuem-mit-skelett-aufdruck-karneval-fasching.jpg?$formatz$"
         },
         {
-            "name": "TINY Damen Smartwatch, Sprachassistent, AMOLED Always-On Display Smartwatch",
-            "price": 149.9,
-            "img": "https://i.otto.de/i/otto/0cdb42b1-9651-4f5d-be1f-e537d5809211?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/0cdb42b1-9651-4f5d-be1f-e537d5809211/levowatch-tiny-damen-smartwatch-sprachassistent-amoled-always-on-display-smartwatch-4-7-cm-1-85-zoll-android-und-ios-fitness-tracker-uhr-3-armbaender-menstruationszyklus-wasserdicht-8mm-gehaeuse-4-teilig-schrittzaehler-puls-spo2-blutdruck-schlafueberwachung-anruffunktion.jpg?$formatz$"
+            "name": "Hippie-Kostüm Frauenkostüm Hippie Girl Harmony, Outfit in Jeans- und Ornamentenoptik",
+            "price": 21.99,
+            "img": "https://i.otto.de/i/otto/26bf8018-6035-5e5e-b494-d2663a8daf4a?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/26bf8018-6035-5e5e-b494-d2663a8daf4a/dressforfun-hippie-kostuem-frauenkostuem-hippie-girl-harmony-outfit-in-jeans-und-ornamentenoptik.jpg?$formatz$"
         },
         {
-            "name": "7\" 1 DIN Flip Android Autoradio mit GPS Navi WIFI Touchscreen MP5 Autoradio",
-            "price": 229.99,
-            "img": "https://i.otto.de/i/otto/b93b105c-e7c5-4e9e-8c90-06fa0ec4e8e2?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/b93b105c-e7c5-4e9e-8c90-06fa0ec4e8e2/hikity-7-1-din-flip-android-autoradio-mit-gps-navi-wifi-touchscreen-mp5-autoradio-1-32gb-digitalradio-dab-android-15-0-mit-gps-navi-bluetooth-wifi-usb-fm-aux.jpg?$formatz$"
+            "name": "Engel-Kostüm Frauenkostüm Heißer Engel, Figurbetontes Outfit in Schwarz mit silbernen Elementen",
+            "price": 26.99,
+            "img": "https://i.otto.de/i/otto/48dd3519-539a-5ab8-8fe9-009dbe521477?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/48dd3519-539a-5ab8-8fe9-009dbe521477/dressforfun-engel-kostuem-frauenkostuem-hei%C3%9Fer-engel-figurbetontes-outfit-in-schwarz-mit-silbernen-elementen.jpg?$formatz$"
         },
         {
-            "name": "Flip Essential 2 Bluetooth-Lautsprecher",
-            "price": 109.99,
-            "img": "https://i.otto.de/i/otto/68d561b5-80f6-5ba2-abcb-c340e9a6bfcc?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/68d561b5-80f6-5ba2-abcb-c340e9a6bfcc/jbl-flip-essential-2-bluetooth-lautsprecher.jpg?$formatz$"
+            "name": "Kostüm Frauenkostüm zauberhafte Orient Lady, Verspieltes Oberteil",
+            "price": 23.99,
+            "img": "https://i.otto.de/i/otto/79080dec-9de2-5743-903b-1e14ee85e838?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/79080dec-9de2-5743-903b-1e14ee85e838/dressforfun-kostuem-frauenkostuem-zauberhafte-orient-lady-verspieltes-oberteil.jpg?$formatz$"
         },
         {
-            "name": "RGB Edition V28717 Gaming-PC-Komplettsystem",
-            "price": 1699.0,
-            "img": "https://i.otto.de/i/otto/3505d696-dce0-5665-a2ee-4428f9a84051?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/3505d696-dce0-5665-a2ee-4428f9a84051/csl-rgb-edition-v28717-gaming-pc-komplettsystem-27-amd-ryzen-5-5600g-radeon-graphics-32-gb-ram-1000-gb-ssd.jpg?$formatz$"
+            "name": "Kostüm Gangster Panzerknacker Kostüm - Unisex Erwachsene 170-190cm - Fasching, unisex",
+            "price": 18.99,
+            "img": "https://i.otto.de/i/otto/4dcb814d-31f8-4494-b427-53a39bd23c20?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/4dcb814d-31f8-4494-b427-53a39bd23c20/kostuemheld-kostuem-gangster-panzerknacker-kostuem-unisex-erwachsene-170-190cm-fasching-unisex.jpg?$formatz$"
         },
         {
-            "name": "IR 500-21 Internet-Radio (Internetradio-Baustein, Bluetooth, DAB+, Webradio)",
-            "price": 249.95,
-            "img": "https://i.otto.de/i/otto/c25098e8-a01d-5bd9-a27e-9bdae70179f9?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/c25098e8-a01d-5bd9-a27e-9bdae70179f9/universum-ir-500-21-internet-radio-internetradio-baustein-bluetooth-dab-webradio.jpg?$formatz$"
+            "name": "Engel-Kostüm Frauenkostüm Sexy Engel Vamp, Dreilagiges Kleid in Schwarz und Grau",
+            "price": 26.99,
+            "img": "https://i.otto.de/i/otto/e3b3ce4c-32f0-56d8-9d78-45d408673057?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/e3b3ce4c-32f0-56d8-9d78-45d408673057/dressforfun-engel-kostuem-frauenkostuem-sexy-engel-vamp-dreilagiges-kleid-in-schwarz-und-grau.jpg?$formatz$"
         },
         {
-            "name": "Smart Soundbar Soundbar",
-            "price": 549.95,
-            "img": "https://i.otto.de/i/otto/957ae6f0-8e80-572d-b7e6-34487bb0462d?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/957ae6f0-8e80-572d-b7e6-34487bb0462d/bose-smart-soundbar-soundbar-stereo-bluetooth-wlan.jpg?$formatz$"
+            "name": "Kostüm Captain America Deluxe - Superhelden Kinderkostüm, Original lizenziertes Kostüm aus dem Film 'Marvel's The Avengers' (20",
+            "price": 39.9,
+            "img": "https://i.otto.de/i/otto/bad47af8-a1f7-5e19-b5b0-c34bc4d897f6?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/bad47af8-a1f7-5e19-b5b0-c34bc4d897f6/rubie-s-kostuem-captain-america-deluxe-superhelden-kinderkostuem-original-lizenziertes-kostuem-aus-dem-film-marvel-s-the-avengers-20.jpg?$formatz$"
         },
         {
-            "name": "Tune Flex wireless In-Ear-Kopfhörer",
-            "price": 99.99,
-            "img": "https://i.otto.de/i/otto/3d494136-23f4-5b73-8304-1115e534e769?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/3d494136-23f4-5b73-8304-1115e534e769/jbl-tune-flex-wireless-in-ear-kopfhoerer.jpg?$formatz$"
+            "name": "Kostüm Schnitterin Kleid, Asymmetrisches Kleid mit Kapuze, todschick und schnittig",
+            "price": 54.9,
+            "img": "https://i.otto.de/i/otto/c0b6dc35-8fad-5562-8483-c2aaf9353027?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/c0b6dc35-8fad-5562-8483-c2aaf9353027/thetru-kostuem-schnitterin-kleid-asymmetrisches-kleid-mit-kapuze-todschick-und-schnittig.jpg?$formatz$"
         },
         {
-            "name": "1DIN 7-Zoll-HD-Autoplayer Einziehbar Autoradio",
-            "price": 179.99,
-            "img": "https://i.otto.de/i/otto/d5839386-c2b3-4386-b32a-1f0c3c895414?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/d5839386-c2b3-4386-b32a-1f0c3c895414/hikity-1din-7-zoll-hd-autoplayer-einziehbar-autoradio-mirro-link-fm-bluetooth-unterstuetzung-tf-usb-typ-c-rueckfahrkamera-kabelloses-carplay-und-android-auto.jpg?$formatz$"
+            "name": "Kostüm Taktisches Agenten-Kostüm für Fasching – FBI, SWAT, POLICE & mehr, Agentenkostüm SWAT FBI POLICE SECURITY",
+            "price": 74.95,
+            "img": "https://i.otto.de/i/otto/df2753c3-65ec-545a-9230-de0c9d3adce5?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/df2753c3-65ec-545a-9230-de0c9d3adce5/black-snake-kostuem-taktisches-agenten-kostuem-fuer-fasching-fbi-swat-police-mehr-agentenkostuem-swat-fbi-police-security.jpg?$formatz$"
         },
         {
-            "name": "Streaming-Box LEAP-S3 4K Streaming Box",
-            "price": 89.99,
-            "img": "https://i.otto.de/i/otto/df9b20fd-9862-5577-ac17-65499bc1067d?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/df9b20fd-9862-5577-ac17-65499bc1067d/strong-streaming-box-leap-s3-4k-streaming-box.jpg?$formatz$"
+            "name": "Kostüm Neon Bauchtasche mit Pailletten, Pink",
+            "price": 7.49,
+            "img": "https://i.otto.de/i/otto/223e2617-bd0c-57bc-b801-b2ea8d6b639a?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/223e2617-bd0c-57bc-b801-b2ea8d6b639a/widmann-s-r-l-kostuem-neon-bauchtasche-mit-pailletten-pink.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Geister Kostüm Kinder, Gespenst Kostüm für Mädchen Jungen, mit Kapuze, Baby Kleinkinder, Halloween Kinder Geist Kostüm",
+            "price": 28.99,
+            "img": "https://i.otto.de/i/otto/db8f957c-272b-44e4-ab2b-d31b20332ac7?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/db8f957c-272b-44e4-ab2b-d31b20332ac7/coonoor-kostuem-geister-kostuem-kinder-gespenst-kostuem-fuer-maedchen-jungen-mit-kapuze-baby-kleinkinder-halloween-kinder-geist-kostuem.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Herrenkostüm super Klempner Mario, Latzhose in Jeansoptik, mit 2 aufgenähten, gelben Knöpfen",
+            "price": 21.99,
+            "img": "https://i.otto.de/i/otto/38395559-9206-57f1-b94b-ec9c850b400e?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/38395559-9206-57f1-b94b-ec9c850b400e/dressforfun-kostuem-herrenkostuem-super-klempner-mario-latzhose-in-jeansoptik-mit-2-aufgenaehten-gelben-knoepfen.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Herrenkostüm, Jacke und Hose im typischen Look der 80er und 90er Jahre.",
+            "price": 29.99,
+            "img": "https://i.otto.de/i/otto/7a747929-dc30-5f77-ab16-304f586bd6e5?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/7a747929-dc30-5f77-ab16-304f586bd6e5/dressforfun-kostuem-herrenkostuem-jacke-und-hose-im-typischen-look-der-80er-und-90er-jahre.jpg?$formatz$"
+        },
+        {
+            "name": "Hippie-Kostüm Frauenkostüm Mrs. Peacemaker, Langes, schönes Kleid",
+            "price": 31.99,
+            "img": "https://i.otto.de/i/otto/da44e845-f289-5167-998b-87b630cfb361?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/da44e845-f289-5167-998b-87b630cfb361/dressforfun-hippie-kostuem-frauenkostuem-mrs-peacemaker-langes-schoenes-kleid.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Die Sesamstraße – Yip Yip Marsianer Kostüm Alien, Lustiges und originalgetreues Kostüm der entdeckungsfreudigen Außeri",
+            "price": 55.39,
+            "img": "https://i.otto.de/i/otto/70a098e2-07e1-5874-b2ec-ea4c3a6b9ffd?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/70a098e2-07e1-5874-b2ec-ea4c3a6b9ffd/maskworld-kostuem-die-sesamstra%C3%9Fe-yip-yip-marsianer-kostuem-alien-lustiges-und-originalgetreues-kostuem-der-entdeckungsfreudigen-au%C3%9Feri.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Kostüm Set - Haus des Geldes 3 in 1 Halloween Kostüm Herren Maske",
+            "price": 8.99,
+            "img": "https://i.otto.de/i/otto/3036c645-af74-4a2c-85f6-951d95d21d7b?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/3036c645-af74-4a2c-85f6-951d95d21d7b/kostuemheld-kostuem-kostuem-set-haus-des-geldes-3-in-1-halloween-kostuem-herren-maske.jpg?$formatz$"
+        },
+        {
+            "name": "Vampir-Kostüm Schwarzes Chiffon Cape mit Kapuze für Halloween Ko",
+            "price": 36.95,
+            "img": "https://i.otto.de/i/otto/60f5e01a-29a3-52af-b760-079aeee8909b?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/60f5e01a-29a3-52af-b760-079aeee8909b/horror-shop-vampir-kostuem-schwarzes-chiffon-cape-mit-kapuze-fuer-halloween-ko.jpg?$formatz$"
+        },
+        {
+            "name": "Partyanzug Erwachsenen Onesie Kostüm in den Größen 150-190cm, Jumpsuit, Pyjama, Fasching, Kigurumi, Tierkostüme, Affe \"Louis\"",
+            "price": 60.0,
+            "img": "https://i.otto.de/i/otto/dd1cc26a-98d4-5e3e-be2d-932376f01e69?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/dd1cc26a-98d4-5e3e-be2d-932376f01e69/corimori-partyanzug-erwachsenen-onesie-kostuem-in-den-groe%C3%9Fen-150-190cm-jumpsuit-pyjama-fasching-kigurumi-tierkostueme-affe-louis.jpg?$formatz$"
+        },
+        {
+            "name": "Hippie-Kostüm Frauenkostüm Hippie, Oberteil und Hose aus Elastik-Jersey",
+            "price": 29.99,
+            "img": "https://i.otto.de/i/otto/afec3f5b-a0cb-5ddb-ab46-ea93170fff5e?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/afec3f5b-a0cb-5ddb-ab46-ea93170fff5e/dressforfun-hippie-kostuem-frauenkostuem-hippie-oberteil-und-hose-aus-elastik-jersey.jpg?$formatz$"
+        },
+        {
+            "name": "Zauberer-Kostüm Zauberer Kostüm für Kinder, Gold Schwarz",
+            "price": 17.5,
+            "img": "https://i.otto.de/i/otto/09a99ec9-176b-49d2-be0c-9e0ba88b3fef?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/09a99ec9-176b-49d2-be0c-9e0ba88b3fef/einkaufszauber-zauberer-kostuem-zauberer-kostuem-fuer-kinder-gold-schwarz.jpg?$formatz$"
+        },
+        {
+            "name": "Hexen-Kostüm Grüne Hexe, Die klassische Wicked Witch of the West",
+            "price": 49.99,
+            "img": "https://i.otto.de/i/otto/33f4d155-b545-5137-b80d-cc956ac81d79?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/33f4d155-b545-5137-b80d-cc956ac81d79/smiffys-hexen-kostuem-gruene-hexe-die-klassische-wicked-witch-of-the-west.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm '80s Girl Kostüm' für Damen 4-tlg., Mehrfarbig -",
+            "price": 21.9,
+            "img": "https://i.otto.de/i/otto/c3a12777-81bb-55b1-ac0a-a770d6534c41?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/c3a12777-81bb-55b1-ac0a-a770d6534c41/widmann-s-r-l-kostuem-80s-girl-kostuem-fuer-damen-4-tlg-mehrfarbig.jpg?$formatz$"
+        },
+        {
+            "name": "Piraten-Kostüm Frauenkostüm Piratenkönigin, Kleid im Vokuhila-Stil mit abgesetztem Totenkopfmuster",
+            "price": 31.99,
+            "img": "https://i.otto.de/i/otto/6e54d6e9-c248-51d5-a6cb-b14cfb846430?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/6e54d6e9-c248-51d5-a6cb-b14cfb846430/dressforfun-piraten-kostuem-frauenkostuem-piratenkoenigin-kleid-im-vokuhila-stil-mit-abgesetztem-totenkopfmuster.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm 5-teiliges Dienstmädchenkostüm",
+            "price": 64.99,
+            "img": "https://i.otto.de/i/otto/275271dd-3d84-5d92-9a2f-bcf737caac6b?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/275271dd-3d84-5d92-9a2f-bcf737caac6b/obsessive-kostuem-5-teiliges-dienstmaedchenkostuem.jpg?$formatz$"
+        },
+        {
+            "name": "Hexen-Kostüm Halloween Kleid Set für Kinder mit Tattoos & Hut, Fasching, Karneval, Faschingskostüm, Karnevalskostüm, Kleid, Hexenhut",
+            "price": 50.0,
+            "img": "https://i.otto.de/i/otto/221adb09-f737-5114-b458-ddd9c79945a5?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/221adb09-f737-5114-b458-ddd9c79945a5/corimori-hexen-kostuem-halloween-kleid-set-fuer-kinder-mit-tattoos-hut-fasching-karneval-faschingskostuem-karnevalskostuem-kleid-hexenhut.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Herrenkostüm Schauerlicher Geist, Weißes Geisterkostüm mit grauen und schwarzen Akzenten",
+            "price": 19.99,
+            "img": "https://i.otto.de/i/otto/d2869fde-331d-58c1-8c7e-417ecd628894?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/d2869fde-331d-58c1-8c7e-417ecd628894/dressforfun-kostuem-herrenkostuem-schauerlicher-geist-wei%C3%9Fes-geisterkostuem-mit-grauen-und-schwarzen-akzenten.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Geisterprinzessin",
+            "price": 60.79,
+            "img": "https://i.otto.de/i/otto/9cc5eaf0-38d5-5a4c-9ec3-30de650c15fb?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/9cc5eaf0-38d5-5a4c-9ec3-30de650c15fb/fun-world-kostuem-geisterprinzessin.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Halloween Kostüm Geist Kinder Jungen Geisterkostüm Gespenst, Halloween Gespenst Faschingskostüme, Gespenster Kostüm",
+            "price": 18.99,
+            "img": "https://i.otto.de/i/otto/db226012-8c87-46e0-8380-61688f5b1825?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/db226012-8c87-46e0-8380-61688f5b1825/coonoor-kostuem-halloween-kostuem-geist-kinder-jungen-geisterkostuem-gespenst-halloween-gespenst-faschingskostueme-gespenster-kostuem.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Pest-Doktor Schnabel Rabenmaske, Cosplay Steampunk Seuchen-Doktor (Einzeln: Schnabelmaske)",
+            "price": 39.95,
+            "img": "https://i.otto.de/i/otto/8869a517-e22d-4098-8688-31a89c2b408e?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/8869a517-e22d-4098-8688-31a89c2b408e/goods-gadgets-kostuem-pest-doktor-schnabel-rabenmaske-cosplay-steampunk-seuchen-doktor-einzeln-schnabelmaske.jpg?$formatz$"
+        },
+        {
+            "name": "Partyanzug Fantasy Figuren Jumpsuit Kostüm Erwachsene S-XL, Karneval - Kostüm, Kigurumi - Dinosaurier grün XL (175-185cm)",
+            "price": 45.0,
+            "img": "https://i.otto.de/i/otto/556e83b4-b8f0-5380-b3a4-9d65c545c977?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/556e83b4-b8f0-5380-b3a4-9d65c545c977/katara-partyanzug-fantasy-figuren-jumpsuit-kostuem-erwachsene-s-xl-karneval-kostuem-kigurumi-dinosaurier-gruen-xl-175-185cm.jpg?$formatz$"
+        },
+        {
+            "name": "Monster-Kostüm Tarnanzug 4-teilig Ghillie Suit, Scharfschützen-Outfit Tarnung - Jacke, Hose, Gewehr- und Kopfbedeckung",
+            "price": 59.95,
+            "img": "https://i.otto.de/i/otto/4ea790e2-47f9-508d-a2b9-bbab17c3dce0?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/4ea790e2-47f9-508d-a2b9-bbab17c3dce0/normani-monster-kostuem-tarnanzug-4-teilig-ghillie-suit-scharfschuetzen-outfit-tarnung-jacke-hose-gewehr-und-kopfbedeckung.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Unisexkostüm Astronaut, Silberner Overall für eine galaktische Optik.",
+            "price": 54.99,
+            "img": "https://i.otto.de/i/otto/6aa53403-75e8-5a7f-9f2a-d591f6d45245?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/6aa53403-75e8-5a7f-9f2a-d591f6d45245/dressforfun-kostuem-unisexkostuem-astronaut-silberner-overall-fuer-eine-galaktische-optik.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Fledermaus für Babys - Halloween Verkleidung",
+            "price": 29.95,
+            "img": "https://i.otto.de/i/otto/6b18ad02-18da-56df-b196-4f81a087a09b?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/6b18ad02-18da-56df-b196-4f81a087a09b/fiestas-guirca-kostuem-fledermaus-fuer-babys-halloween-verkleidung.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Glurak Verkleidung für Kinder",
+            "price": 59.99,
+            "img": "https://i.otto.de/i/otto/9f3d6290-36c5-54da-8ddc-3d28cea81d4b?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/9f3d6290-36c5-54da-8ddc-3d28cea81d4b/amscan-kostuem-glurak-verkleidung-fuer-kinder.jpg?$formatz$"
+        },
+        {
+            "name": "Piraten-Kostüm Herrenkostüm Seeräuber-König, Goldverzierter Mantel mit Ärmelaufschlägen",
+            "price": 29.99,
+            "img": "https://i.otto.de/i/otto/84cb9fb0-0172-51b5-8b19-c7f6d6101276?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/84cb9fb0-0172-51b5-8b19-c7f6d6101276/dressforfun-piraten-kostuem-herrenkostuem-seeraeuber-koenig-goldverzierter-mantel-mit-%C3%A4rmelaufschlaegen.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm 36x Selbstklebend Bärte mit div. Schnurrbart zum Ankleben - Fake Bart",
+            "price": 9.99,
+            "img": "https://i.otto.de/i/otto/eead9e28-b7dd-44b6-8732-114b14bc2b8e?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/eead9e28-b7dd-44b6-8732-114b14bc2b8e/kostuemheld-kostuem-36x-selbstklebend-baerte-mit-div-schnurrbart-zum-ankleben-fake-bart.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Die Eiskönigin Elsa Basic, Einfaches Eiskönigin-Kostümkleid zum ersten 'Frozen'-Film",
+            "price": 39.99,
+            "img": "https://i.otto.de/i/otto/1bd8367d-35b2-554a-aba9-7763dd18f185?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/1bd8367d-35b2-554a-aba9-7763dd18f185/metamorph-kostuem-die-eiskoenigin-elsa-basic-einfaches-eiskoenigin-kostuemkleid-zum-ersten-frozen-film.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Mittelalter Kostüm Kleid Gewand Elbentraum Elfe Fee Faschingskostüm",
+            "price": 35.9,
+            "img": "https://i.otto.de/i/otto/cf3e1873-4d52-5bc3-baa3-1c2265a120e7?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/cf3e1873-4d52-5bc3-baa3-1c2265a120e7/maylynn-kostuem-mittelalter-kostuem-kleid-gewand-elbentraum-elfe-fee-faschingskostuem.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Belly Dance Bauchtanz Hüfttuch Münzgürtel Fasching",
+            "price": 7.99,
+            "img": "https://i.otto.de/i/otto/c6472858-884c-42c5-b14d-84cc18b6baf1?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/c6472858-884c-42c5-b14d-84cc18b6baf1/mybeautyworld24-kostuem-belly-dance-bauchtanz-huefttuch-muenzguertel-fasching.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Liebestöter Pluderhose Spitzenhose knielange Unterhose Damen Herren",
+            "price": 9.99,
+            "img": "https://i.otto.de/i/otto/3a13d01e-185e-4f7d-8f19-88a7db0dc334?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/3a13d01e-185e-4f7d-8f19-88a7db0dc334/fries-kostuem-liebestoeter-pluderhose-spitzenhose-knielange-unterhose-damen-herren.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Frauenkostüm Königstochter, Traumhaftes Königstochter-Kleid",
+            "price": 19.79,
+            "img": "https://i.otto.de/i/otto/56555b58-0032-5ddf-9edc-7b70f19cba65?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/56555b58-0032-5ddf-9edc-7b70f19cba65/dressforfun-kostuem-frauenkostuem-koenigstochter-traumhaftes-koenigstochter-kleid.jpg?$formatz$"
+        },
+        {
+            "name": "Engel-Kostüm Frauenkostüm Weihnachtselfe, Langarm-Shirt in Jacket-Optik",
+            "price": 19.99,
+            "img": "https://i.otto.de/i/otto/3117a458-872c-5e21-b55f-24cf83ab76da?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/3117a458-872c-5e21-b55f-24cf83ab76da/dressforfun-engel-kostuem-frauenkostuem-weihnachtselfe-langarm-shirt-in-jacket-optik.jpg?$formatz$"
+        },
+        {
+            "name": "Kostüm Schuluniform Wednesday Addams für Erwachsene",
+            "price": 59.99,
+            "img": "https://i.otto.de/i/otto/e8d54b10-6db0-50dc-94b6-d22d917874db?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/e8d54b10-6db0-50dc-94b6-d22d917874db/chaks-kostuem-schuluniform-wednesday-addams-fuer-erwachsene.jpg?$formatz$"
         }
     ]
 }
