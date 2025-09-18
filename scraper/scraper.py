@@ -131,5 +131,6 @@ def scrape_main(search_terms:list, export_path:str='articles.json', await_debug:
     driver.quit()
     
 if __name__ == "__main__":
+    #categories = ["multimedia", "hello kitty", "moebel","haushalt", "bekleidung", "sport", "gartengeraete", "kostueme", "kleidung", "haustier kostueme", "haustier accessoires", "geraet", "bau", "beauty", "kind", "utensilien", "pc accessoires"]
     categories = ["kostueme", "utensilien"]
     scrape_main(search_terms = categories, export_path='articles.json', await_debug=False)
