@@ -24,6 +24,8 @@ def scraper(driver:webdriver.Chrome):
             try:
                 list_item = article.find_element(By.CSS_SELECTOR, "li.find_tile")
 
+                product_brand = list_item.find_element(By.CLASS_NAME, "find_tile__brand")
+
                 product_name = list_item.find_element(By.CLASS_NAME, "find_tile__name")
 
                 #get the price by the right tag
@@ -43,6 +45,7 @@ def scraper(driver:webdriver.Chrome):
                 high_quality_img_url = hqi.get_high_quality_link(image_url, alt_image)
 
                 data = {
+                    "brand": product_brand.text.strip(),
                     "name": product_name.text.strip(),
                     "price": helper.clean_price(product_price.text),
                     "img": image_url,
