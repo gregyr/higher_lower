@@ -1,0 +1,72 @@
+import json
+from os import path
+import random
+
+from numpy.ma.core import absolute
+
+
+class Product:
+    def __init__(self, name, price, img, high_q_img = None):
+        self.name = name
+        self.price = float(price)
+        self.img = img
+        self.high_q_img = high_q_img
+
+    def get_product_relation(self, other, threshold = 1.2):
+        if self.price * threshold > other.price > self.price / threshold: return 0
+        return 0.1 + self.__class__.absolute_relation(self.price - other.price) + self.__class__.relative_relation(self.price/other.price)
+
+    @staticmethod
+    def absolute_relation(delta_price):
+        return max(0, 0.2 - abs(delta_price)/120)
+
+    @staticmethod
+    def relative_relation(price_ratio):
+        return max(0, -0.5*(((price_ratio if price_ratio > 1 else 1/price_ratio) - 1)**2) + 0.2)
+
+    def __repr__(self):
+        return f'{self.__class__.__name__}({self.name}, {self.price}, {self.img}, {self.high_q_img})'
+
+    def __str__(self):
+        return f'{self.name}: {self.price}€'
+
+class ProductCollection:
+    def __init__(self, file_path = None, *, products = None):
+        self.products = None
+        if products is None:
+            if not file_path is None: self.load_products(file_path)
+        else:
+            self.products = products
+
+    def load_products(self, file_path):
+        with open(file_path) as f:
+            products = json.load(f)
+            self.products = [Product(**product) for product in products]
+
+    def next_product(self, last_product: Product | int):
+        if isinstance(last_product, int):
+            last_product = self[last_product]
+        products = random.sample(self.products, len(self.products))
+        products.remove(last_product)
+        for product in products[:-1]:
+            if random.random() < last_product.get_product_relation(product):
+                return product
+        return products[-1]
+
+    def __getitem__(self, item):
+        return self.products[item]
+
+    def __len__(self):
+        return self.products.__len__()
+
+    def __str__(self):
+        return f'{self.__class__.__name__}{'[]' if self.products is None else [product for product in self.products]}'
+
+def main():
+    catalog = ProductCollection(path.relpath('../scraper/articles.json'))
+    i = 2
+    print(catalog[i], catalog.next_product(i))
+
+
+if __name__ == '__main__':
+    main()
