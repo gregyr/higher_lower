@@ -2,9 +2,6 @@ import json
 from os import path
 import random
 
-from numpy.ma.core import absolute
-
-
 class Product:
     def __init__(self, name, price, img, high_q_img = None):
         self.name = name
