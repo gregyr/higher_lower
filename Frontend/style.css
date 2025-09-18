@@ -1,9 +1,41 @@
 /* Allgemeines */
+
+@font-face {
+    font-family: OttoSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.otto.de/assets-static/components/assets/otto-sans.CtUYNJ_f.woff2) format("woff2"),url(https://static.otto.de/assets-static/components/assets/otto-sans.DT9YO2fU.woff) format("woff")
+}
+
+@font-face {
+    font-family: OttoSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.otto.de/assets-static/components/assets/otto-sans-bold.7ffBVm3L.woff2) format("woff2"),url(https://static.otto.de/assets-static/components/assets/otto-sans-bold.BeUYGSjW.woff) format("woff")
+}
+
+@font-face {
+    font-family: OttoPlay;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.otto.de/assets-static/components/assets/otto-play.C9CZ0YGN.woff2) format("woff2")
+}
+
+@media (min-width: 48rem) {
+    @font-face {
+        font-family:OttoSansThin;
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://static.otto.de/assets-static/components/assets/otto-sans-thin.DVT-9QSF.woff2) format("woff2"),url(https://static.otto.de/assets-static/components/assets/otto-sans-thin.UQZ1fxrC.woff) format("woff")
+    }
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #e6e6e6;
 }
 
 header {
@@ -15,11 +47,12 @@ header {
 }
 
 h1 {
-    font-family: 'Arial', sans-serif;
-    color: #c62c8a;
+    font-family: 'OttoPlay', sans-serif;
+    color: #f00020;
     margin: 0;
     font-size: 2.5em;
 }
+
 
 /* Produkt Container */
 .product-container {
@@ -66,3 +99,4 @@ h1 {
 .question-mark {
     display: none; /* standard versteckt */
 }
+
