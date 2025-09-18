@@ -31,8 +31,9 @@ class Product:
         return f'{self.name}: {self.price}€'
 
 class ProductCollection:
-    def __init__(self, file_path = None, *, products = None):
+    def __init__(self, file_path = None, *, category = None, products = None):
         self.products = None
+        self.category = category
         if products is None:
             if not file_path is None: self.load_products(file_path)
         else:
@@ -40,10 +41,17 @@ class ProductCollection:
 
     def load_products(self, file_path):
         with open(file_path) as f:
-            products = json.load(f)
+            categories = json.load(f)
+            products = None
+            if self.category is None:
+                products = [product for k, v in categories.items() for product in v]
+            else:
+                products = categories[self.category]
             self.products = [Product(**product) for product in products]
 
-    def next_product(self, last_product: Product | int):
+    def next_product(self, last_product: Product | int | None = None):
+        if last_product is None:
+            return random.choice(self.products)
         if isinstance(last_product, int):
             last_product = self[last_product]
         products = random.sample(self.products, len(self.products))
@@ -64,9 +72,11 @@ class ProductCollection:
 
 def main():
     catalog = ProductCollection(path.relpath('../scraper/articles.json'))
-    i = 2
-    print(catalog[i], catalog.next_product(i))
-
+    print(len(catalog))
+    categories = []
+    with open(path.relpath('../scraper/articles.json')) as f:
+        categories = json.load(f).keys()
+    print(sum([len(ProductCollection(path.relpath('../scraper/articles.json'), category=category)) for category in categories]))
 
 if __name__ == '__main__':
     main()
