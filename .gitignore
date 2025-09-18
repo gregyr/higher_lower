@@ -11,3 +11,4 @@ scraper/.venv
 
 # VsCode settings
 server/.vscode/
+server/__pycache__
