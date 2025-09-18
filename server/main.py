@@ -1,5 +1,5 @@
 import uuid
-from flask import Flask, session, redirect, url_for, request, render_template
+from flask import Flask, jsonify, session, redirect, url_for, request, render_template
 
 class Product:
    def __init__(self, price):
@@ -19,6 +19,13 @@ class Game:
    def checkGuess(self, userGuess):
       rightGuess = True
       return rightGuess
+   
+   def toDict(self, CencorNextPrice = True):
+      return {
+         "score": self.score,
+         "productLast": self.productLast.price,
+         "productNext": self.productNext.price if not CencorNextPrice else 0
+      }
 
 games = {}
 
@@ -62,20 +69,21 @@ def game():
 
 @app.route("/guess", methods = ['POST'])
 def guess():
-   user_guess = request.form['guess']
+   #Check if session and game exist
    if "sessionID" not in session:
       return redirect(url_for('index'))
    elif session['sessionID'] not in games:
       return redirect(url_for('new_game'))
    else:
       currentGame = games[session['sessionID']]
-      if currentGame.checkGuess(user_guess):
+      #get user guess from form
+      user_guess = request.form['guess']
+      if currentGame.checkGuess(user_guess): # if correct guess deliver new product
          currentGame.score += 1
          currentGame.nextProduct()
-         return redirect(url_for('game'))
+         return jsonify(currentGame.toDict(True)) # censor next price
       else:
-         score = currentGame.score
-         del games[session['sessionID']]
+         # if wrong return to title screen with score
          return redirect(url_for("index"))
 
 @app.route("/test")
