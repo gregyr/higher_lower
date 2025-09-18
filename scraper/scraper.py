@@ -3,53 +3,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-import time
-import json
 
 import high_quality_img as hqi
+import helper_functions as helper
 
-#---Helpers---#
-def clean_price(pricetag:str):
-    """
-    Säubert den Preis zu einem Floatformat
-    """
-    remove_letters = "ab€"
-    new_string = ""
-    for i in pricetag:
-        if i not in remove_letters:
-            if i == ",":
-                new_string += "."
-            else:
-                new_string += i
-    
-    return new_string
-            
-def remove_duplicates(list):
-    """
-    Entfernt doppelte Produkte
-    """
-    new_list = []
-
-    for item in list:
-        if item not in new_list:
-            new_list.append(item)
-    return new_list
-
-def export_to_json(data, filename="data.json"):
-    """
-    Exportiert das dictionary an Artikeln in eine JSON
-    """
-    try:
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-        print(f"Successfully exported data to {filename}")
-
-    except Exception as e:
-        print(f"Error exporting to JSON: {e}")
-
-#---Scraping funktionen---#
-
-def scraper(driver) :
+def scraper(driver, search_term:str) :
     """
     Scraped die gerade geladene Seite <br>
     Kann nicht eine komplette Seite scannen, da diese automatisch generiert wird und nicht preloaded ist. <br>
@@ -65,10 +23,12 @@ def scraper(driver) :
             try:
                 list_item = article.find_element(By.CSS_SELECTOR, "li.find_tile")
 
-                #Preis den nochmal spezifizieren um den wirklichen UVP zu scrapen statt Rabatt
-                #Möglicher weise Produkt namen vereinfachen
                 product_name = list_item.find_element(By.CLASS_NAME, "find_tile__name")
-                product_price = list_item.find_element(By.CSS_SELECTOR, ".find_tile__priceValue.find_tile__priceValue--red")
+                product_price = list_item.find_element(By.CSS_SELECTOR, ".find_tile__priceValue--strikethrough")
+                
+                if(not product_price):
+                    print("using other price")
+                    product_price = list_item.find_element(By.CSS_SELECTOR, "span.find_tile__retailPrice pl_headline50 find_tile__priceValue")
 
                 product_image = list_item.find_element(By.CSS_SELECTOR, "div.find_tile__productImageContainer picture img.find_tile__productImage")
 
@@ -82,7 +42,7 @@ def scraper(driver) :
 
                 data = {
                     "name": product_name.text.strip(),
-                    "price": clean_price(product_price.text).strip(),
+                    "price": helper.clean_price(product_price.text),
                     "img": image_url,
                     "high_q_img": high_quality_img_url
                 }
@@ -90,7 +50,7 @@ def scraper(driver) :
                 print(f"Name: {product_name.text.strip()}")
 
             except NoSuchElementException:
-                print("Could not find name, price, or image for a product. Skipping.")
+                print("Could not find all properties, skipping Element")
 
     except TimeoutException:
         print("Timed out waiting for products to load.")
@@ -98,10 +58,11 @@ def scraper(driver) :
     return scraped_data
 
 
-def scrape_full_page(url, driver):
+def scrape_full_page(url, driver, search_term):
     """
     Scraped eine komplette Seite indem sie sie durchscrollt
     """
+    print(f"Scraping {url}")
     driver.get(url)
 
     max_height = driver.execute_script("return document.body.scrollHeight")
@@ -116,10 +77,10 @@ def scrape_full_page(url, driver):
         driver.execute_script(f"window.scrollTo(0, {current_height});")
         print(f"Scrolled to {current_height}")
 
-        product_data.extend(scraper(driver))
+        product_data.extend(scraper(driver, search_term=search_term))
 
 
-    product_data = remove_duplicates(product_data)
+    product_data = helper.remove_duplicates(product_data)
 
     #Debugging    
     for item in product_data:
@@ -143,18 +104,23 @@ def main(search_terms:list):
     Das high-res Bild ist möglicherweise eine falsche URL, da sie generiert ist um traffic zu reduzieren. <br>
     
     """
-    total_data = []
+    category_dict = {}
 
     options = webdriver.ChromeOptions()
     options.add_argument("--headless=new")
     driver = webdriver.Chrome(options=options)
 
     for search_term in search_terms:
-        total_data.extend(scrape_full_page(f"https://www.otto.de/suche/{search_term}/", driver))
+        products = scrape_full_page(f"https://www.otto.de/suche/{search_term}/", driver, search_term=search_term)
+        category_dict[search_term] = products
 
-    export_to_json(total_data, 'articles.json')
+    helper.export_to_json(category_dict, 'articles.json')
 
-    print(f"Articles scraped: {len(total_data)}")
+    for product in category_dict:
+        print(f"Category: {product}, Articles: {len(category_dict[product])}")
+
+    total_count = sum(len(products) for products in category_dict.values())
+    print(f"Total articles scraped: {total_count}")
     driver.quit()
     
 
@@ -162,5 +128,5 @@ def main(search_terms:list):
 if __name__ == "__main__":
     #läuft über suche also Kategorienamen anpassen
     #["multimedia", "bekleidung", "haushalt", "möbel", "küche"]
-    categories = ["multimedia"]
+    categories = ["multimedia", "möbel"]
     main(search_terms = categories)
