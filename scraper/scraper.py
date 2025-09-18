@@ -24,11 +24,11 @@ def scraper(driver, search_term:str) :
                 list_item = article.find_element(By.CSS_SELECTOR, "li.find_tile")
 
                 product_name = list_item.find_element(By.CLASS_NAME, "find_tile__name")
-                product_price = list_item.find_element(By.CSS_SELECTOR, ".find_tile__priceValue--strikethrough")
-                
-                if(not product_price):
-                    print("using other price")
-                    product_price = list_item.find_element(By.CSS_SELECTOR, "span.find_tile__retailPrice pl_headline50 find_tile__priceValue")
+
+                try:
+                    product_price = list_item.find_element(By.CSS_SELECTOR, ".find_tile__priceValue--strikethrough")
+                except NoSuchElementException:
+                    product_price = list_item.find_element(By.CSS_SELECTOR, ".find_tile__priceValue")
 
                 product_image = list_item.find_element(By.CSS_SELECTOR, "div.find_tile__productImageContainer picture img.find_tile__productImage")
 
@@ -50,7 +50,8 @@ def scraper(driver, search_term:str) :
                 print(f"Name: {product_name.text.strip()}")
 
             except NoSuchElementException:
-                print("Could not find all properties, skipping Element")
+                #print("Some elements not found in this article, skipping...")
+                pass
 
     except TimeoutException:
         print("Timed out waiting for products to load.")
@@ -114,7 +115,7 @@ def scrape_main(search_terms:list):
         products = scrape_full_page(f"https://www.otto.de/suche/{search_term}/", driver, search_term=search_term)
         category_dict[search_term] = products
 
-    helper.export_to_json(category_dict, 'articles.json')
+    helper.export_to_json(category_dict, 'scraper/articles.json')
 
     for product in category_dict:
         print(f"Category: {product}, Articles: {len(category_dict[product])}")
@@ -128,5 +129,5 @@ def scrape_main(search_terms:list):
 if __name__ == "__main__":
     #läuft über suche also Kategorienamen anpassen
     #["multimedia", "bekleidung", "haushalt", "möbel", "küche"]
-    categories = ["multimedia", "möbel"]
+    categories = ["kostueme"]
     scrape_main(search_terms = categories)
