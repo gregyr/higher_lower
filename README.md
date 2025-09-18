@@ -1,9 +1,20 @@
 # Higher Lower
-Higher Lower Repo
 
-### Scraper --> scraper.py
+### Scraping script: scraping.py
 
-in der main() funktion kann man eine Liste an Suchen eingeben die gescraped werden
-- pro Suchterm ca 40-50 Produkte
-- durch high_quality_img.py wird der Link zum high-res Bild generiert
+in der `main()` funktion kann man eine Liste an Suchen eingeben die gescraped werden
+- pro Suchterm werden ca. 40-50 Produkte gefunden
+- durch high_quality_img.py wird der Link zum high-res Bild generiert <br>
+#### Dependencies:
+mit pip:
+```
+pip install selenium
+pip install urllib3
+```
+mit uv:
+
+```
+uv add selenium
+uv add urllib3
+```
 
