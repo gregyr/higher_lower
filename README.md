@@ -10,11 +10,13 @@ mit pip:
 ```
 pip install selenium
 pip install urllib3
+pip install numpy
 ```
 mit uv:
 
 ```
 uv add selenium
 uv add urllib3
+uv add numpy
 ```
 
