@@ -92,7 +92,7 @@ def scrape_full_page(url, driver, search_term):
 
 #---Main execute---#
 
-def main(search_terms:list):
+def scrape_main(search_terms:list):
     """
     Scraped die gegebenen Suchterme <br>
     gibt eine JSON mit folgenden Produktdaten aus:
@@ -129,4 +129,4 @@ if __name__ == "__main__":
     #läuft über suche also Kategorienamen anpassen
     #["multimedia", "bekleidung", "haushalt", "möbel", "küche"]
     categories = ["multimedia", "möbel"]
-    main(search_terms = categories)
+    scrape_main(search_terms = categories)

@@ -1,16 +1,16 @@
 {
     "multimedia": [
         {
-            "name": "HS3100 3.1 Soundsystem",
-            "price": 249.0,
-            "img": "https://i.otto.de/i/otto/38ba09f5-9bc3-57e9-93e0-d3d4367754f9?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/38ba09f5-9bc3-57e9-93e0-d3d4367754f9/hisense-hs3100-3-1-soundsystem-480-w.jpg?$formatz$"
+            "name": "43E6NT LED-Fernseher",
+            "price": 449.0,
+            "img": "https://i.otto.de/i/otto/b526a55c-e43f-54fd-8155-652b8d4688df?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/b526a55c-e43f-54fd-8155-652b8d4688df/hisense-43e6nt-led-fernseher-108-cm-43-zoll-4k-ultra-hd-smart-tv-4k-uhd.jpg?$formatz$"
         },
         {
-            "name": "HS2100 2.1 Soundsystem",
-            "price": 149.0,
-            "img": "https://i.otto.de/i/otto/0b273be7-1ecb-51e8-9e4e-97380f2f4cc4?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/0b273be7-1ecb-51e8-9e4e-97380f2f4cc4/hisense-hs2100-2-1-soundsystem-2-1-bluetooth-240-w.jpg?$formatz$"
+            "name": "40E4QT LED-Fernseher",
+            "price": 349.0,
+            "img": "https://i.otto.de/i/otto/53ba9a23-f15b-5a8b-aa30-acbcec472fa4?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/53ba9a23-f15b-5a8b-aa30-acbcec472fa4/hisense-40e4qt-led-fernseher-100-cm-40-zoll-full-hd-smart-tv-2k-fhd.jpg?$formatz$"
         },
         {
             "name": "IdeaPad 3 Chrome 15IJL6 8GB RAM / 128GB eMMC Chromebook",
@@ -43,6 +43,12 @@
             "high_q_img": "https://i.otto.de/i/otto/7abdf151-4661-5174-b5aa-914acd8a58b4/wisam-kreativset-145-teiliger-einhorn-kunstkoffer-fuer-kinder-mit-zeichen-und-malutensil-spar-set.jpg?$formatz$"
         },
         {
+            "name": "HS205G 2.0 Kanal Soundbar, 120 Watt, schwarz Soundbar",
+            "price": 129.0,
+            "img": "https://i.otto.de/i/otto/ed1c8373-3587-5ce0-8ba6-8f4c4f823d51?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/ed1c8373-3587-5ce0-8ba6-8f4c4f823d51/hisense-hs205g-2-0-kanal-soundbar-120-watt-schwarz-soundbar-2-0-bluetooth-120-w.jpg?$formatz$"
+        },
+        {
             "name": "WHCH520 Bluetooth-Kopfhörer",
             "price": 69.99,
             "img": "https://i.otto.de/i/otto/8a20ac07-a152-5f44-bcf1-0c2a1e0b236e?$responsive_ft2$",
@@ -61,10 +67,10 @@
             "high_q_img": "https://i.otto.de/i/otto/f8838c3c-87d1-4136-8182-d09aaffba263/athlix-auto-radio-multimedia-video-player-apple-car-play-bluetooth-aux-usb-autoradio-autoradio-10-26-full-hd-breite-kompatibilitaet-sprachsteuerung.jpg?$formatz$"
         },
         {
-            "name": "7\" Doppel 2 DIN Autoradio Stereo Bluetooth FM USB AUX MP5 MP3 Player Autoradio",
-            "price": 99.99,
-            "img": "https://i.otto.de/i/otto/33d7d31a-372e-4387-9de7-c6a4a7e105f0?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/33d7d31a-372e-4387-9de7-c6a4a7e105f0/hikity-7-doppel-2-din-autoradio-stereo-bluetooth-fm-usb-aux-mp5-mp3-player-autoradio.jpg?$formatz$"
+            "name": "32E4QT LED-Fernseher",
+            "price": 249.0,
+            "img": "https://i.otto.de/i/otto/5a963103-1845-5146-9043-876557448065?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/5a963103-1845-5146-9043-876557448065/hisense-32e4qt-led-fernseher-80-cm-32-zoll-hd-smart-tv-hd.jpg?$formatz$"
         },
         {
             "name": "Major IV Bluetooth-Kopfhörer",
@@ -97,10 +103,10 @@
             "high_q_img": "https://i.otto.de/i/otto/7f0ea177-520a-44bd-a4e4-91d5f43d0b3d/xgody-11-3-tragbares-4k-android-auto-touchscreen-kabellos-bt-carplay-radio.jpg?$formatz$"
         },
         {
-            "name": "xboom Buds Lite Bluetooth-Kopfhörer",
-            "price": 109.0,
-            "img": "https://i.otto.de/i/otto/f6a9a932-4f39-58bb-9733-842fe143a064?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/f6a9a932-4f39-58bb-9733-842fe143a064/lg-xboom-buds-lite-bluetooth-kopfhoerer-active-noise-cancelling-anc-freisprechfunktion-led-ladestandsanzeige-multi-point-verbindung-rauschunterdrueckung-sprachsteuerung-kompatibel-mit-siri-google-assistant-siri-bluetooth.jpg?$formatz$"
+            "name": "50UA73006LA LED-Fernseher",
+            "price": 629.0,
+            "img": "https://i.otto.de/i/otto/957ed26b-2028-54b0-9859-cc37cfebfb06?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/957ed26b-2028-54b0-9859-cc37cfebfb06/lg-50ua73006la-led-fernseher-126-cm-50-zoll-4k-ultra-hd-smart-tv.jpg?$formatz$"
         },
         {
             "name": "10,26\" IPS-Touchscreen Digitaler Medienempfänger Wireless Carplay/Auto Navigationsgerät (weltweit, Bluetooth/Airplay/Spiegelverbindung/SD/TF)",
@@ -113,18 +119,6 @@
             "price": 229.99,
             "img": "https://i.otto.de/i/otto/2108acda-a1f2-4ac4-bd59-e6c3c1c54cd8?$responsive_ft2$",
             "high_q_img": "https://i.otto.de/i/otto/2108acda-a1f2-4ac4-bd59-e6c3c1c54cd8/actionbikes-motors-elektro-kinderquad-kinder-elektro-quad-bumper-offroad-2-x-35-watt-motoren-belastbarkeit-35-kg-1-tlg-kinder-elektroauto-mit-display-beleuchtete-armaturen-multimedia.jpg?$formatz$"
-        },
-        {
-            "name": "Tonies Toniebox Starterset Lautsprecher",
-            "price": 99.95,
-            "img": "https://i.otto.de/i/otto/e7c1cc9c-babe-5b03-902a-1ea3add410c0?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/e7c1cc9c-babe-5b03-902a-1ea3add410c0/tonies-tonies-toniebox-starterset-lautsprecher-mono-bluetooth-wlan.jpg?$formatz$"
-        },
-        {
-            "name": "Kopfhörer, TWS In-Ear-Kopfhörer,Bluetooth 5.3,HiFi Stereo In-Ear-Kopfhörer",
-            "price": 48.99,
-            "img": "https://i.otto.de/i/otto/ecebe80b-176a-4c17-8a3b-e49079789416?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/ecebe80b-176a-4c17-8a3b-e49079789416/braidol-kopfhoerer-tws-in-ear-kopfhoerer-bluetooth-5-3-hifi-stereo-in-ear-kopfhoerer-bluetooth-kopfhoerer-mit-hd-mikrofon-true-wireless-noise-cancelling-sprachsteuerung-ultraleicht-ohrhoerer-hohe-hi-fi-klangqualitaet.jpg?$formatz$"
         },
         {
             "name": "HIGH Tablet 12 Zoll, 2560 x 1600 Pixel, 256GB, WLAN+LTE Premium Tablet",
@@ -145,16 +139,34 @@
             "high_q_img": "https://i.otto.de/i/otto/a1eebcfa-337e-5500-9fcd-11e0f2a09e2e/karcher-dab-go-bluetooth-lautsprecher-digitalradio-dab-digitalradio-dab-ukw-mit-rds-5-w-bluetooth-speaker-mit-trageschlaufe-bluetooth-stereo-farbdisplay.jpg?$formatz$"
         },
         {
-            "name": "7\" 1 DIN Flip Android Autoradio mit GPS Navi WIFI Touchscreen MP5 Autoradio",
-            "price": 229.99,
-            "img": "https://i.otto.de/i/otto/b93b105c-e7c5-4e9e-8c90-06fa0ec4e8e2?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/b93b105c-e7c5-4e9e-8c90-06fa0ec4e8e2/hikity-7-1-din-flip-android-autoradio-mit-gps-navi-wifi-touchscreen-mp5-autoradio-1-32gb-digitalradio-dab-android-15-0-mit-gps-navi-bluetooth-wifi-usb-fm-aux.jpg?$formatz$"
+            "name": "10\" Android 15 Set WiFi Tablet",
+            "price": 249.99,
+            "img": "https://i.otto.de/i/otto/bd738867-a267-4985-ac8a-81f071823bcc?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/bd738867-a267-4985-ac8a-81f071823bcc/besttab-10-android-15-set-wifi-tablet-10-256-gb-android-15-mit-stift-maus-tastatur-gemini-al.jpg?$formatz$"
+        },
+        {
+            "name": "7\" Doppel 2 DIN Autoradio Stereo Bluetooth FM USB AUX MP5 MP3 Player Autoradio",
+            "price": 99.99,
+            "img": "https://i.otto.de/i/otto/33d7d31a-372e-4387-9de7-c6a4a7e105f0?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/33d7d31a-372e-4387-9de7-c6a4a7e105f0/hikity-7-doppel-2-din-autoradio-stereo-bluetooth-fm-usb-aux-mp5-mp3-player-autoradio.jpg?$formatz$"
         },
         {
             "name": "10.1 Zoll Android Stereoton 2 DIN Stereo GPS mit AHD Rückfahrkamera Autoradio",
             "price": 229.99,
             "img": "https://i.otto.de/i/otto/c7c15a9e-fd30-4aca-91f9-9519e4cb98cd?$responsive_ft2$",
             "high_q_img": "https://i.otto.de/i/otto/c7c15a9e-fd30-4aca-91f9-9519e4cb98cd/hikity-10-1-zoll-android-stereoton-2-din-stereo-gps-mit-ahd-rueckfahrkamera-autoradio-hifi-bluetooth-rds-fm-radio-dvr-funktion-das-navigationssystem.jpg?$formatz$"
+        },
+        {
+            "name": "ULT Wear Kopfhörer",
+            "price": 199.99,
+            "img": "https://i.otto.de/i/otto/f1d214ec-44f1-58f7-8e14-84f1191e6fa4?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/f1d214ec-44f1-58f7-8e14-84f1191e6fa4/sony-ult-wear-kopfhoerer-multi-point-verbindung-noise-cancelling-sprachsteuerung-kompatibel-mit-siri-alexa-google-assistant-siri-a2dp-bluetooth-avrcp-bluetooth-bluetooth-hfp-hsp-tiefem-bass-geraeuschunterdrueckung-klare-anrufqualitaet-ios-android.jpg?$formatz$"
+        },
+        {
+            "name": "DOITX3 Herren Smartwatch, Sprachassistent, AMOLED Always-On Display Smartwatch",
+            "price": 149.9,
+            "img": "https://i.otto.de/i/otto/f902ede4-625d-4987-bace-6f267d404f97?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/f902ede4-625d-4987-bace-6f267d404f97/levowatch-doitx3-herren-smartwatch-sprachassistent-amoled-always-on-display-smartwatch-5-3-cm-2-1-zoll-android-und-ios-fitness-tracker-uhr-3-armbaender-bt5-3-wasserdicht-502x410p-realtek-chip-4-teilig-schrittzaehler-puls-spo2-blutdruck-schlafueberwachung-anruffunktion.jpg?$formatz$"
         },
         {
             "name": "11,26 Zoll Wireless CarPlay & Android Auto mit 4K DVR & Bluetooth Navigationsgerät (weltweit, GPS, Intelligentes Display)",
@@ -169,6 +181,12 @@
             "high_q_img": "https://i.otto.de/i/otto/fc0d3332-89af-5b72-9ff4-34db8bfee018/samsung-galaxy-buds3-pro-sm-r630-wireless-in-ear-kopfhoerer-active-noise-cancelling-anc-a2dp-bluetooth-doppel-verstaerker-24-bit-hi-fi-sound-ip57.jpg?$formatz$"
         },
         {
+            "name": "55UA73006LA LED-Fernseher",
+            "price": 749.0,
+            "img": "https://i.otto.de/i/otto/9f108d52-f03c-57bc-8050-0bb21c347e05?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/9f108d52-f03c-57bc-8050-0bb21c347e05/lg-55ua73006la-led-fernseher-139-cm-55-zoll-4k-ultra-hd-smart-tv.jpg?$formatz$"
+        },
+        {
             "name": "Streaming-Box Bluetooth Sprachfernbedienung, (Leistungsstarke 8K Android TV Box, Dolby Audio-Unterstützung), Dual-Band Wi-Fi, flexiblem Speicher und Dolby Audio",
             "price": 69.99,
             "img": "https://i.otto.de/i/otto/8c8a6293-8175-40dc-9652-f896435ddadb?$responsive_ft2$",
@@ -179,6 +197,18 @@
             "price": 59.99,
             "img": "https://i.otto.de/i/otto/a2b8bec3-94fd-582a-a26c-4e146923eeec?$responsive_ft2$",
             "high_q_img": "https://i.otto.de/i/otto/a2b8bec3-94fd-582a-a26c-4e146923eeec/lenco-xemio-860-mp4-player-mit-display-akku-bt-8gb-mp4-player.jpg?$formatz$"
+        },
+        {
+            "name": "50UT73006LA LED-Fernseher",
+            "price": 629.0,
+            "img": "https://i.otto.de/i/otto/73f1fa42-22a9-52c8-bb3b-b86c7c588763?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/73f1fa42-22a9-52c8-bb3b-b86c7c588763/lg-50ut73006la-led-fernseher-126-cm-50-zoll-4k-ultra-hd-smart-tv.jpg?$formatz$"
+        },
+        {
+            "name": "Smartwatch 1,65“ (Telefonfunktion, WhatsApp, E-Mail etc., wasserdicht) Smartwatch (1,65 Zoll)",
+            "price": 59.0,
+            "img": "https://i.otto.de/i/otto/9d6ab937-a54f-53f1-b7c5-1d56059975f2?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/9d6ab937-a54f-53f1-b7c5-1d56059975f2/hama-smartwatch-1-65-telefonfunktion-whatsapp-e-mail-etc-wasserdicht-smartwatch-1-65-zoll.jpg?$formatz$"
         },
         {
             "name": "Nova S80 Soundbar",
@@ -199,16 +229,16 @@
             "high_q_img": "https://i.otto.de/i/otto/2d8d3531-efef-5f5a-883c-600f6705f5b8/hama-lautsprecher-fuer-pc-notebook-tablet-3-5-mm-klinke-usb-3-0-3-w-aktiv-pc-lautsprecher.jpg?$formatz$"
         },
         {
-            "name": "43UT73006LA LED-Fernseher",
-            "price": 529.0,
-            "img": "https://i.otto.de/i/otto/35524cfe-f992-5168-a1b9-4bf8ac0d915d?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/35524cfe-f992-5168-a1b9-4bf8ac0d915d/lg-43ut73006la-led-fernseher-108-cm-43-zoll-4k-ultra-hd-smart-tv.jpg?$formatz$"
+            "name": "Streaming-Stick IP TV-Stick (inkl. HD+ IP für 3 Monate gratis)",
+            "price": 69.0,
+            "img": "https://i.otto.de/i/otto/eb13aa71-bf04-585c-9d2f-bbbe2af11ec6?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/eb13aa71-bf04-585c-9d2f-bbbe2af11ec6/hd-plus-streaming-stick-ip-tv-stick-inkl-hd-ip-fuer-3-monate-gratis.jpg?$formatz$"
         },
         {
-            "name": "DAB+ 1 DIN 7'' Android 14 Ausfahrbarem Display GPS Navigation BT Autoradio",
-            "price": 269.99,
-            "img": "https://i.otto.de/i/otto/54cc1ec5-3fd4-4d6b-a68e-77f0c6855f85?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/54cc1ec5-3fd4-4d6b-a68e-77f0c6855f85/essgoo-dab-1-din-7-android-14-ausfahrbarem-display-gps-navigation-bt-autoradio-dab-optional-4-64gb-optional-fm-rds-carplay-android-auto-bluetooth-eq-usb-gps-navi-wifi-touchscreen.jpg?$formatz$"
+            "name": "Bluetooth-Lautsprecher",
+            "price": 198.99,
+            "img": "https://i.otto.de/i/otto/19e70812-b52c-4c5f-8c85-5fbaed69a16c?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/19e70812-b52c-4c5f-8c85-5fbaed69a16c/amazon-bluetooth-lautsprecher.jpg?$formatz$"
         },
         {
             "name": "Open Ear Kopfhörer, In Ear Ohrhörer, Bluetooth 5.3 Sport-Kopfhörer Open-Ear-Kopfhörer",
@@ -223,6 +253,12 @@
             "high_q_img": "https://i.otto.de/i/otto/0cdb42b1-9651-4f5d-be1f-e537d5809211/levowatch-tiny-damen-smartwatch-sprachassistent-amoled-always-on-display-smartwatch-4-7-cm-1-85-zoll-android-und-ios-fitness-tracker-uhr-3-armbaender-menstruationszyklus-wasserdicht-8mm-gehaeuse-4-teilig-schrittzaehler-puls-spo2-blutdruck-schlafueberwachung-anruffunktion.jpg?$formatz$"
         },
         {
+            "name": "7\" 1 DIN Flip Android Autoradio mit GPS Navi WIFI Touchscreen MP5 Autoradio",
+            "price": 229.99,
+            "img": "https://i.otto.de/i/otto/b93b105c-e7c5-4e9e-8c90-06fa0ec4e8e2?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/b93b105c-e7c5-4e9e-8c90-06fa0ec4e8e2/hikity-7-1-din-flip-android-autoradio-mit-gps-navi-wifi-touchscreen-mp5-autoradio-1-32gb-digitalradio-dab-android-15-0-mit-gps-navi-bluetooth-wifi-usb-fm-aux.jpg?$formatz$"
+        },
+        {
             "name": "Flip Essential 2 Bluetooth-Lautsprecher",
             "price": 109.99,
             "img": "https://i.otto.de/i/otto/68d561b5-80f6-5ba2-abcb-c340e9a6bfcc?$responsive_ft2$",
@@ -233,6 +269,18 @@
             "price": 1699.0,
             "img": "https://i.otto.de/i/otto/3505d696-dce0-5665-a2ee-4428f9a84051?$responsive_ft2$",
             "high_q_img": "https://i.otto.de/i/otto/3505d696-dce0-5665-a2ee-4428f9a84051/csl-rgb-edition-v28717-gaming-pc-komplettsystem-27-amd-ryzen-5-5600g-radeon-graphics-32-gb-ram-1000-gb-ssd.jpg?$formatz$"
+        },
+        {
+            "name": "IR 500-21 Internet-Radio (Internetradio-Baustein, Bluetooth, DAB+, Webradio)",
+            "price": 249.95,
+            "img": "https://i.otto.de/i/otto/c25098e8-a01d-5bd9-a27e-9bdae70179f9?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/c25098e8-a01d-5bd9-a27e-9bdae70179f9/universum-ir-500-21-internet-radio-internetradio-baustein-bluetooth-dab-webradio.jpg?$formatz$"
+        },
+        {
+            "name": "Smart Soundbar Soundbar",
+            "price": 549.95,
+            "img": "https://i.otto.de/i/otto/957ae6f0-8e80-572d-b7e6-34487bb0462d?$responsive_ft2$",
+            "high_q_img": "https://i.otto.de/i/otto/957ae6f0-8e80-572d-b7e6-34487bb0462d/bose-smart-soundbar-soundbar-stereo-bluetooth-wlan.jpg?$formatz$"
         },
         {
             "name": "Tune Flex wireless In-Ear-Kopfhörer",
@@ -247,324 +295,10 @@
             "high_q_img": "https://i.otto.de/i/otto/d5839386-c2b3-4386-b32a-1f0c3c895414/hikity-1din-7-zoll-hd-autoplayer-einziehbar-autoradio-mirro-link-fm-bluetooth-unterstuetzung-tf-usb-typ-c-rueckfahrkamera-kabelloses-carplay-und-android-auto.jpg?$formatz$"
         },
         {
-            "name": "43E6NT LED-Fernseher",
-            "price": 449.0,
-            "img": "https://i.otto.de/i/otto/b526a55c-e43f-54fd-8155-652b8d4688df?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/b526a55c-e43f-54fd-8155-652b8d4688df/hisense-43e6nt-led-fernseher-108-cm-43-zoll-4k-ultra-hd-smart-tv-4k-uhd.jpg?$formatz$"
-        },
-        {
             "name": "Streaming-Box LEAP-S3 4K Streaming Box",
             "price": 89.99,
             "img": "https://i.otto.de/i/otto/df9b20fd-9862-5577-ac17-65499bc1067d?$responsive_ft2$",
             "high_q_img": "https://i.otto.de/i/otto/df9b20fd-9862-5577-ac17-65499bc1067d/strong-streaming-box-leap-s3-4k-streaming-box.jpg?$formatz$"
-        },
-        {
-            "name": "HT-SF150 Soundbar",
-            "price": 149.9,
-            "img": "https://i.otto.de/i/otto/829e41c9-33c2-53bc-bd46-8ebfeca5d104?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/829e41c9-33c2-53bc-bd46-8ebfeca5d104/sony-ht-sf150-soundbar-stereo-bluetooth-120-w-verbindung-ueber-hdmi-bluetooth-usb-tv-soundsystem.jpg?$formatz$"
-        },
-        {
-            "name": "Clip 5 Bluetooth-Lautsprecher",
-            "price": 69.99,
-            "img": "https://i.otto.de/i/otto/cba671c3-14b7-50b4-a152-e6e8839723fb?$responsive_ft2$",
-            "high_q_img": "https://i.otto.de/i/otto/cba671c3-14b7-50b4-a152-e6e8839723fb/jbl-clip-5-bluetooth-lautsprecher-bluetooth-7-w-ultra-kompakt-wasser-und-staubgeschuetzt-ip67-7-watt-rms.jpg?$formatz$"
-        }
-    ],
-    "möbel": [
-        {
-            "name": "Sideboard Kenia, Kommode für das Schlafzimmer/Wohnzimmer (1 St), Modernes Sideboard mit 3 Schubladen und 4 Fächern, Breite 150 cm",
-            "price": 399.0,
-            "img": "https://i.otto.de/i/otto/065d7ede-2822-55ce-bb12-76164dd28e0c?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/065d7ede-2822-55ce-bb12-76164dd28e0c/inosign-sideboard-kenia-kommode-fuer-das-schlafzimmer-wohnzimmer-1-st-modernes-sideboard-mit-3-schubladen-und-4-faechern-breite-150-cm.jpg?$formatz$"
-        },
-        {
-            "name": "Sideboard Cross,Breite 225 cm, moderne grifflose Kommode,4 Türen/4 Schubkästen, Schubladenschrank mit viel Stauraum, Einlegeböden verstellbar",
-            "price": 506.99,
-            "img": "https://i.otto.de/i/otto/6242b633-7df4-5520-a387-c2a2764e39d1?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/6242b633-7df4-5520-a387-c2a2764e39d1/inosign-sideboard-cross-breite-225-cm-moderne-grifflose-kommode-4-tueren-4-schubkaesten-schubladenschrank-mit-viel-stauraum-einlegeboeden-verstellbar.jpg?$formatz$"
-        },
-        {
-            "name": "Drehtürenschrank Malta mit Hochglanz-Front",
-            "price": 274.0,
-            "img": "https://i.otto.de/i/otto/cfe8cb44-9f30-5019-a509-609d3c99ee30?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/cfe8cb44-9f30-5019-a509-609d3c99ee30/wimex-drehtuerenschrank-malta-mit-hochglanz-front.jpg?$formatz$"
-        },
-        {
-            "name": "Lowboard COLGANTE KASCHMIR 200 cm TV-Schrank mit LED Beleuchtung",
-            "price": 219.0,
-            "img": "https://i.otto.de/i/otto/cd075fd8-1cbd-4ca2-96a4-9a216fe02854?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/cd075fd8-1cbd-4ca2-96a4-9a216fe02854/lookway-lowboard-colgante-kaschmir-200-cm-tv-schrank-mit-led-beleuchtung.jpg?$formatz$"
-        },
-        {
-            "name": "Polsterbett SONIC-OM mit Bettkasten und Lattenrost (Bett mit Kopfteil. Lattenrost und Bettkasten .Viele Varianten zur Auswahl – wählen Sie Größe und Farbe!, TOP ANGEBOT), Länge: 220 cm Höhe Kopfteil: 100 cm",
-            "price": 1238.0,
-            "img": "https://i.otto.de/i/otto/315c8583-e34d-45a3-9d2b-7a4b4c5c06a0?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/315c8583-e34d-45a3-9d2b-7a4b4c5c06a0/a-j-moebelland-gmbh-polsterbett-sonic-om-mit-bettkasten-und-lattenrost-bett-mit-kopfteil-lattenrost-und-bettkasten-viele-varianten-zur-auswahl-waehlen-sie-groe%C3%9Fe-und-farbe-top-angebot-laenge-220-cm-hoehe-kopfteil-100-cm.jpg?$formatz$"
-        },
-        {
-            "name": "Ecksofa Credo Ecksofa U-Form, mit Schlaffunktion und Bettkasten, U-Form Couch",
-            "price": 1599.0,
-            "img": "https://i.otto.de/i/otto/79cf3c46-536e-464a-81fe-59b650d4b37e?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/79cf3c46-536e-464a-81fe-59b650d4b37e/prometo-moebel-ecksofa-credo-ecksofa-u-form-mit-schlaffunktion-und-bettkasten-u-form-couch.jpg?$formatz$"
-        },
-        {
-            "name": "Polsterbett, LED Hydraulisches Stauraumbett Doppelbett 140x200cm mit Ladefunktion",
-            "price": 649.99,
-            "img": "https://i.otto.de/i/otto/3ab54574-cf18-4e53-a94c-4ac161334aa2?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/3ab54574-cf18-4e53-a94c-4ac161334aa2/flieks-polsterbett-led-hydraulisches-stauraumbett-doppelbett-140x200cm-mit-ladefunktion.jpg?$formatz$"
-        },
-        {
-            "name": "Kleiderschrank Taiga Kleiderschrank mit Spiegel OTTOs Choice Topseller mit Schubladen auf bequemer Höhe, Garderobe Schlafzimmerschrank",
-            "price": 1000.0,
-            "img": "https://i.otto.de/i/otto/c4e3d9ec-e78c-551f-ac91-f25876176d3b?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/c4e3d9ec-e78c-551f-ac91-f25876176d3b/wimex-kleiderschrank-taiga-kleiderschrank-mit-spiegel-ottos-choice-topseller-mit-schubladen-auf-bequemer-hoehe-garderobe-schlafzimmerschrank.jpg?$formatz$"
-        },
-        {
-            "name": "Lowboard LOWBOARD VERA, wahlweise mit oder ohne Beleuchtung, Modernes griffloses TV-Board, 180 cm TV-Schrank, stehend und hängend",
-            "price": 249.0,
-            "img": "https://i.otto.de/i/otto/2462e7bd-10ec-59fa-9d45-e609f2819e15?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/2462e7bd-10ec-59fa-9d45-e609f2819e15/inosign-lowboard-lowboard-vera-wahlweise-mit-oder-ohne-beleuchtung-modernes-griffloses-tv-board-180-cm-tv-schrank-stehend-und-haengend.jpg?$formatz$"
-        },
-        {
-            "name": "Ecksofa VIENA 328x182 cm mit Schlaffunktion, Bonellfederkern und Bettkasten, TOP ANGEBOT!",
-            "price": 1699.0,
-            "img": "https://i.otto.de/i/otto/34a034e5-7403-4031-aef3-937d4fec5121?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/34a034e5-7403-4031-aef3-937d4fec5121/a-j-moebelland-gmbh-ecksofa-viena-328x182-cm-mit-schlaffunktion-bonellfederkern-und-bettkasten-top-angebot.jpg?$formatz$"
-        },
-        {
-            "name": "Wohnzimmer-Set DIAMANT Kaschmir Hochglanz GOLD Metallfüßen Wohnzimmer Möbel SET, Das Set besteht aus: Kommode, TV Schrank, Couchtisch",
-            "price": 899.0,
-            "img": "https://i.otto.de/i/otto/66403db2-5668-4b48-9ea3-6eb7cbe0457c?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/66403db2-5668-4b48-9ea3-6eb7cbe0457c/allhouse24-wohnzimmer-set-diamant-kaschmir-hochglanz-gold-metallfue%C3%9Fen-wohnzimmer-moebel-set-das-set-besteht-aus-kommode-tv-schrank-couchtisch.jpg?$formatz$"
-        },
-        {
-            "name": "Drehtürenschrank Binz, Wäscheschrank, Mehrzweckschrank, skandinavischer Landhausstil (B/H/T ca. 122/130/35 cm) viele Stauraummöglichkeiten, Metallgriffe, Türen mit Rahmen/ Kassetten",
-            "price": 679.99,
-            "img": "https://i.otto.de/i/otto/51bdf288-05ff-52c9-a7f2-aac22e17b71c?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/51bdf288-05ff-52c9-a7f2-aac22e17b71c/home-affaire-drehtuerenschrank-binz-waescheschrank-mehrzweckschrank-skandinavischer-landhausstil-b-h-t-ca-122-130-35-cm-viele-stauraummoeglichkeiten-metallgriffe-tueren-mit-rahmen-kassetten.jpg?$formatz$"
-        },
-        {
-            "name": "Bücherregal, 1-tlg., Standregal, Büroregal, 6 Fächer, Holzwerkstoff, 70x190,5x24cm (BxHxT)",
-            "price": 101.99,
-            "img": "https://i.otto.de/i/otto/94936efe-6174-4f22-810c-189f0a5668e2?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/94936efe-6174-4f22-810c-189f0a5668e2/vasagle-buecherregal-1-tlg-standregal-bueroregal-6-faecher-holzwerkstoff-70x190-5x24cm-bxhxt.jpg?$formatz$"
-        },
-        {
-            "name": "Kleiderständer, Kleiderschrank offen, 3 Hängefächer",
-            "price": 56.99,
-            "img": "https://i.otto.de/i/otto/25ad1a28-55b3-4858-974d-8f26f5ed90f4?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/25ad1a28-55b3-4858-974d-8f26f5ed90f4/songmics-kleiderstaender-kleiderschrank-offen-3-haengefaecher.jpg?$formatz$"
-        },
-        {
-            "name": "Lowboard Kenia (1 St), 2 Türen, 2 Schubladen, Breite 180 cm, höhenverstellbare Einlegeböden",
-            "price": 389.0,
-            "img": "https://i.otto.de/i/otto/7ac8979f-68a1-5001-8e8c-242043401f73?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/7ac8979f-68a1-5001-8e8c-242043401f73/inosign-lowboard-kenia-1-st-2-tueren-2-schubladen-breite-180-cm-hoehenverstellbare-einlegeboeden.jpg?$formatz$"
-        },
-        {
-            "name": "Polsterbett, Hydraulisches Stauraumbett Doppelbett Samt 140x200cm",
-            "price": 719.99,
-            "img": "https://i.otto.de/i/otto/c096b841-1364-4dea-89d2-76fc00a9962c?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/c096b841-1364-4dea-89d2-76fc00a9962c/flieks-polsterbett-hydraulisches-stauraumbett-doppelbett-samt-140x200cm.jpg?$formatz$"
-        },
-        {
-            "name": "Lowboard Sophia, Breite 200 cm mit 4 Türen, stehend und hängend",
-            "price": 209.0,
-            "img": "https://i.otto.de/i/otto/0d1ec476-2b78-5efa-8775-d36381a088e0?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/0d1ec476-2b78-5efa-8775-d36381a088e0/borchardt-moebel-lowboard-sophia-breite-200-cm-mit-4-tueren-stehend-und-haengend.jpg?$formatz$"
-        },
-        {
-            "name": "Schwebetürenschrank ORAVELLE 3-türiger Kleiderschrank mit Spiegel, 4 Schubladen (TOP ANGEBOT! Geräumiger Schrank mit einer Breite von 200 cm und Spiegel, ideal zur Aufbewahrung von Kleidung und Accessoires. 4 Schubladen gratis und viel Stauraum. TOP PRODUKT! Wählen Sie das ideale Modell für Ihr Schlafzimmer!, Gratis 4 Schubladen – Katalogpreis der Schubladen 219 Euro) Breite: 200 cm, Höhe: 215 cm, Tiefe: 59,5 cm",
-            "price": 998.0,
-            "img": "https://i.otto.de/i/otto/36958dae-6e5b-43dd-9713-0ac48c982933?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/36958dae-6e5b-43dd-9713-0ac48c982933/a-j-moebelland-gmbh-schwebetuerenschrank-oravelle-3-tueriger-kleiderschrank-mit-spiegel-4-schubladen-top-angebot-geraeumiger-schrank-mit-einer-breite-von-200-cm-und-spiegel-ideal-zur-aufbewahrung-von-kleidung-und-accessoires-4-schubladen-gratis-und-viel-stauraum-top-produkt-waehlen-sie-das-ideale-modell-fuer-ihr-schlafzimmer-gratis-4-schubladen-katalogpreis-der-schubladen-219-euro-breite-200-cm-hoehe-215-cm-tiefe-59-5-cm.jpg?$formatz$"
-        },
-        {
-            "name": "Stauraumschrank Kommode mit Stoffschubladen, Stoffkommode für Schlafzimmer Geeignet Schubladenschränke",
-            "price": 89.0,
-            "img": "https://i.otto.de/i/otto/cee53c57-9b13-4f5f-8a95-5c1ac2833061?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/cee53c57-9b13-4f5f-8a95-5c1ac2833061/dumos-stauraumschrank-kommode-mit-stoffschubladen-stoffkommode-fuer-schlafzimmer-geeignet-schubladenschraenke.jpg?$formatz$"
-        },
-        {
-            "name": "Schlafsofa Bella, mit Bettfunktion und Bettkasten, inkl. loser Rücken- und Zierkissen",
-            "price": 919.0,
-            "img": "https://i.otto.de/i/otto/1f63c3af-38b2-531b-9f43-8dda08a8a94f?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/1f63c3af-38b2-531b-9f43-8dda08a8a94f/collection-ab-schlafsofa-bella-mit-bettfunktion-und-bettkasten-inkl-loser-ruecken-und-zierkissen.jpg?$formatz$"
-        },
-        {
-            "name": "Wohnwand VERA II, Vitrinen Türanschlag wechselbar, (Komplett-Set, 4-St), Mediawand 260 cm, Vitrine mit Verglasung, stehend und hängend",
-            "price": 579.0,
-            "img": "https://i.otto.de/i/otto/da8f5f68-f983-5a7c-962d-12862740fedc?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/da8f5f68-f983-5a7c-962d-12862740fedc/inosign-wohnwand-vera-ii-vitrinen-tueranschlag-wechselbar-komplett-set-4-st-mediawand-260-cm-vitrine-mit-verglasung-stehend-und-haengend.jpg?$formatz$"
-        },
-        {
-            "name": "Schuhschrank Mister Breite 160 cm, 4 Türen, Hochglanz Lackierung",
-            "price": 459.99,
-            "img": "https://i.otto.de/i/otto/10e8a803-4517-56bc-bc71-dcc25638ec41?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/10e8a803-4517-56bc-bc71-dcc25638ec41/inosign-schuhschrank-mister-breite-160-cm-4-tueren-hochglanz-lackierung.jpg?$formatz$"
-        },
-        {
-            "name": "Kleiderschrank Kalixtus, OTTOs Choice, TOPSELLER, Made in Europe (B/H/T ca. 200x190x60 cm, 2 Schiebetüren, 2 Drehtüren, 8 Einlegeböden) Kombination aus Dreh- und Schwebetüren, mehrere Farben",
-            "price": 759.0,
-            "img": "https://i.otto.de/i/otto/3eaa7de9-fcef-585d-b9fb-6e6c5e66a4fd?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/3eaa7de9-fcef-585d-b9fb-6e6c5e66a4fd/forte-kleiderschrank-kalixtus-ottos-choice-topseller-made-in-europe-b-h-t-ca-200x190x60-cm-2-schiebetueren-2-drehtueren-8-einlegeboeden-kombination-aus-dreh-und-schwebetueren-mehrere-farben.jpg?$formatz$"
-        },
-        {
-            "name": "Sideboard hoher Küchenschrank mit 2 Schubladen und 2 Türen, Vorratschrank, Weiß",
-            "price": 199.99,
-            "img": "https://i.otto.de/i/otto/c83fabf3-cf2f-495c-9228-d83f7fa7546f?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/c83fabf3-cf2f-495c-9228-d83f7fa7546f/bealife-sideboard-hoher-kuechenschrank-mit-2-schubladen-und-2-tueren-vorratschrank-wei%C3%9F.jpg?$formatz$"
-        },
-        {
-            "name": "Lowboard Santa Fe, Breite 166 cm",
-            "price": 269.0,
-            "img": "https://i.otto.de/i/otto/4229e2d1-a571-5948-abf1-b833ea60aaaa?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/4229e2d1-a571-5948-abf1-b833ea60aaaa/borchardt-moebel-lowboard-santa-fe-breite-166-cm.jpg?$formatz$"
-        },
-        {
-            "name": "Drehtürenschrank Mokkaris, OTTOs Choice, TOPSELLER! 3 oder 4 Türen, zeitloses Design (B/H/T ca. 145x200x59cm oder 206x200x59cm) Schubladen, schwarze Stangengriffe, Made in Europe, viel Stauraum",
-            "price": 569.0,
-            "img": "https://i.otto.de/i/otto/f196001e-6d29-5ba3-8c44-7981d44ed4c4?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/f196001e-6d29-5ba3-8c44-7981d44ed4c4/forte-drehtuerenschrank-mokkaris-ottos-choice-topseller-3-oder-4-tueren-zeitloses-design-b-h-t-ca-145x200x59cm-oder-206x200x59cm-schubladen-schwarze-stangengriffe-made-in-europe-viel-stauraum.jpg?$formatz$"
-        },
-        {
-            "name": "Sideboard Vaasa, Breite 152 cm",
-            "price": 269.0,
-            "img": "https://i.otto.de/i/otto/3bcb49c1-29b4-5c2a-860a-e3c99d7d2b05?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/3bcb49c1-29b4-5c2a-860a-e3c99d7d2b05/borchardt-moebel-sideboard-vaasa-breite-152-cm.jpg?$formatz$"
-        },
-        {
-            "name": "Badkommode Badezimmerschrank, mit 2 Türen und 2 Schubladen, verstellbare Ablage",
-            "price": 130.99,
-            "img": "https://i.otto.de/i/otto/90376393-f49a-4343-bcc1-1439b509c510?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/90376393-f49a-4343-bcc1-1439b509c510/vasagle-badkommode-badezimmerschrank-mit-2-tueren-und-2-schubladen-verstellbare-ablage.jpg?$formatz$"
-        },
-        {
-            "name": "Spiegelschrank Texas Spiegel Badmöbel Badschrank Badspiegel Bestseller mit 3 Türen, Breite 60cm, wahlweise mit LED, Badezimmerspiegelschrank",
-            "price": 179.99,
-            "img": "https://i.otto.de/i/otto/77b4b4cf-563b-50ff-9c3d-f640b6538225?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/77b4b4cf-563b-50ff-9c3d-f640b6538225/welltime-spiegelschrank-texas-spiegel-badmoebel-badschrank-badspiegel-bestseller-mit-3-tueren-breite-60cm-wahlweise-mit-led-badezimmerspiegelschrank.jpg?$formatz$"
-        },
-        {
-            "name": "Sofa IKON, Luxus und Eleganz in einem Sofa-Set.",
-            "price": 3749.0,
-            "img": "https://i.otto.de/i/otto/4bf02a9c-74ef-59fa-aba3-96f67686fc6e?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/4bf02a9c-74ef-59fa-aba3-96f67686fc6e/viva-moebel-sofa-ikon-luxus-und-eleganz-in-einem-sofa-set.jpg?$formatz$"
-        },
-        {
-            "name": "Nachttisch AURORA II KASCHMIR mit Beinen und LED-Beleuchtung (1x Nachttisch), Breite: 50 cm",
-            "price": 149.0,
-            "img": "https://i.otto.de/i/otto/eed8f317-3b28-489e-8f7e-e3a837543de0?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/eed8f317-3b28-489e-8f7e-e3a837543de0/lookway-nachttisch-aurora-ii-kaschmir-mit-beinen-und-led-beleuchtung-1x-nachttisch-breite-50-cm.jpg?$formatz$"
-        },
-        {
-            "name": "Ecksofa Soft&Cosy XXL L-Form - Breite 303 cm, Mega-Sofa, Cord oder Chenille-Struktur, Federkern-Polsterung",
-            "price": 1849.0,
-            "img": "https://i.otto.de/i/otto/ea908dbe-59b6-5929-a487-8e53a3bf2d9d?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/ea908dbe-59b6-5929-a487-8e53a3bf2d9d/home-affaire-ecksofa-soft-cosy-xxl-l-form-breite-303-cm-mega-sofa-cord-oder-chenille-struktur-federkern-polsterung.jpg?$formatz$"
-        },
-        {
-            "name": "Polsterbett, LED Einzelbett Daybett Tagesbett Samt 90x200cm mit USB-Anschluss",
-            "price": 589.99,
-            "img": "https://i.otto.de/i/otto/429564ba-bb25-44ee-95d3-4a4e6c4005e5?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/429564ba-bb25-44ee-95d3-4a4e6c4005e5/flieks-polsterbett-led-einzelbett-daybett-tagesbett-samt-90x200cm-mit-usb-anschluss.jpg?$formatz$"
-        },
-        {
-            "name": "Schminktisch Melisa, Eiche/Weiß, 120 cm mit LED Beleuchtung",
-            "price": 366.9,
-            "img": "https://i.otto.de/i/otto/f32600c8-6309-510e-be94-6132b96f1cde?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/f32600c8-6309-510e-be94-6132b96f1cde/vicco-schminktisch-melisa-eiche-wei%C3%9F-120-cm-mit-led-beleuchtung.jpg?$formatz$"
-        },
-        {
-            "name": "Eckschreibtisch Lena (mit abschließbarer Tür, Computertisch, Winkelschreibtisch, Homeoffice, Bürotisch), Made in Germany",
-            "price": 269.0,
-            "img": "https://i.otto.de/i/otto/1ab5a156-08fd-4095-b4d1-bac76226fbef?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/1ab5a156-08fd-4095-b4d1-bac76226fbef/bmg-moebel-eckschreibtisch-lena-mit-abschlie%C3%9Fbarer-tuer-computertisch-winkelschreibtisch-homeoffice-buerotisch-made-in-germany.jpg?$formatz$"
-        },
-        {
-            "name": "Polsterbett, LED-Beleuchtung Einzelbett 90x200cm mit Ladefunktion und 2 Schubladen",
-            "price": 559.99,
-            "img": "https://i.otto.de/i/otto/447b70df-153f-499e-8e1c-8002dd992709?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/447b70df-153f-499e-8e1c-8002dd992709/flieks-polsterbett-led-beleuchtung-einzelbett-90x200cm-mit-ladefunktion-und-2-schubladen.jpg?$formatz$"
-        },
-        {
-            "name": "Couchtisch Wolke (1-St), Beistelltisch Scandi, Wohnzimmertisch, Kaffetisch, Breite:107cm",
-            "price": 229.99,
-            "img": "https://i.otto.de/i/otto/5792b413-4675-4ae4-9dbe-b8812dbe09a6?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/5792b413-4675-4ae4-9dbe-b8812dbe09a6/merax-couchtisch-wolke-1-st-beistelltisch-scandi-wohnzimmertisch-kaffetisch-breite-107cm.jpg?$formatz$"
-        },
-        {
-            "name": "Drehtürenschrank Binz, Wäscheschrank, Mehrzweckschrank, skandinavischer Landhausstil (B/H/T ca. 122/130/35 cm) viele Stauraummöglichkeiten, Metallgriffe, Türen mit Rahmen/ Kassetten",
-            "price": 679.99,
-            "img": "https://i.otto.de/i/otto/f62aed61-cdd7-5d86-903f-b7011c568174?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/f62aed61-cdd7-5d86-903f-b7011c568174/home-affaire-drehtuerenschrank-binz-waescheschrank-mehrzweckschrank-skandinavischer-landhausstil-b-h-t-ca-122-130-35-cm-viele-stauraummoeglichkeiten-metallgriffe-tueren-mit-rahmen-kassetten.jpg?$formatz$"
-        },
-        {
-            "name": "Sideboard Modernes Küchenschrank (mit LED-Sensorleuchte, höhenverstellbaren Böden & Kippschutz, 1 St)",
-            "price": 359.99,
-            "img": "https://i.otto.de/i/otto/13c67f9b-583c-5a01-967d-34601e2cb852?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/13c67f9b-583c-5a01-967d-34601e2cb852/okwish-sideboard-modernes-kuechenschrank-mit-led-sensorleuchte-hoehenverstellbaren-boeden-kippschutz-1-st.jpg?$formatz$"
-        },
-        {
-            "name": "Ecksofa Josy L-Form, Breite 214 cm, mit 3 großen Rückenkissen, mit Bettfunktion und Bettkasten, Federkern",
-            "price": 1199.0,
-            "img": "https://i.otto.de/i/otto/f9ec51ca-645b-5062-9c73-0da6d3cafe87?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/f9ec51ca-645b-5062-9c73-0da6d3cafe87/collection-ab-ecksofa-josy-l-form-breite-214-cm-mit-3-gro%C3%9Fen-rueckenkissen-mit-bettfunktion-und-bettkasten-federkern.jpg?$formatz$"
-        },
-        {
-            "name": "Wohnwand Scala, 3-tlg.",
-            "price": 409.0,
-            "img": "https://i.otto.de/i/otto/401c3be3-f567-5ba9-b92d-d12f66f6cc9f?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/401c3be3-f567-5ba9-b92d-d12f66f6cc9f/borchardt-moebel-wohnwand-scala-3-tlg.jpg?$formatz$"
-        },
-        {
-            "name": "Polsterbett Verona, 90x200 cm, Kunstleder, hohes Kopfteil, robustes Bett, Lattenrost",
-            "price": 199.99,
-            "img": "https://i.otto.de/i/otto/f221fc65-4202-510d-bf08-d59320fb0475?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/f221fc65-4202-510d-bf08-d59320fb0475/juskys-polsterbett-verona-90x200-cm-kunstleder-hohes-kopfteil-robustes-bett-lattenrost.jpg?$formatz$"
-        },
-        {
-            "name": "Aktenschrank Moid, moderner Mehrzweckschrank, Maße: 64,5x41,5x175 cm, 5 Fächer mit viel Stauraum",
-            "price": 339.99,
-            "img": "https://i.otto.de/i/otto/dd2c86fa-bac4-5db4-a29d-c63f0310862d?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/dd2c86fa-bac4-5db4-a29d-c63f0310862d/places-of-style-aktenschrank-moid-moderner-mehrzweckschrank-ma%C3%9Fe-64-5x41-5x175-cm-5-faecher-mit-viel-stauraum.jpg?$formatz$"
-        },
-        {
-            "name": "Polsterbett Daybett Tagesbett Ausziehbett (1 tlg), Schlafsofa, Mit Unterbett, 90x200 cm/180x200 cm, Lattenrost, Samt",
-            "price": 699.99,
-            "img": "https://i.otto.de/i/otto/0f8cffff-3ec0-4bb6-a3e6-3035444af453?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/0f8cffff-3ec0-4bb6-a3e6-3035444af453/furnishings-home-polsterbett-daybett-tagesbett-ausziehbett-1-tlg-schlafsofa-mit-unterbett-90x200-cm-180x200-cm-lattenrost-samt.jpg?$formatz$"
-        },
-        {
-            "name": "Nachttisch (1-St), Nachttisch mit Steckdosenleiste, Beistelltisch, 2 Schubladen, modern",
-            "price": 69.99,
-            "img": "https://i.otto.de/i/otto/b4af78f5-aed2-4098-80c1-7b7f4bbf89f6?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/b4af78f5-aed2-4098-80c1-7b7f4bbf89f6/vasagle-nachttisch-1-st-nachttisch-mit-steckdosenleiste-beistelltisch-2-schubladen-modern.jpg?$formatz$"
-        },
-        {
-            "name": "Polsterbett Paris, 140x200 cm, bunte LED-Beleuchtung, Kunstleder, weiches Kopfteil",
-            "price": 239.99,
-            "img": "https://i.otto.de/i/otto/e6a84ef7-d7d3-52e3-947b-7440e96a9540?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/e6a84ef7-d7d3-52e3-947b-7440e96a9540/juskys-polsterbett-paris-140x200-cm-bunte-led-beleuchtung-kunstleder-weiches-kopfteil.jpg?$formatz$"
-        },
-        {
-            "name": "Bücherregal, mit 5/6 Ebenen, offenes Aufbewahrungsregal, Standregal, für Wohnzimmer",
-            "price": 59.99,
-            "img": "https://i.otto.de/i/otto/f03ebcb5-3220-45c5-adf3-f4b03b29e9cd?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/f03ebcb5-3220-45c5-adf3-f4b03b29e9cd/vasagle-buecherregal-mit-5-6-ebenen-offenes-aufbewahrungsregal-standregal-fuer-wohnzimmer.jpg?$formatz$"
-        },
-        {
-            "name": "Wohnlandschaft Josy, U-Form, Schlafsofa mit Bettkasten, flexible Recamiere, Breite: 269cm, inklusive Rückenkissen",
-            "price": 1069.0,
-            "img": "https://i.otto.de/i/otto/14331de9-a21f-51e6-bbdb-c0a2e0501858?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/14331de9-a21f-51e6-bbdb-c0a2e0501858/collection-ab-wohnlandschaft-josy-u-form-schlafsofa-mit-bettkasten-flexible-recamiere-breite-269cm-inklusive-rueckenkissen.jpg?$formatz$"
-        },
-        {
-            "name": "Standregal NIZZA, Aktennregal, Würfelregal mit 4 Fächern, Made in Germany",
-            "price": 79.9,
-            "img": "https://i.otto.de/i/otto/e12fa300-addf-4654-acd9-93d17dcb4855?$responsive_ftfind_w800$",
-            "high_q_img": "https://i.otto.de/i/otto/e12fa300-addf-4654-acd9-93d17dcb4855/bmg-moebel-standregal-nizza-aktennregal-wuerfelregal-mit-4-faechern-made-in-germany.jpg?$formatz$"
         }
     ]
 }
