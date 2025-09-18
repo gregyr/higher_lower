@@ -1,15 +1,12 @@
+from next_product_getter import Product, ProductCollection
 import uuid
 from flask import Flask, jsonify, session, redirect, url_for, request, render_template
-
-class Product:
-   def __init__(self, price):
-      self.price = price
 
 class Game:
    def __init__(self):
       self.score = 0
-      self.productLast = Product(100)
-      self.productNext = Product(150)
+      self.productLast = Product("testLast",100, "img1")
+      self.productNext = Product("testNext", 150, "img2")
    
    def nextProduct(self):
       self.productLast = self.productNext
@@ -17,8 +14,15 @@ class Game:
       self.productNext
    
    def checkGuess(self, userGuess):
-      rightGuess = True
-      return rightGuess
+      rightGuess = ""
+      if (self.productNext.price > self.productLast.price):
+         rightGuess = "higher"
+      elif (self.productNext.price < self.productLast.price):
+         rightGuess = "lower"
+      else: 
+         return True # if prices are equal always correct
+      if userGuess == rightGuess:
+         return True
    
    def toDict(self, CencorNextPrice = True):
       return {
