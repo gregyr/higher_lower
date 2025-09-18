@@ -53,7 +53,7 @@ def scraper(driver) :
     """
     Scraped die gerade geladene Seite <br>
     Kann nicht eine komplette Seite scannen, da diese automatisch generiert wird und nicht preloaded ist. <br>
-    Preis sollte vielleicht als Float gespeichert werden statt eines Strings
+    --> Preis sollte vielleicht als Float gespeichert werden statt eines Strings
     """
     scraped_data = []
     try:
