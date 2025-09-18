@@ -12,16 +12,21 @@ class Product:
         self.img = img
         self.high_q_img = high_q_img
 
+    # Calculates how similar in price products are
     def get_product_relation(self, other, threshold = 1.2):
         if self.price * threshold > other.price > self.price / threshold: return 0
         return 0.1 + self.__class__.absolute_relation(self.price - other.price) + self.__class__.relative_relation(self.price/other.price)
 
+    # Based on the absolute price difference
     @staticmethod
     def absolute_relation(delta_price):
+        # At most 0.2
         return max(0, 0.2 - abs(delta_price)/120)
 
+    # Based on the relative price ratio
     @staticmethod
     def relative_relation(price_ratio):
+        # At most 0.2
         return max(0, -0.5*(((price_ratio if price_ratio > 1 else 1/price_ratio) - 1)**2) + 0.2)
 
     def __repr__(self):
@@ -44,19 +49,23 @@ class ProductCollection:
             categories = json.load(f)
             products = None
             if self.category is None:
+                # Adds together all products of all categories
                 products = [product for k, v in categories.items() for product in v]
             else:
                 products = categories[self.category]
+            # Unpacks the product dictionary into the Product class constructor
             self.products = [Product(**product) for product in products]
 
-    def next_product(self, last_product: Product | int | None = None):
+    def next_product(self, last_product: Product | int | None = None) -> Product:
         if last_product is None:
             return random.choice(self.products)
         if isinstance(last_product, int):
             last_product = self[last_product]
+        # Shuffles the product list
         products = random.sample(self.products, len(self.products))
         products.remove(last_product)
         for product in products[:-1]:
+            # Uses the product price similarity to randomly get the next product, becoming more probable the more similar the products are
             if random.random() < last_product.get_product_relation(product):
                 return product
         return products[-1]
