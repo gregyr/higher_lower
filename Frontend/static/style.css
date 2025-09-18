@@ -117,3 +117,23 @@ h1 {
 .question-mark {
     display: none; /* standard versteckt */
 }
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries (for phone screens)*/
+
+@media (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .arrow-container {
+        transform: rotate(90deg);
+    }
+}
