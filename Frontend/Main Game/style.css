@@ -32,7 +32,7 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'OttoSans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e6e6e6;
@@ -83,15 +83,16 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 20px; /* Abstand */
+    margin: 0 40px; /* Abstand */
     position: relative;
 }
 
 .arrow, .question-mark {
+    font-family: 'Otto-Sans', sans-serif;
     font-size: 6em;
-    color: red;
+    color: #f00020;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Soft Übergang */
+    transition: transform 0.5s ease; /* Soft Übergang */
     user-select: none;
     position: absolute; /* Überlagerung */
 }
