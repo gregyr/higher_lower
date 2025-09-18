@@ -1,5 +1,4 @@
 # Higher Lower
-Higher Lower Repo
 
 ### Scraping script: scraping.py
 
