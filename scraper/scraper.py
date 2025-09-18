@@ -3,23 +3,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-import logging
-from selenium.webdriver.remote.remote_connection import LOGGER
 import time
 
 import high_quality_img as hqi
 import helper_functions as helper
 
-LOGGER.setLevel(logging.WARNING)
-
 def scraper(driver:webdriver.Chrome):
     """
     Scraped die gerade geladene Seite <br>
     Kann nicht eine komplette Seite scannen, da diese automatisch generiert wird und nicht preloaded ist. <br>
-    --> Preis sollte vielleicht als Float gespeichert werden statt eines Strings
     """
     scraped_data = []
-    product_count = 0
 
     try:
         articles = WebDriverWait(driver, 10).until(
@@ -32,6 +26,7 @@ def scraper(driver:webdriver.Chrome):
 
                 product_name = list_item.find_element(By.CLASS_NAME, "find_tile__name")
 
+                #get the price by the right tag
                 try:
                     product_price = list_item.find_element(By.CSS_SELECTOR, ".find_tile__priceValue--strikethrough")
                 except NoSuchElementException:
@@ -39,7 +34,7 @@ def scraper(driver:webdriver.Chrome):
 
                 product_image = list_item.find_element(By.CSS_SELECTOR, "div.find_tile__productImageContainer picture img.find_tile__productImage")
 
-                
+                #get the right image url and generate the high quality link
                 image_url = product_image.get_attribute("src")
                 if not image_url:
                     image_url = product_image.get_attribute("data-src")
@@ -69,16 +64,16 @@ def scrape_full_page(url:str, driver:webdriver.Chrome):
     """
     Scraped eine komplette Seite indem sie sie durchscrollt
     """
+    
     print(f"Scraping {url}\n")
+
+    #Setup parameters
     driver.get(url)
-
     max_height = driver.execute_script("return document.body.scrollHeight")
-
+    current_height = 0
     product_data = []
 
-    current_height = 0
-
-    #scrolls to end
+    #scroll through the page and scrape currently loaded products
     while current_height < max_height:  
         current_height += 4500
         percentage = min(100, int((current_height / max_height) * 100))
@@ -102,18 +97,16 @@ def scrape_full_page(url:str, driver:webdriver.Chrome):
 
 def scrape_main(search_terms:list, export_path:str='articles.json', await_debug:bool=False):
     """
-    Scraped die gegebenen Suchterme <br>
-    gibt eine JSON mit folgenden Produktdaten aus:
+    Scraped die gegebenen Suchterme und gibt eine JSON mit folgenden Produktdaten aus:
     - Name ("name")
     - Preis ("price")
     - original Bild ("img")
-    - high-res Bild ("high_q_img")
-
-    Das high-res Bild ist möglicherweise eine falsche URL, da sie generiert ist um traffic zu reduzieren. <br>
-    
+    - high-res Bild ("high_q_img")    
     """
+
     category_dict = {}
 
+    #Setup WebDriver
     options = webdriver.ChromeOptions()
     options.add_argument("--headless=new")
     driver = webdriver.Chrome(options=options)
@@ -121,23 +114,22 @@ def scrape_main(search_terms:list, export_path:str='articles.json', await_debug:
     if await_debug:
         time.sleep(13) # Await all debug prints from selenium to finish
 
+    #Search and scrape each category
     for search_term in search_terms:
         products = scrape_full_page(f"https://www.otto.de/suche/{search_term}/", driver)
         category_dict[search_term] = products
 
+    #Export data to JSON
     helper.export_to_json(category_dict, export_path)
 
-    for product in category_dict:
-        print(f"Category: {product}, Articles: {len(category_dict[product])}")
-
-    total_count = sum(len(products) for products in category_dict.values())
+    #Print summary
+    for category in category_dict:
+        print(f"Category: {category}, Articles: {len(category_dict[category])}")
+    total_count = sum(len(category) for category in category_dict.values())
     print(f"Total articles scraped: {total_count}")
+
     driver.quit()
     
-
-
 if __name__ == "__main__":
-    #läuft über suche also Kategorienamen anpassen
-    #["multimedia", "bekleidung", "haushalt", "möbel", "küche"]
     categories = ["kostueme", "utensilien"]
     scrape_main(search_terms = categories, export_path='articles.json', await_debug=False)

@@ -9,7 +9,7 @@ nutzt die <alt> Beschreibung des <img> um auf high-res Link zu schließen
 
 def parse_alt_img_link(link):
     """
-    Konvertiert den alt des low-res Bilds in ein Format als Identifier für das high-res Bild
+    Konvertiert den alt des low-res Bilds in ein Format als identifier für das high-res Bild
     """
     original_string = link
     stripped_string = ''.join(e for e in original_string if e.isalnum() or e == " ")

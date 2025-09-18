@@ -28,7 +28,7 @@ def remove_duplicates(list):
 
 def export_to_json(data, filename="data.json"):
     """
-    Exportiert das dictionary an Artikeln in eine JSON
+    Exportiert das Dictionary an Artikeln in eine JSON
     """
     try:
         with open(filename, 'w', encoding='utf-8') as f:
