@@ -12,7 +12,15 @@ header {
 .logo{
     margin: 20px;
     width: 100px;
-    height: auto;
+    height: 40px;
+}
+
+.logo-button {
+    margin:0;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .index-body {
@@ -37,7 +45,7 @@ header {
 }
 
 .streak-text {
-    font-size: 49px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.5;
     color: #dc001d;

@@ -6,20 +6,24 @@
     <title>Higher or Lower</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/index_style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body class = "index-body">
 
     <header>
-        <img src="/static/images/pl_logo_otto.svg" alt="Logo" class="logo">
+        <button class ="logo-button" onclick="location.href='/'">
+            <img src="/static/images/pl_logo_otto.svg" alt="Logo" class="logo">
+        </button>
         <h1>Higher or Lower</h1>
     </header>
     
         <main class = "index-main">
         <div class="index-container">
+            {%if not firstGame%}
             <div class="streak-container">
                 <p class="streak-text">Highest Streak: <span>12</span></p>
             </div>
-
+            {%endif%}
             <input type="text" class="username-input" placeholder="Gib deinen Namen ein">
             <!-- Add Icon to the right
             pl_icon_edit
@@ -27,8 +31,12 @@
             -->
             </input>
 
-            <button class = "start-game-button" onclick="location.href='/new_game'">Neues Spiel</button>
+            <button class = "start-game-button" onclick="location.href='/new_game'">
+                Neues Spiel
+                
+            </button>
         </div>
+                
     </main>
 
     <script src=""></script>
