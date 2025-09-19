@@ -6,7 +6,7 @@
     <title>Higher or Lower</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/index_style.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="/static/js/index_script.js"></script>
 </head>
 <body class = "index-body">
 
@@ -19,6 +19,35 @@
     
         <main class = "index-main">
         <div class="index-container">
+            <div class="leaderboard-container">
+                <div class="leaderboard-element">
+                    <span id="place" class="leaderboard-place">1.</span>
+                    <span id="name" class="leaderboard-name"> Robert</span>
+                    <span id="score" class ="leaderboard-score"> 15</span>
+                </div>
+                <div class="leaderboard-element">
+                    <span id="place" class="leaderboard-place">1.</span>
+                    <span id="name" class="leaderboard-name"> Robert</span>
+                    <span id="score" class ="leaderboard-score"> 15</span>
+                </div>
+                <div class="leaderboard-element">
+                    <span id="place" class="leaderboard-place">1.</span>
+                    <span id="name" class="leaderboard-name"> Robert</span>
+                    <span id="score" class ="leaderboard-score"> 15</span>
+                </div>
+                <div class="leaderboard-element">
+                    <span id="place" class="leaderboard-place">1.</span>
+                    <span id="name" class="leaderboard-name"> Robert</span>
+                    <span id="score" class ="leaderboard-score"> 15</span>
+                </div>
+                <div class="leaderboard-element">
+                    <span id="place" class="leaderboard-place">1.</span>
+                    <span id="name" class="leaderboard-name"> Robert</span>
+                    <span id="score" class ="leaderboard-score"> 15</span>
+                </div>
+            </div>
+
+
             {%if not firstGame%}
             <div class="streak-container">
                 <p class="streak-text">Letzte Streak: <span>{{score}}</span></p>
@@ -37,7 +66,7 @@
                 <button type="submit" class = "start-game-button" onclick="location.href='/new_game'">
                 Neues Spiel
 
-            </button>
+                </button>
 
             </form>
             
