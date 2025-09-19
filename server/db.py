@@ -2,7 +2,7 @@ import sqlite3
 
 class leaderBoard:
     def __init__(self, dbPath):
-        self.conn = sqlite3.connect(dbPath)
+        self.conn = sqlite3.connect(dbPath, check_same_thread=False)
         self.cursor = self.conn.cursor()
         self.cursor.execute("CREATE TABLE IF NOT EXISTS leaderboard (name TEXT, score INTEGER)")
         self.conn.commit()
@@ -19,9 +19,9 @@ class leaderBoard:
         scores = self.get_top_scores(limit)
         scoreDict = {}
         for i in range(len(scores)):
-            scoreDict[f"{i+1}_name"] = scores[i][0]
+            scoreDict[f"name_{i+1}"] = scores[i][0]
         for i in range(len(scores)):
-            scoreDict[f"{i+1}_score"] = scores[i][1]
+            scoreDict[f"score_{i+1}"] = scores[i][1]
         return scoreDict
     
     def get_position(self, score):

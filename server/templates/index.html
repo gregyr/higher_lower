@@ -22,33 +22,39 @@
             <div class="leaderboard-container">
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">1.</span>
-                    <span class="leaderboard-name">{{1_name}}</span>
-                    <span class="leaderboard-score">{{1_score}}</span>
+                    <span class="leaderboard-name">{{name_1}}</span>
+                    <span class="leaderboard-score">{{score_1}}</span>
                 </div>
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">2.</span>
-                    <span class="leaderboard-name">{{2_name}}</span>
-                    <span class="leaderboard-score">{{2_score}}</span>
+                    <span class="leaderboard-name">{{name_2}}</span>
+                    <span class="leaderboard-score">{{score_2}}</span>
                 </div>
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">3.</span>
-                    <span class="leaderboard-name">{{3_name}}</span>
-                    <span class="leaderboard-score">{{3_score}}</span>
+                    <span class="leaderboard-name">{{name_3}}</span>
+                    <span class="leaderboard-score">{{score_3}}</span>
                 </div>
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">4.</span>
-                    <span class="leaderboard-name">{{4_name}}</span>
-                    <span class="leaderboard-score">{{4_score}}</span>
+                    <span class="leaderboard-name">{{name_4}}</span>
+                    <span class="leaderboard-score">{{score_4}}</span>
                 </div>
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">5.</span>
-                    <span class="leaderboard-name">{{5_name}}</span>
-                    <span class="leaderboard-score">{{5_score}}</span>
+                    <span class="leaderboard-name">{{name_5}}</span>
+                    <span class="leaderboard-score">{{score_5}}</span>
                 </div>
+                {%if not firstGame%}
+                <div class="leaderboard-element-player">
+                    <span class="leaderboard-place">{{own_position}}</span>
+                    <span class="leaderboard-name">{{own_name}}</span>
+                    <span class="leaderboard-score">{{own_score}}</span>
+                </div>
+                {%endif%} 
 
             </div>
-            {%if not firstGame%}
-            {%endif%}    
+               
             <form method="POST" action="/setname" class="start-game-form">
                 <input name="username" type="text" class="username-input" placeholder="Gib deinen Namen ein">
                 <input type = "submit" value = "Neues Spiel" class="start-game-button"/>
