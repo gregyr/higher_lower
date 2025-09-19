@@ -11,6 +11,7 @@ mit pip:
 pip install selenium
 pip install urllib3
 pip install flask
+pip install apscheduler
 ```
 mit uv:
 
