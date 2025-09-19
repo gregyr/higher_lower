@@ -9,9 +9,9 @@ from pathlib import Path
 dirname = str(Path(__file__).parent.parent)
 
 class Game:
-   def __init__(self):
+   def __init__(self, article_file_path = None):
       self.score = 0
-      collection = ProductCollection(dirname + r'\scraper\articles.json')
+      collection = ProductCollection((dirname + r'/scraper/articles.json') if article_file_path is None else article_file_path)
       self.productLast = collection.next_product()
       self.productNext = collection.next_product(self.productLast)
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=5) # game expires in 30 minutes
