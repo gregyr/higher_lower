@@ -68,6 +68,11 @@ header {
     background-color: #b80018;
 }
 
+.start-game-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .username-input {
     padding: 15px 30px;
     font-size: 1em;

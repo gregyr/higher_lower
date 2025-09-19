@@ -123,6 +123,11 @@ def guess():
             # if wrong return to title screen with score
             return redirect(url_for("index"))
 
+@app.route("/setname", methods = ['POST'])
+def setname():
+   name = request.form['username']
+   session['name'] = name
+
 @app.route("/test")
 def test():
    with games_lock:
