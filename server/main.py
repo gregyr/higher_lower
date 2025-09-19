@@ -11,9 +11,9 @@ dirname = str(Path(__file__).parent.parent)
 class Game:
    def __init__(self, article_file_path = None):
       self.score = 0
-      collection = ProductCollection((dirname + r'/scraper/articles.json') if article_file_path is None else article_file_path)
-      self.productLast = collection.next_product()
-      self.productNext = collection.next_product(self.productLast)
+      self.collection = ProductCollection((dirname + r'/scraper/articles.json') if article_file_path is None else article_file_path)
+      self.productLast = self.collection.next_product()
+      self.productNext = self.collection.next_product(self.productLast)
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=5) # game expires in 30 minutes
    
    def expired(self):
@@ -24,7 +24,7 @@ class Game:
 
    def nextProduct(self):
       self.productLast = self.productNext
-      self.productNext = ProductCollection.next_product(self.productLast)
+      self.productNext = self.collection.next_product(self.productLast)
    
    def checkGuess(self, userGuess):
       self.extend_time()
@@ -114,7 +114,7 @@ def guess():
       else:
          currentGame = games[session['sessionID']]
          #get user guess from form
-         user_guess = request.form['guess']
+         user_guess = request.json['guess']
          if currentGame.checkGuess(user_guess): # if correct guess deliver new product
             currentGame.score += 1
             currentGame.nextProduct()
