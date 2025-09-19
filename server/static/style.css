@@ -149,6 +149,13 @@ p {
     display: none; /* standard versteckt */
 }
 
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Media Queries (for phone screens)*/
 
 @media (max-width: 600px) {
