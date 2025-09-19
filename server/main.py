@@ -82,8 +82,17 @@ def index():
       firstgame =  True if session['sessionID'] not in games else False
       lastScore = 0 if firstgame else games[session['sessionID']].score
       
+      #leaderboard logic
+      if not firstgame: #leaderboard update
+         leaderBoard.add_score(session.get('name', 'Anonymous'), lastScore)
+      leaderBoardData = leaderBoard.get_top_scores_dict(5) # get leaderboard from leaderboard.db
+
+      if not firstgame: # adding own score and name to leaderboard data if not first game
+         leaderBoardData["own_name"] = session.get('name', 'Anonymous')
+         leaderBoardData["own_score"] = lastScore
+      
       games.pop(session['sessionID'], None) # remove old game if exists
-      return render_template("index.html", firstGame = firstgame, score = lastScore)
+      return render_template("index.html", firstGame = firstgame, **leaderBoardData)
 
 @app.route("/new_game")
 def new_game():
