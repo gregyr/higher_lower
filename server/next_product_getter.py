@@ -3,7 +3,8 @@ from os import path
 import random
 
 class Product:
-    def __init__(self, name, price, img, high_q_img = None):
+    def __init__(self,brand, name, price, img, high_q_img = None):
+        self.brand = brand
         self.name = name
         self.price = float(price)
         self.img = img
