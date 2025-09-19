@@ -6,7 +6,7 @@
     <title>Higher or Lower</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/index_style.css">
-    <script src="/static/js/index_script.js"></script>
+    
 </head>
 <body class = "index-body">
 
@@ -20,55 +20,18 @@
         <main class = "index-main">
         <div class="index-container">
             <div class="leaderboard-container">
-                <div class="leaderboard-element">
-                    <span id="place" class="leaderboard-place">1.</span>
-                    <span id="name" class="leaderboard-name"> Robert</span>
-                    <span id="score" class ="leaderboard-score"> 15</span>
-                </div>
-                <div class="leaderboard-element">
-                    <span id="place" class="leaderboard-place">1.</span>
-                    <span id="name" class="leaderboard-name"> Robert</span>
-                    <span id="score" class ="leaderboard-score"> 15</span>
-                </div>
-                <div class="leaderboard-element">
-                    <span id="place" class="leaderboard-place">1.</span>
-                    <span id="name" class="leaderboard-name"> Robert</span>
-                    <span id="score" class ="leaderboard-score"> 15</span>
-                </div>
-                <div class="leaderboard-element">
-                    <span id="place" class="leaderboard-place">1.</span>
-                    <span id="name" class="leaderboard-name"> Robert</span>
-                    <span id="score" class ="leaderboard-score"> 15</span>
-                </div>
-                <div class="leaderboard-element">
-                    <span id="place" class="leaderboard-place">1.</span>
-                    <span id="name" class="leaderboard-name"> Robert</span>
-                    <span id="score" class ="leaderboard-score"> 15</span>
-                </div>
             </div>
-
-
             {%if not firstGame%}
-            <div class="streak-container">
-                <p class="streak-text">Letzte Streak: <span>{{score}}</span></p>
-            </div>
-            {%endif%}
-            
-            <!-- Add Icon to the right
-            pl_icon_edit
-            add play icon
-            -->
-                       
+            {%endif%}    
             <form method="POST" action="/setname" class="start-game-form">
                 <input name="username" type="text" class="username-input" placeholder="Gib deinen Namen ein">
-                <input type = "submit" value = "submit" />
-
+                <input type = "submit" value = "Neues Spiel" class="start-game-button"/>
             </form>
             
         </div>
                 
     </main>
 
-    <script src=""></script>
+    <script src="/static/js/index_script.js"></script>
 </body>
 </html>
