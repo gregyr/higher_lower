@@ -127,11 +127,12 @@ def guess():
 def setname():
    name = request.form['username']
    session['name'] = name
+   return redirect(url_for('new_game'))
 
 @app.route("/test")
 def test():
-   with games_lock:
-      return str(games.__len__())
+   name = session["name"]
+   return name
    
 sheduler = BackgroundScheduler()
 sheduler.add_job(func=cleanup_games, trigger="interval", minutes=1)
