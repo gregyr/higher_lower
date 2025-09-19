@@ -70,6 +70,36 @@ h1 {
     margin-right: auto;
 }
 
+h2 {
+    font-family: 'OttoSans', sans-serif;
+    color: #000;
+    margin: 0;
+    font-size: 1em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-family: 'OttoSans', sans-serif;
+    color: #000;
+    margin: 0;
+    font-size: 1em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: 'OttoSans', sans-serif;
+    color: #000;
+    margin: 0;
+    font-size: 1em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Produkt Container */
 .product-container {
@@ -81,7 +111,8 @@ h1 {
 
 .product-box {
     width: 300px;
-    padding: 20px;
+    height: 400px;
+    padding: 40px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -100,13 +131,13 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 40px; /* Abstand */
+    margin: 0 60px; /* Abstand */
     position: relative;
 }
 
 .arrow, .question-mark {
     font-family: 'Otto-Sans', sans-serif;
-    font-size: 6em;
+    font-size: 8em;
     color: #f00020;
     cursor: pointer;
     transition: transform 0.5s ease; /* Soft Übergang */
