@@ -1,3 +1,11 @@
+:root{
+    --otto-red: #eb001f;
+}
+
+html {
+    overflow: hidden;
+}
+
 main {
     flex: 1;
     display: flex;
@@ -36,7 +44,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    padding: 40px;
+    padding: 20px 50px;
     border-radius: 10px;
 }
 
@@ -53,10 +61,10 @@ header {
 
 .start-game-button {
     padding:0.8rem 3rem ;
-    margin:20px;
+    margin:15px;
     font-size: 1.2em;
     font-weight: 700;
-    background-color: #eb001f;
+    background-color: var(--otto-red);
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -76,10 +84,11 @@ header {
 .username-input {
     padding: 15px 30px;
     font-size: 1em;
+    background: url("/static/images/edit.svg") no-repeat scroll 37vw 12px;
     background-color: #eaeaea;
     border: none;
     border-radius: 100px;
-    margin: 20px;
+    margin: 15px;
     width: 35vw;
 }
 
@@ -88,16 +97,62 @@ header {
     background-color: #ffffff;
 }
 
-.leaderboard-container{
-    padding: 10px;
-}
 
 .leaderboard-element{
-    padding: 10px 20px;
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 20px;
     margin: 10px;
-    background-color: #eaeaea
+    background-color: #eaeaea;
+    border-radius: 10px;
+    width: 40vh;
 }
 
-.leaderboard-element span {
+.leaderboard-element-player{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin: 10px;
+    margin-top: 30px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    width: 40vh;
+}
+
+.leaderboard-element span{
+    font-weight: 500;
     margin: 5px;
+}
+
+.leaderboard-element .leaderboard-place {
+    min-width: 30px; 
+    display: inline-block;
+    text-align: center;
+}
+
+.leaderboard-element-player .leaderboard-place {
+    min-width: 30px; 
+    display: inline-block;
+    text-align: center;
+}
+
+.leaderboard-element-player span{
+    font-weight: 500;
+    margin: 5px;
+}
+
+.leaderboard-element .leaderboard-score {
+    font-weight: 700;
+    color: var(--otto-red);
+    min-width: 30px; 
+    display: inline-block;
+    text-align: center;
+}
+
+.leaderboard-element-player .leaderboard-score {
+    font-weight: 700;
+    color: var(--otto-red);
+    min-width: 30px; 
+    display: inline-block;
+    text-align: center;
 }
