@@ -20,38 +20,46 @@
         <main class = "index-main">
         <div class="index-container">
             <div class="leaderboard-container">
+                <!--
+                for in der der js funktioniert leider nicht mit den flask {{name_x}},etc. variablen
+                -->
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">1.</span>
-                    <span class="leaderboard-name">{{name_1}}</span>
+                    <span class="leaderboard-name">{{name_1}} {%if own_position == 1%} (Du) {%endif%}</span>
                     <span class="leaderboard-score">{{score_1}}</span>
                 </div>
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">2.</span>
-                    <span class="leaderboard-name">{{name_2}}</span>
+                    <span class="leaderboard-name">{{name_2}} {%if own_position == 2%} (Du) {%endif%}</span>
                     <span class="leaderboard-score">{{score_2}}</span>
                 </div>
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">3.</span>
-                    <span class="leaderboard-name">{{name_3}}</span>
+                    <span class="leaderboard-name">{{name_3}} {%if own_position == 3%} (Du) {%endif%}</span>
                     <span class="leaderboard-score">{{score_3}}</span>
                 </div>
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">4.</span>
-                    <span class="leaderboard-name">{{name_4}}</span>
+                    <span class="leaderboard-name">{{name_4}} {%if own_position == 4%} (Du) {%endif%}</span>
                     <span class="leaderboard-score">{{score_4}}</span>
                 </div>
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">5.</span>
-                    <span class="leaderboard-name">{{name_5}}</span>
+                    <span class="leaderboard-name">{{name_5}} {%if own_position == 5%} (Du) {%endif%}</span>
                     <span class="leaderboard-score">{{score_5}}</span>
                 </div>
                 {%if not firstGame%}
+                    {% if own_position >= 5 %}
                 <div class="leaderboard-element-player">
                     <span class="leaderboard-place">{{own_position}}</span>
-                    <span class="leaderboard-name">{{own_name}}</span>
+                    <span class="leaderboard-name">{{own_name}} (Du)</span>
                     <span class="leaderboard-score">{{own_score}}</span>
                 </div>
+                    {%endif%}
                 {%endif%} 
+            <!--Muss glaube ich so hässlich sein weil man nur own_position hat wenn not first game
+            -->
+                
 
             </div>
                
