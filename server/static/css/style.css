@@ -204,7 +204,7 @@ p {
     }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 800px) and (max-width: 600px) {
     .product-container {
         gap: 30px;
     }
