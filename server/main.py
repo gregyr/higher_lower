@@ -90,6 +90,7 @@ def index():
       if not firstgame: # adding own score and name to leaderboard data if not first game
          leaderBoardData["own_name"] = session.get('name', 'Anonymous')
          leaderBoardData["own_score"] = lastScore
+         leaderBoardData["own_position"] = leaderBoard.get_position(lastScore)
       
       games.pop(session['sessionID'], None) # remove old game if exists
       return render_template("index.html", firstGame = firstgame, **leaderBoardData)
