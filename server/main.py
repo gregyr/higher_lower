@@ -5,6 +5,7 @@ from flask import Flask, jsonify, session, redirect, url_for, request, render_te
 import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 from pathlib import Path
+from db import leaderBoard
 
 dirname = str(Path(__file__).parent.parent)
 
@@ -57,6 +58,8 @@ class Game:
 
 games = {}
 games_lock = Lock() # to prevent simultaneous access to games dict from cleanup and main thread
+
+leaderBoard = leaderBoard(dirname + r'/server/DB/leaderboard.db')
 
 def cleanup_games():
    with games_lock:
