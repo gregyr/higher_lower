@@ -56,8 +56,18 @@ header {
 .logo {
     width: 50px;
     height: auto;
-    margin-right: 20px;
+    margin: 0;
 }
+
+.logobig {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.5s ease; /* Soft Übergang */
+    user-select: none;
+    display: none;
+}
+
 
 h1 {
     font-family: 'OttoPlay', sans-serif;
@@ -74,7 +84,7 @@ h2 {
     color: #000;
     margin: 0;
     font-size: 1em;
-    text-align: left;
+    align-self: left;
     margin-left: auto;
     margin-right: auto;
 }
@@ -84,7 +94,7 @@ h3 {
     color: #000;
     margin: 0;
     font-size: 1em;
-    text-align: left;
+    align-self: left;
     margin-left: auto;
     margin-right: auto;
 }
@@ -94,18 +104,24 @@ p {
     color: #000;
     margin: 0;
     font-size: 1em;
-    text-align: left;
+    align-self: left;
     margin-left: auto;
     margin-right: auto;
 }
 
-
 /* Produkt Container */
 .product-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
+    gap: 20px;
+}
+
+.noBorder {
+    border: none;
+    outline: none;
+    background-color: #e6e6e6
 }
 
 .product-box {
@@ -117,44 +133,69 @@ p {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
     cursor: pointer;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
-.product-box .img-wrap {
-    max-height: 250px;
-    margin-bottom: 10px;
+.product-box img {
+    max-width: 90%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    grid-row: 1;
 }
 
-.product-box .img-wrap img {
-    max-width: 100%;
-    max-height: 250px;
-    width: auto;
 
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* Pfeil & Fragezeichen */
-.arrow-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 60px; /* Abstand */
+.product1 {
     position: relative;
+    left: -50px;
 }
 
-.arrow, .question-mark {
-    font-family: 'Otto-Sans', sans-serif;
-    font-size: 8em;
-    color: #f00020;
-    cursor: pointer;
+.product2 {
+    position: relative;
+    left: 50px;
+}
+
+.text-box {
+    width: 100%;
+    align-self: left;
+    justify-self: top;
+    grid-row: 2;
+    margin-top: 40px;
+    display: grid;
+}
+
+
+.UpLogo {
+    width: 50px;
+    height: auto;
+    align-self: left;
+    justify-self: left;
+}
+
+.arrow-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    align-items: center;
+    margin: 0 0px; /* Abstand */
+    position: relative; /* Für absolute Positionierung des Pfeils */
+}
+
+
+.arrow_red {
+    width: 200px;
+    height: auto;
     transition: transform 0.5s ease; /* Soft Übergang */
-    user-select: none;
-    position: absolute; /* Überlagerung */
+    position: absolute;
+
 }
 
-.question-mark {
-    display: none; /* standard versteckt */
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media Queries (for phone screens)*/
@@ -204,7 +245,7 @@ p {
     }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 800px) and (max-width: 600px) {
     .product-container {
         gap: 30px;
     }

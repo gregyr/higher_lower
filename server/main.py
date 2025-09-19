@@ -5,15 +5,16 @@ from flask import Flask, jsonify, session, redirect, url_for, request, render_te
 import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 from pathlib import Path
+from db import leaderBoard
 
 dirname = str(Path(__file__).parent.parent)
 
 class Game:
    def __init__(self, article_file_path = None):
       self.score = 0
-      collection = ProductCollection((dirname + r'/scraper/articles.json') if article_file_path is None else article_file_path)
-      self.productLast = collection.next_product()
-      self.productNext = collection.next_product(self.productLast)
+      self.collection = ProductCollection((dirname + r'/scraper/articles.json') if article_file_path is None else article_file_path)
+      self.productLast = self.collection.next_product()
+      self.productNext = self.collection.next_product(self.productLast)
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=5) # game expires in 30 minutes
    
    def expired(self):
@@ -24,7 +25,7 @@ class Game:
 
    def nextProduct(self):
       self.productLast = self.productNext
-      self.productNext = ProductCollection.next_product(self.productLast)
+      self.productNext = self.collection.next_product(self.productLast)
    
    def checkGuess(self, userGuess):
       self.extend_time()
@@ -58,6 +59,8 @@ class Game:
 games = {}
 games_lock = Lock() # to prevent simultaneous access to games dict from cleanup and main thread
 
+leaderBoard = leaderBoard(dirname + r'/server/DB/leaderboard.db')
+
 def cleanup_games():
    with games_lock:
       for game in list(games.items()):
@@ -79,8 +82,18 @@ def index():
       firstgame =  True if session['sessionID'] not in games else False
       lastScore = 0 if firstgame else games[session['sessionID']].score
       
+      #leaderboard logic
+      if not firstgame: #leaderboard update
+         leaderBoard.add_score(session.get('name', 'Anonymous'), lastScore)
+      leaderBoardData = leaderBoard.get_top_scores_dict(5) # get leaderboard from leaderboard.db
+
+      if not firstgame: # adding own score and name to leaderboard data if not first game
+         leaderBoardData["own_name"] = session.get('name', 'Anonymous')
+         leaderBoardData["own_score"] = lastScore
+         leaderBoardData["own_position"] = leaderBoard.get_position(lastScore)
+      
       games.pop(session['sessionID'], None) # remove old game if exists
-      return render_template("index.html", firstGame = firstgame, score = lastScore)
+      return render_template("index.html", firstGame = firstgame, **leaderBoardData)
 
 @app.route("/new_game")
 def new_game():
@@ -114,14 +127,15 @@ def guess():
       else:
          currentGame = games[session['sessionID']]
          #get user guess from form
-         user_guess = request.form['guess']
+         user_guess = request.json['guess']
          if currentGame.checkGuess(user_guess): # if correct guess deliver new product
+            print("Guessed correctly")
             currentGame.score += 1
             currentGame.nextProduct()
             return jsonify(currentGame.toDict(True)) # censor next price
          else:
             # if wrong return to title screen with score
-            return redirect(url_for("index"))
+            return redirect(url_for("test"))
 
 @app.route("/setname", methods = ['POST'])
 def setname():

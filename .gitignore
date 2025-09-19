@@ -13,4 +13,7 @@ scraper/.venv
 server/.vscode/
 server/__pycache__
 
+#Python test file for db
+test.py
+
 .vscode/
