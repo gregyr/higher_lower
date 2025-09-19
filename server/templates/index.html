@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Higher or Lower</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/index_style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class = "index-body">
+
     <header>
+        <button class ="logo-button" onclick="location.href='/'">
+            <img src="/static/images/pl_logo_otto.svg" alt="Logo" class="logo">
+        </button>
         <h1>Higher or Lower</h1>
     </header>
-
-    <main>
+    
+        <main class = "index-main">
         <div class="index-container">
-            <div class="scoreboard-container"></div>
+            {%if not firstGame%}
             <div class="streak-container">
-                <p>Highest Streak: <span>12</span></p>
+                <p class="streak-text">Highest Streak: <span>12</span></p>
             </div>
-            <button onclick="location.href='/new_game'">Next Game</button>
+            {%endif%}
+            <input type="text" class="username-input" placeholder="Gib deinen Namen ein">
+            <!-- Add Icon to the right
+            pl_icon_edit
+            add play icon
+            -->
+            </input>
+
+            <button class = "start-game-button" onclick="location.href='/new_game'">
+                Neues Spiel
+                
+            </button>
         </div>
+                
     </main>
 
     <script src=""></script>
