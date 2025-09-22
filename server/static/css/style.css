@@ -43,6 +43,7 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     height: 40px;
+    padding-right: 120px;
     display: flex;
     align-items: center;
 }
@@ -54,9 +55,19 @@ header {
 }
 
 .logo {
-    width: 50px;
+    margin: 20px;
+    width: 100px;
+    height: 40px;
     height: auto;
     margin: 0;
+}
+
+.logo-button {
+    margin:0;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .logobig {
