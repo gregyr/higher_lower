@@ -13,6 +13,12 @@ main {
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  header {
+    padding-right: 40px;
+  }
+}
+
 .index-body {
       margin: 0;
       display: flex;
@@ -52,6 +58,8 @@ main {
     border-radius: 0.5rem;
     cursor: pointer;
     transition-duration: 100ms;
+    min-width: 250px;
+    max-width: 500px;
 }
 
 .start-game-button:hover {
@@ -61,17 +69,21 @@ main {
 .start-game-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .username-input {
     padding: 15px 30px;
     font-size: 1em;
-    background: url("/static/images/edit.svg") no-repeat scroll 37vw 12px;
+    background: url("/static/images/edit.svg") no-repeat scroll 97% 12px;
     background-color: #eaeaea;
     border: none;
     border-radius: 100px;
     margin: 15px;
     width: 35vw;
+    min-width:fit-content;
+    max-width: 600px;
+    
 }
 
 .username-input:focus {
@@ -87,7 +99,8 @@ main {
     margin: 10px;
     background-color: #eaeaea;
     border-radius: 10px;
-    width: 40vh;
+    width: 40vw;
+    max-width: 40vh;
 }
 
 .leaderboard-element-player{
