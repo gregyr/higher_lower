@@ -36,7 +36,8 @@ async function send_guess() {
             arrow.style.display= "none"
             correct.style.display = "block"
             logobig.style.display = "none"
-            
+            product1.classList.add("removed")
+            product2.classList.add("moved")
             setTimeout(() => {
             load_next_product(response);
             }, 500);
@@ -53,6 +54,7 @@ async function send_guess() {
 }
 
 function load_next_product(response) {
+    product2.classList.remove("moved")
     product1.remove();
     moveDown(center_container);
     product2.removeEventListener('mouseenter', enter_rotate);

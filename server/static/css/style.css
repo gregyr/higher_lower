@@ -153,6 +153,16 @@ p {
     cursor: pointer;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    transition-duration: 500ms;
+}
+.moved{
+    transform: translateX(-730px);
+    transition-duration: 500ms;
+}
+
+.removed{
+    transform: translateX(-50vw);
+    transition-duration: 500ms;
 }
 
 .product-box img {
@@ -241,6 +251,7 @@ p {
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+    scale: 1.1
 }
 
 .score-display{
