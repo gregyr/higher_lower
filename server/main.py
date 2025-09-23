@@ -127,11 +127,12 @@ def guess():
          return redirect(url_for('new_game'))
       else:
          currentGame = games[session['sessionID']]
+         user_guess = request.json['guess']
+         guessed_correctly = currentGame.checkGuess(user_guess)
          currentGame.nextProduct()
          dict = currentGame.toDict(True)
          #get user guess from form
-         user_guess = request.json['guess']
-         if currentGame.checkGuess(user_guess): # if correct guess deliver new product
+         if guessed_correctly: # if correct guess deliver new product
             print("Guessed correctly")
             currentGame.score += 1            
             dict['correct'] = True
