@@ -20,34 +20,17 @@
         <main class = "index-main">
         <div class="index-container">
             <div class="leaderboard-container">
-                <!--
-                for der html einfach machen wie die if
-                -->
+                {% set name_list = [name_1, name_2, name_3, name_4, name_5] %}
+                {% set score_list = [score_1, score_2, score_3, score_4, score_5] %}
+                
+                {% for idx in range(5) %}
                 <div class="leaderboard-element">
-                    <span class="leaderboard-place">1.</span>
-                    <span class="leaderboard-name">{{name_1}} {%if own_position == 1%} (Du) {%endif%}</span>
-                    <span class="leaderboard-score">{{score_1}}</span>
+                    <span class="leaderboard-place">{{idx + 1}}.</span>
+                    <span class="leaderboard-name">{{name_list[idx]}} {%if own_position == 1%} (Du) {%endif%}</span>
+                    <span class="leaderboard-score">{{score_list[idx]}}</span>
                 </div>
-                <div class="leaderboard-element">
-                    <span class="leaderboard-place">2.</span>
-                    <span class="leaderboard-name">{{name_2}} {%if own_position == 2%} (Du) {%endif%}</span>
-                    <span class="leaderboard-score">{{score_2}}</span>
-                </div>
-                <div class="leaderboard-element">
-                    <span class="leaderboard-place">3.</span>
-                    <span class="leaderboard-name">{{name_3}} {%if own_position == 3%} (Du) {%endif%}</span>
-                    <span class="leaderboard-score">{{score_3}}</span>
-                </div>
-                <div class="leaderboard-element">
-                    <span class="leaderboard-place">4.</span>
-                    <span class="leaderboard-name">{{name_4}} {%if own_position == 4%} (Du) {%endif%}</span>
-                    <span class="leaderboard-score">{{score_4}}</span>
-                </div>
-                <div class="leaderboard-element">
-                    <span class="leaderboard-place">5.</span>
-                    <span class="leaderboard-name">{{name_5}} {%if own_position == 5%} (Du) {%endif%}</span>
-                    <span class="leaderboard-score">{{score_5}}</span>
-                </div>
+                {%endfor%}
+                
                 {%if not firstGame%}
                     {% if own_position >= 5 %}
                 <div class="leaderboard-element-player">
@@ -56,11 +39,7 @@
                     <span class="leaderboard-score">{{own_score}}</span>
                 </div>
                     {%endif%}
-                {%endif%} 
-            <!--Muss glaube ich so hässlich sein weil man nur own_position hat wenn not first game
-            -->
-                
-
+                {%endif%}
             </div>
                
             <form method="POST" action="/setname" class="start-game-form">
