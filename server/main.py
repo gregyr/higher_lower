@@ -6,7 +6,7 @@ import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 from pathlib import Path
 from db import leaderBoard
-from namegenerator import generate_nickname
+from randomgenerator import generate_nickname, generate_parceltime
 
 dirname = str(Path(__file__).parent.parent)
 
@@ -49,12 +49,14 @@ class Game:
          "productLast_name": self.productLast.name,
          "productLast_img": self.productLast.img,
          "productLast_high_q_img": self.productLast.high_q_img,
+         "productLast_parcel_time": generate_parceltime(),
 
          "productNext_brand": self.productNext.brand,
          "productNext_price": self.productNext.price if not CensorNextPrice else "???",
          "productNext_name": self.productNext.name,
          "productNext_img": self.productNext.img,
          "productNext_high_q_img": self.productNext.high_q_img,
+         "productNext_parcel_time": generate_parceltime(),
       }
 
 games = {}
