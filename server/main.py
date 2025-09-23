@@ -43,7 +43,7 @@ class Game:
    def toDict(self, CensorNextPrice = True):
       return {
          "score": self.score,
-         "poductLast_brand": self.productLast.brand,
+         "productLast_brand": self.productLast.brand,
          "productLast_price": self.productLast.price,
          "productLast_name": self.productLast.name,
          "productLast_img": self.productLast.img,
