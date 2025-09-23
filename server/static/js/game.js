@@ -1,8 +1,9 @@
 var arrow = document.getElementById('arrow');
 var logobig = document.getElementById('logobig');
-var arrow_container = document.getElementsByClassName('arrow-container')[0]
+var center_container = document.getElementsByClassName('center-container')[0]
 var product1 = document.getElementsByClassName('product-box')[0];
 var product2 = document.getElementsByClassName('product-box')[1];
+var score = document.getElementsByClassName('score')[0];
 
 document.addEventListener("DOMContentLoaded", (event) => {
     setup();
@@ -37,10 +38,11 @@ async function send_guess() {
 
 function load_next_product(response) {
     product1.remove();
-    moveDown(arrow_container);
+    moveDown(center_container);
     product2.removeEventListener('mouseenter', enter_rotate);
     product2.removeEventListener('mouseleave', leave_rotate);
     product2.removeEventListener('click', send_guess);
+    score.innerHTML = response.score + 1
 
     document.querySelector('.product-container').insertAdjacentHTML('beforeend', `<div class="product-box">
                     <img class="product-image" src=${response.productNext_high_q_img} alt="Produkt">
@@ -68,10 +70,11 @@ function insertAfter(referenceNode, newNode) {
 function setup() {
     arrow = document.getElementById('arrow');
     logobig = document.getElementById('logobig');
-    arrow_container = document.getElementsByClassName('arrow-container')[0]
+    center_container = document.getElementsByClassName('center-container')[0]
     product1 = document.getElementsByClassName('product-box')[0];
     product2 = document.getElementsByClassName('product-box')[1];
-
+    score = document.getElementsByClassName('score')[0];
+    
     product1.setAttribute('rotation', '-180');
     product2.setAttribute('rotation', '0');
 
