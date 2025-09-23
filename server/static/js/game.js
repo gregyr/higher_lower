@@ -40,7 +40,7 @@ async function send_guess() {
             product2.classList.add("moved")
             setTimeout(() => {
             load_next_product(response);
-            }, 500);
+            }, 1000);
         }
         else {
             arrow.style.display= "none";
