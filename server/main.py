@@ -84,11 +84,11 @@ def index():
       
       #leaderboard logic
       if not firstgame: #leaderboard update
-         leaderBoard.add_score(session.get('name', 'Anonymous'), lastScore)
+         leaderBoard.add_score(session.get('name'), lastScore)
       leaderBoardData = leaderBoard.get_top_scores_dict(5) # get leaderboard from leaderboard.db
 
       if not firstgame: # adding own score and name to leaderboard data if not first game
-         leaderBoardData["own_name"] = session.get('name', 'Anonymous')
+         leaderBoardData["own_name"] = session.get('name')
          leaderBoardData["own_score"] = lastScore
          leaderBoardData["own_position"] = leaderBoard.get_position(lastScore)
       
@@ -135,12 +135,14 @@ def guess():
             return jsonify(currentGame.toDict(True)) # censor next price
          else:
             # if wrong return to title screen with score
-            return redirect(url_for("test"))
+            return redirect(url_for("index"))
 
 @app.route("/setname", methods = ['POST'])
 def setname():
    name = request.form['username']
    session['name'] = name
+   if(name == ""):
+      session['name'] = "Anonym" #add a funny name genration later
    return redirect(url_for('new_game'))
 
 @app.route("/test")
