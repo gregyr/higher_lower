@@ -36,7 +36,17 @@ product2.addEventListener('mouseleave', () => {
     }
 });
 
+function send_guess(user_guess) {
+    response = await fetch("/guess", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ guess: user_guess })
+    })
 
+
+}
 
 // Initialzustand
 arrow.style.display = 'none';
