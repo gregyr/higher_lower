@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 async function send_guess() {
+    //console.log(this.getAttribute('user_guess'))
     await fetch("/guess", {
         method: 'POST',
         redirect: 'follow',
@@ -23,9 +24,14 @@ async function send_guess() {
         }
         return response.json();
     }).then(response => {
-        console.log(response);
-        console.log(response.productLast_price);
-        load_next_product(response);
+        document.querySelectorAll('.price')[1].textContent = `Preis: ${response.productLast_price} €`
+        //console.log(response)
+        if (response.correct) {
+            load_next_product(response);
+        }
+        else {
+            game_over();
+        }
     });
 }
 
@@ -35,7 +41,6 @@ function load_next_product(response) {
     product2.removeEventListener('mouseenter', enter_rotate);
     product2.removeEventListener('mouseleave', leave_rotate);
     product2.removeEventListener('click', send_guess);
-    document.querySelector('.price').textContent = `Preis: ${response.productLast_price} €`
 
     document.querySelector('.product-container').insertAdjacentHTML('beforeend', `<div class="product-box">
                     <img class="product-image" src=${response.productNext_high_q_img} alt="Produkt">
@@ -100,4 +105,14 @@ function leave_rotate() {
     arrow.style.transform = 'rotate(-90deg)';
     arrow.style.display = 'block';
     logobig.style.display = 'none';
+}
+
+function game_over() {
+    product1.removeEventListener('mouseenter', enter_rotate);
+    product1.removeEventListener('mouseleave', leave_rotate);
+    product1.removeEventListener('click', send_guess);
+
+    product2.removeEventListener('mouseenter', enter_rotate);
+    product2.removeEventListener('mouseleave', leave_rotate);
+    product2.removeEventListener('click', send_guess);
 }
