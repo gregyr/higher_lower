@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Higher or Lower</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/game.js"></script>
 </head>
 <body>
-    <header>
+<header>
         <button class ="logo-button" onclick="location.href='/'">
             <img src="/static/images/pl_logo_otto.svg" alt="Logo" class="logo">
         </button>
@@ -16,7 +17,7 @@
 
     <main>
         <div class="product-container">
-            
+
             <button class="noBorder" onclick="choose()">
                 <div class="product-box" id="product1">
                     <img class="product-image" id="product-image1" src={{productLast_high_q_img}} alt="Produkt 1">
@@ -50,7 +51,5 @@
         </div>
     </main>
 
-    <script src="/static/js/script.js"></script>
-    <script src="static/js/request.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+
 const arrow = document.getElementById('arrow');
 const questionMark = document.getElementById('logobig');
 const product1 = document.getElementById('product1');
@@ -39,3 +41,5 @@ product2.addEventListener('mouseleave', () => {
 // Initialzustand
 arrow.style.display = 'none';
 logobig.style.display = 'block';
+
+});
