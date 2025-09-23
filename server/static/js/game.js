@@ -23,9 +23,10 @@ async function send_guess() {
         }
         return response.json();
     }).then(response => {
-        console.log(response);
-        console.log(response.productLast_price);
-        load_next_product(response);
+        document.querySelectorAll('.price')[1].textContent = `Preis: ${response.productLast_price} €`
+        if (response.correct) {
+            load_next_product(response);
+        }
     });
 }
 
@@ -35,7 +36,6 @@ function load_next_product(response) {
     product2.removeEventListener('mouseenter', enter_rotate);
     product2.removeEventListener('mouseleave', leave_rotate);
     product2.removeEventListener('click', send_guess);
-    document.querySelector('.price').textContent = `Preis: ${response.productLast_price} €`
 
     document.querySelector('.product-container').insertAdjacentHTML('beforeend', `<div class="product-box">
                     <img class="product-image" src=${response.productNext_high_q_img} alt="Produkt">
