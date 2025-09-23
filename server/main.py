@@ -6,6 +6,7 @@ import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 from pathlib import Path
 from db import leaderBoard
+from namegenerator import generate_nickname
 
 dirname = str(Path(__file__).parent.parent)
 
@@ -142,7 +143,7 @@ def setname():
    name = request.form['username']
    session['name'] = name
    if(name == ""):
-      session['name'] = "Anonym" #add a funny name genration later
+      session['name'] = (f"{generate_nickname()}")
    return redirect(url_for('new_game'))
 
 @app.route("/test")
