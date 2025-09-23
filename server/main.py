@@ -129,12 +129,13 @@ def guess():
          #get user guess from form
          user_guess = request.json['guess']
          if currentGame.checkGuess(user_guess): # if correct guess deliver new product
+            print("Guessed correctly")
             currentGame.score += 1
             currentGame.nextProduct()
             return jsonify(currentGame.toDict(True)) # censor next price
          else:
             # if wrong return to title screen with score
-            return redirect(url_for("index"))
+            return redirect(url_for("test"))
 
 @app.route("/setname", methods = ['POST'])
 def setname():
