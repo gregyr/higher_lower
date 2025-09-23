@@ -1,9 +1,14 @@
 var arrow = document.getElementById('arrow');
+var correct = document.getElementsByClassName('check')[0]
+var wrong = document.getElementsByClassName('check')[1] //muss so gemacht werden da man sonst kurz den haken sieht bei falschem guess
 var logobig = document.getElementById('logobig');
 var center_container = document.getElementsByClassName('center-container')[0]
 var product1 = document.getElementsByClassName('product-box')[0];
 var product2 = document.getElementsByClassName('product-box')[1];
 var score = document.getElementsByClassName('score')[0];
+var score_display = document.getElementsByClassName('score-container')[0]
+var return_button = document.getElementsByClassName('return-button')[0]
+var game_over_display = document.getElementsByClassName('game-over')[0]
 
 document.addEventListener("DOMContentLoaded", (event) => {
     setup();
@@ -28,15 +33,28 @@ async function send_guess() {
         document.querySelectorAll('.price')[1].textContent = `Preis: ${response.productLast_price} €`
         //console.log(response)
         if (response.correct) {
+            arrow.style.display= "none"
+            correct.style.display = "block"
+            logobig.style.display = "none"
+            product1.classList.add("removed")
+            product2.classList.add("moved")
+            setTimeout(() => {
             load_next_product(response);
+            }, 500);
         }
         else {
+            arrow.style.display= "none";
+            wrong.style.display = "block";
+            score_display.style.zoom = 1.4;
+            return_button.style.display = 'block'
+            game_over_display.style.display= 'flex'
             game_over();
         }
     });
 }
 
 function load_next_product(response) {
+    product2.classList.remove("moved")
     product1.remove();
     moveDown(center_container);
     product2.removeEventListener('mouseenter', enter_rotate);
@@ -74,6 +92,11 @@ function setup() {
     product1 = document.getElementsByClassName('product-box')[0];
     product2 = document.getElementsByClassName('product-box')[1];
     score = document.getElementsByClassName('score')[0];
+    correct = document.getElementsByClassName('check')[0]
+    wrong = document.getElementsByClassName('check')[1]
+    score_display = document.getElementsByClassName('score-text')[0]
+    return_button = document.getElementsByClassName('return-button')[0]
+    game_over_display = document.getElementsByClassName('game-over')[0]
     
     product1.setAttribute('rotation', '-180');
     product2.setAttribute('rotation', '0');
@@ -84,6 +107,8 @@ function setup() {
     // Initialzustand
     arrow.style.display = 'none';
     logobig.style.display = 'block';
+    correct.style.display = "none"
+    wrong.style.display = 'none'
 
     // Maus berührt ein Feld
     product1.addEventListener('mouseenter', enter_rotate);
@@ -102,6 +127,7 @@ function enter_rotate() {
     arrow.style.transform = `rotate(${rotation}deg)`;
     arrow.style.display = 'block';
     logobig.style.display = 'none';
+    correct.style.display = "none"
 }
 
 function leave_rotate() {
