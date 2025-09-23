@@ -141,6 +141,8 @@ def guess():
 def setname():
    name = request.form['username']
    session['name'] = name
+   if(name == ""):
+      session['name'] = "Anonym" #add a funny name genration later
    return redirect(url_for('new_game'))
 
 @app.route("/test")
