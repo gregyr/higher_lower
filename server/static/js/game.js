@@ -50,7 +50,7 @@ function load_next_product(response) {
                         <h2>${response.productNext_brand}</h2>
                         <h3>${response.productNext_name}</h3>
                         <p class="price">Preis: ${response.productNext_price} €</p>
-                        <p>lieferbar - in 2-3 Werktagen bei dir</p>
+                        <p>lieferbar - in ${response.productNext_parcel_time} Werktagen bei dir</p>
                         <img alt="Logo" class="UpLogo" src="/static/images/otto-up-logo.png">
                     </div>
                 </div>`);

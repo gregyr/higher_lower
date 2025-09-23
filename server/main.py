@@ -16,6 +16,8 @@ class Game:
       self.collection = ProductCollection((dirname + r'/scraper/articles.json') if article_file_path is None else article_file_path)
       self.productLast = self.collection.next_product()
       self.productNext = self.collection.next_product(self.productLast)
+      self.LastParcelTime = generate_parceltime()
+      self.NextParcelTime = generate_parceltime()
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=5) # game expires in 30 minutes
    
    def expired(self):
@@ -27,6 +29,8 @@ class Game:
    def nextProduct(self):
       self.productLast = self.productNext
       self.productNext = self.collection.next_product(self.productLast)
+      self.LastParcelTime = self.NextParcelTime
+      self.NextParcelTime = generate_parceltime()
    
    def checkGuess(self, userGuess):
       self.extend_time()
@@ -49,14 +53,14 @@ class Game:
          "productLast_name": self.productLast.name,
          "productLast_img": self.productLast.img,
          "productLast_high_q_img": self.productLast.high_q_img,
-         "productLast_parcel_time": generate_parceltime(),
+         "productLast_parcel_time": self.LastParcelTime,
 
          "productNext_brand": self.productNext.brand,
          "productNext_price": self.productNext.price if not CensorNextPrice else "???",
          "productNext_name": self.productNext.name,
          "productNext_img": self.productNext.img,
          "productNext_high_q_img": self.productNext.high_q_img,
-         "productNext_parcel_time": generate_parceltime(),
+         "productNext_parcel_time": self.NextParcelTime,
       }
 
 games = {}
