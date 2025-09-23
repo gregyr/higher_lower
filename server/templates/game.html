@@ -19,29 +19,39 @@
             
             <button class="noBorder" onclick="choose()">
                 <div class="product-box" id="product1">
-                    <img class="product-image" id="product-image1" src={{productLast_high_q_img}} alt="Produkt 1">
+                    <div class = "image-wrapper">
+                        <img class="product-image" id="product-image1" src={{productLast_high_q_img}} alt="Produkt 1">
+                    </div>
                     <div class="text-box" id="text-box1">
                         <h2>{{productLast_brand}}</h2>
                         <h3>{{productLast_name}}</h3>
-                        <p>Preis: {{productLast_price}} €</p>
+                        <p>Preis: <span class = "price-span">{{productLast_price}} €</span></p>
                         <p>lieferbar - in 2-3 Werktagen bei dir</p>
                         <img alt="Logo" class="UpLogo" id="UpLogo1" src="/static/images/otto-up-logo.png">
                     </div>
                 </div>
             </button>
-
-            <div class="arrow-container">
-                <img id="arrow" class="arrow_red" src="/static/images/arrow.png">
-                <img class="logo_big" id="logobig" src="/static/images/pl_logo_otto.svg">
+            
+            <div class="center-container">
+                <div class="arrow-container">
+                    <img id="arrow" class="arrow_red" src="/static/images/arrow.png">
+                    <img class="logo-big" id="logobig" src="/static/images/pl_logo_otto.svg">
+                </div>
+                <div class="score-container">
+                    <span class = "score-text"> Score: <span class ="score"> {{score}} </span></span>
+                </div>
             </div>
+            
 
             <button class="noBorder" onclick="choose()">
                 <div class="product-box" id="product2">
-                    <img class="product-image" id="product-image1" src={{productNext_high_q_img}} alt="Produkt 2">
+                    <div class = "image-wrapper">
+                        <img class="product-image" id="product-image1" src={{productNext_high_q_img}} alt="Produkt 2">
+                    </div>
                     <div class="text-box" id="text-box2">
                         <h2>{{productNext_brand}}</h2>
                         <h3>{{productNext_name}}</h3>
-                        <p>Preis: {{productNext_price}} €</p>
+                        <p>Preis: <span class = "price-span">{{productNext_price}} €</span></p>
                         <p>lieferbar - in 2-3 Werktagen bei dir</p>
                         <img alt="Logo" class="UpLogo" id="UpLogo2" src="/static/images/otto-up-logo.png">
                     </div>
