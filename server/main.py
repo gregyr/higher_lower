@@ -143,7 +143,7 @@ def setname():
    name = request.form['username']
    session['name'] = name
    if(name == ""):
-      session['name'] = (f"{generate_nickname()}")
+      session['name'] = generate_nickname(dirname + r"/server/words.json")
    return redirect(url_for('new_game'))
 
 @app.route("/test")
