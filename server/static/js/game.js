@@ -10,6 +10,12 @@ var score_display = document.getElementsByClassName('score-container')[0]
 var return_button = document.getElementsByClassName('return-button')[0]
 var game_over_display = document.getElementsByClassName('game-over')[0]
 
+var overrideCheckmark = true
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", (event) => {
     setup();
 });
@@ -33,46 +39,40 @@ async function send_guess() {
         document.querySelectorAll('.price')[1].textContent = `Preis: ${response.productLast_price} €`
         //console.log(response)
         if (response.correct) {
-            arrow.style.display= "none"
-            correct.style.display = "block"
-            logobig.style.display = "none"
-            product1.classList.add("removed")
-            product2.classList.add("moved")
-            setTimeout(() => {
-            load_next_product(response);
-            }, 1000);
+            overrideCheckmark = false
+            let pos1 = getOffset(product1)
+            let pos2 = getOffset(product2)
+            let offset = pos1 - pos2
+            displayCorrect(offset);
+            animateNewProduct(offset, response);
+            
         }
         else {
-            arrow.style.display= "none";
-            wrong.style.display = "block";
-            score_display.style.zoom = 1.4;
-            return_button.style.display = 'block'
-            game_over_display.style.display= 'flex'
-            game_over();
+            displayWrong();
+            game_over(response);
         }
     });
 }
 
 function load_next_product(response) {
-    product2.classList.remove("moved")
     product1.remove();
     moveDown(center_container);
     product2.removeEventListener('mouseenter', enter_rotate);
     product2.removeEventListener('mouseleave', leave_rotate);
     product2.removeEventListener('click', send_guess);
+    product2.childNodes[3].childNodes[3].href = response.productLast_link
     score.innerHTML = response.score + 1
 
     document.querySelector('.product-container').insertAdjacentHTML('beforeend', `<div class="product-box">
                     <img class="product-image" src=${response.productNext_high_q_img} alt="Produkt">
                     <div class="text-box">
                         <h2>${response.productNext_brand}</h2>
-                        <h3>${response.productNext_name}</h3>
+                        <a>${response.productNext_name}</a>
                         <p class="price">Preis: ${response.productNext_price} €</p>
                         <p>lieferbar - in ${response.productNext_parcel_time} Werktagen bei dir</p>
                         <img alt="Logo" class="UpLogo" src="/static/images/otto-up-logo.png">
                     </div>
                 </div>`);
-
     setup();
 }
 
@@ -106,9 +106,9 @@ function setup() {
 
     // Initialzustand
     arrow.style.display = 'none';
-    logobig.style.display = 'block';
-    correct.style.display = "none"
+    if (overrideCheckmark) logobig.style.display = 'block';
     wrong.style.display = 'none'
+    if (overrideCheckmark) correct.style.display = "none"
 
     // Maus berührt ein Feld
     product1.addEventListener('mouseenter', enter_rotate);
@@ -127,7 +127,7 @@ function enter_rotate() {
     arrow.style.transform = `rotate(${rotation}deg)`;
     arrow.style.display = 'block';
     logobig.style.display = 'none';
-    correct.style.display = "none"
+    if (overrideCheckmark) correct.style.display = "none"
 }
 
 function leave_rotate() {
@@ -136,7 +136,7 @@ function leave_rotate() {
     logobig.style.display = 'none';
 }
 
-function game_over() {
+function game_over(response) {
     product1.removeEventListener('mouseenter', enter_rotate);
     product1.removeEventListener('mouseleave', leave_rotate);
     product1.removeEventListener('click', send_guess);
@@ -144,4 +144,45 @@ function game_over() {
     product2.removeEventListener('mouseenter', enter_rotate);
     product2.removeEventListener('mouseleave', leave_rotate);
     product2.removeEventListener('click', send_guess);
+    
+    product2.childNodes[3].childNodes[3].href = response.productNext_link
+}
+
+function displayCorrect(offset){
+    arrow.style.display= "none"
+    correct.style.display = "block"
+    logobig.style.display = "none"
+}
+
+function animateNewProduct(offset, response){
+    setTimeout(() => {
+            product1.style.transform = `translateX(${offset}px)`;
+            product2.style.transform = `translateX(${offset}px)`;
+                setTimeout(() => {
+                load_next_product(response);
+                product2.style.transform = `translateX(${-offset}px)`;
+                product1.style.transform = `translateX(0px)`;
+                setTimeout(() => {
+                    product2.style.transform = `translateX(0px)`;
+                    overrideCheckmark = true
+                    correct.style.display = "none"
+                    arrow.style.display = "block"
+                },10);
+                },500);
+            }, 1000);
+}
+
+function displayWrong(){
+    arrow.style.display= "none";
+    wrong.style.display = "block";
+    score_display.style.zoom = 1.4;
+    return_button.style.display = 'block'
+    game_over_display.style.display= 'flex'
+
+}
+
+function getOffset(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.left + window.scrollX
+
 }

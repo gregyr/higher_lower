@@ -125,7 +125,7 @@ def scrape_main(search_terms:list, export_path:str='articles.json', await_debug:
 
     #Search and scrape each category
     for search_term in search_terms:
-        products = scrape_full_page(f"https://www.otto.de/suche/{search_term}/", driver)
+        products = scrape_full_page(f"https://www.otto.de/suche/{search_term}/?verkaeufer=otto", driver)
         category_dict[search_term] = products
 
     #Export data to JSON

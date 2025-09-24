@@ -18,6 +18,7 @@ class Game:
       self.productNext = self.collection.next_product(self.productLast)
       self.LastParcelTime = generate_parceltime()
       self.NextParcelTime = generate_parceltime()
+      self.gameOver = False
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=5) # game expires in 30 minutes
    
    def expired(self):
@@ -50,6 +51,7 @@ class Game:
          "score": self.score,
          "productLast_brand": self.productLast.brand,
          "productLast_price": self.productLast.price,
+         "productLast_link": self.productLast.link,
          "productLast_name": self.productLast.name,
          "productLast_img": self.productLast.img,
          "productLast_high_q_img": self.productLast.high_q_img,
@@ -57,6 +59,7 @@ class Game:
 
          "productNext_brand": self.productNext.brand,
          "productNext_price": self.productNext.price if not CensorNextPrice else "???",
+         "productNext_link": self.productNext.link if not CensorNextPrice else None,
          "productNext_name": self.productNext.name,
          "productNext_img": self.productNext.img,
          "productNext_high_q_img": self.productNext.high_q_img,
@@ -121,6 +124,8 @@ def game():
          return redirect(url_for('new_game'))
       else:
          currentGame = games[session['sessionID']]
+         if currentGame.gameOver:
+            return redirect(url_for('index'))
          return render_template("game.html", **currentGame.toDict(True))
 
 @app.route("/guess", methods = ['POST'])
@@ -145,6 +150,7 @@ def guess():
             return jsonify(dict) # censor next price
          else:
             dict['correct'] = False
+            currentGame.gameOver = True
             return jsonify(dict)
 
 @app.route("/setname", methods = ['POST'])
