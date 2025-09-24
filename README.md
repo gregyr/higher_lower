@@ -20,4 +20,5 @@ uv add selenium
 uv add urllib3
 uv add flask
 ```
-
+## Spielen:
+https://higher-lower-y6ra.onrender.com
