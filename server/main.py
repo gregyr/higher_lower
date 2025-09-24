@@ -1,4 +1,4 @@
-from next_product_getter import Product, ProductCollection
+from next_product_getter import Product, ProductCollection, Difficulty
 from threading import Lock
 import uuid
 from flask import Flask, jsonify, session, redirect, url_for, request, render_template
@@ -17,7 +17,10 @@ class Game:
       self.collection = ProductCollection((dirname + r'/scraper/articles.json') if article_file_path is None else article_file_path)
       
       self.productLast = self.collection.next_product()
-      self.productNext = self.collection.next_product(self.productLast)
+      self.productNext = self.collection.next_product()
+      self.nextProduct()
+
+
       self.LastParcelTime = generate_parceltime()
       self.NextParcelTime = generate_parceltime()
       
@@ -31,8 +34,13 @@ class Game:
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=minutes)
 
    def nextProduct(self):
+      diff = Difficulty()
+      if self.difficulty == "normal" : diff = diff.normal
+      if self.difficulty == "hard"   : diff = diff.hard
+      if self.difficulty == "extreme": diff = diff.extreme
+
       self.productLast = self.productNext
-      self.productNext = self.collection.next_product(self.productLast)
+      self.productNext = self.collection.next_product(self.productLast, difficulty=diff)
 
       self.LastParcelTime = self.NextParcelTime
       self.NextParcelTime = generate_parceltime()
