@@ -152,6 +152,15 @@ function displayCorrect(offset){
     arrow.style.display= "none"
     correct.style.display = "block"
     logobig.style.display = "none"
+
+    //remove listeners to avoid clicks during animation
+    product1.removeEventListener('mouseenter', enter_rotate);
+    product1.removeEventListener('mouseleave', leave_rotate);
+    product1.removeEventListener('click', send_guess);
+
+    product2.removeEventListener('mouseenter', enter_rotate);
+    product2.removeEventListener('mouseleave', leave_rotate);
+    product2.removeEventListener('click', send_guess);
 }
 
 function animateNewProduct(offset, response){
@@ -167,6 +176,17 @@ function animateNewProduct(offset, response){
                     overrideCheckmark = true
                     correct.style.display = "none"
                     arrow.style.display = "block"
+
+
+                    //add back listeners
+                    product1.addEventListener('mouseenter', enter_rotate);
+                    product1.addEventListener('mouseleave', leave_rotate);
+                    product1.addEventListener('click', send_guess);
+
+                    product2.addEventListener('mouseenter', enter_rotate);
+                    product2.addEventListener('mouseleave', leave_rotate);
+                    product2.addEventListener('click', send_guess);
+
                 },10);
                 },500);
             }, 1000);
