@@ -49,7 +49,7 @@ main {
 
 .start-game-button {
     padding:0.8rem 3rem ;
-    margin:2vh;
+    margin-top:2vh;
     font-size: 1.2em;
     font-weight: 700;
     background-color: var(--otto-red);
