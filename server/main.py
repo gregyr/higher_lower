@@ -126,7 +126,7 @@ def index():
       print(leaderBoardData)
 
       games.pop(session['sessionID'], None) # remove old game if exists
-      return render_template("index.html", firstGame = firstgame, difficulties=difficulties, difficulty_names=difficulty_names, **leaderBoardData)
+      return render_template("index.html", firstGame = firstgame, difficulties=difficulties, difficulty_names=difficulty_names, leaderBoardData=leaderBoardData)
 
 
 @app.route("/new_game", methods = ["POST"])
