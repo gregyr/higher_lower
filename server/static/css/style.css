@@ -94,13 +94,13 @@ h2 {
     font-family: 'OttoSans', sans-serif;
     color: #000;
     margin: 3px;
-    font-size: 1.2em;
+    font-size: 1em;
     align-self: left;
     margin-left: auto;
     margin-right: auto;
 }
 
-h3 {
+a {
     font-family: 'OttoSans', sans-serif;
     color: #000;
     margin: 10px;
@@ -157,12 +157,10 @@ p {
 }
 .moved{
     transform: translateX(-730px);
-    transition-duration: 500ms;
 }
 
 .removed{
     transform: translateX(-50vw);
-    transition-duration: 500ms;
 }
 
 .product-box img {
@@ -235,7 +233,7 @@ p {
     align-items: center;
 }
 
-.price-span{
+.price{
     font-weight: 700;
 }
 
