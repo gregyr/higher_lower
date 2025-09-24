@@ -2,9 +2,6 @@ import json
 from os import path
 import random
 
-from git import DiffIndex
-from pandas.core.ops.missing import dispatch_fill_zeros
-
 
 class Difficulty:
     def __init__(self, threshold = 1.2, base = 0.05, absolute = 120, relative = 1.0, relation_base = 0.2):
