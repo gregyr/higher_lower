@@ -1,9 +1,10 @@
 import sys
 import scraper
+import selenium
 
 # Kann verwendet werden um den scraper über die CLI auszuführen
 # Beispiel: python scraper_via_cli.py category1 category2 category3
-# Praktisch: py scrpaper_via_cli.py (cat categories)
+# Praktisch: py scraper_via_cli.py (cat categories)
 
 def main():
     

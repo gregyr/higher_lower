@@ -1,3 +1,4 @@
+import selenium
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -28,6 +29,8 @@ def scraper(driver:webdriver.Chrome):
 
                 product_name = list_item.find_element(By.CLASS_NAME, "find_tile__name")
 
+                product_link = list_item.find_element(By.CLASS_NAME, "find_tile__productLink")
+
                 #get the price by the right tag
                 try:
                     product_price = list_item.find_element(By.CSS_SELECTOR, ".find_tile__priceValue--strikethrough")
@@ -51,6 +54,7 @@ def scraper(driver:webdriver.Chrome):
                     "img": image_url,
                     "high_q_img": high_quality_img_url,
                     "alt": alt_image,
+                    "link": product_link.get_attribute("href"),
                 }
                 scraped_data.append(data)
 
@@ -106,6 +110,7 @@ def scrape_main(search_terms:list, export_path:str='articles.json', await_debug:
     - Preis ("price")
     - original Bild ("img")
     - high-res Bild ("high_q_img")    
+    - Link (zu Produkt)
     """
 
     category_dict = {}
@@ -136,5 +141,5 @@ def scrape_main(search_terms:list, export_path:str='articles.json', await_debug:
     
 if __name__ == "__main__":
     #categories = ["multimedia", "hello kitty", "moebel","haushalt", "bekleidung", "sport", "gartengeraete", "kostueme", "kleidung", "haustier kostueme", "haustier accessoires", "geraet", "bau", "beauty", "kind", "utensilien", "pc accessoires"]
-    categories = ["kostueme", "utensilien"]
+    categories = ["kostueme"]
     scrape_main(search_terms = categories, export_path='articles.json', await_debug=False)
