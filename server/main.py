@@ -18,6 +18,7 @@ class Game:
       self.productNext = self.collection.next_product(self.productLast)
       self.LastParcelTime = generate_parceltime()
       self.NextParcelTime = generate_parceltime()
+      self.gameOver = False
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=5) # game expires in 30 minutes
    
    def expired(self):
@@ -121,6 +122,8 @@ def game():
          return redirect(url_for('new_game'))
       else:
          currentGame = games[session['sessionID']]
+         if currentGame.gameOver:
+            return redirect(url_for('index'))
          return render_template("game.html", **currentGame.toDict(True))
 
 @app.route("/guess", methods = ['POST'])
@@ -145,6 +148,7 @@ def guess():
             return jsonify(dict) # censor next price
          else:
             dict['correct'] = False
+            currentGame.gameOver = True
             return jsonify(dict)
 
 @app.route("/setname", methods = ['POST'])
