@@ -51,6 +51,7 @@ class Game:
          "score": self.score,
          "productLast_brand": self.productLast.brand,
          "productLast_price": self.productLast.price,
+         "productLast_link": self.productLast.link,
          "productLast_name": self.productLast.name,
          "productLast_img": self.productLast.img,
          "productLast_high_q_img": self.productLast.high_q_img,
