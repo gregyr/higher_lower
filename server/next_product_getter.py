@@ -13,8 +13,8 @@ class Difficulty:
         self.relation_base = relation_base
 
 Difficulty.normal = Difficulty(1.2, 0.05, 120, 1, 0.2)
-Difficulty.hard = Difficulty(1.1, 0.03, 120, 1.5, 0.25)
-Difficulty.extreme = Difficulty(1, 0, 120, 1.5, 0.25)
+Difficulty.hard = Difficulty(1.1, 0.03, 80, 1.5, 0.25)
+Difficulty.extreme = Difficulty(1, 0, 60, 1.5, 0.25)
 
 class Product:
     def __init__(self,brand, name, price, img, link = None, high_q_img = None, alt="product"):

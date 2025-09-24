@@ -118,8 +118,11 @@ def index():
          leaderBoardData["own_difficulty"] = difficulty
          leaderBoardData["own_position"] = leaderBoard.get_position(difficulty, lastScore)
 
+      difficulties = {k:v for k, v in zip(["difficulty_" + str(i) for i in range(1,4)], ["normal", "hard", "extreme"])}
+      difficulty_names = {k:v for k, v in zip(["difficulty_name_" + str(i) for i in range(1,4)], ["Normal", "Hard", "Extrem"])}
+
       games.pop(session['sessionID'], None) # remove old game if exists
-      return render_template("index.html", firstGame = firstgame, **leaderBoardData)
+      return render_template("index.html", firstGame = firstgame, **leaderBoardData, **difficulties, **difficulty_names)
 
 
 @app.route("/new_game", methods = ["POST"])
@@ -132,10 +135,11 @@ def new_game():
       session['name'] = name if name != "" else generate_nickname(dirname + r"/server/words.json")
 
       #set game difficulty
-      difficutly = request.form["difficulty"]
+      difficulty = request.form["difficulty"]
+      print(difficulty)
 
       #create new game and add to list of games: games
-      game = Game(difficulty=difficutly)
+      game = Game(difficulty=difficulty)
       with games_lock: games[session['sessionID']] = game   
      
       return redirect(url_for('game'))

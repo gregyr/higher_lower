@@ -20,9 +20,15 @@
         <main class = "index-main">
         <div class="index-container">
             <div class="difficulty-bar">
-                <div class="difficulty">Normal</div>
-                <div class="difficulty">Hard</div>
-                <div class="difficulty">Extreme</div>
+                {% set difficulty_list = [difficulty_1, difficulty_2, difficulty_3] %}
+                {% set difficulty_name_list = [difficulty_name_1, difficulty_name_2, difficulty_name_3] %}
+
+                {% for idx in range(3) %}
+                <label class="difficulty {{ difficulty_list[idx] }}" data-name="{{ difficulty_list[idx] }}">
+                    <input type="radio" name="difficulty" value="{{ difficulty_list[idx] }}" form="start-game-form" {% if idx == 0 %}checked{% endif %}>
+                    <span class="label-text">{{ difficulty_name_list[idx] }}</span>
+                </label>
+                {% endfor %}
             </div>
             <div class="leaderboard-container">
                 {% set name_list = [name_1, name_2, name_3, name_4, name_5] %}
@@ -47,9 +53,9 @@
                 {%endif%}
             </div>
                
-            <form method="POST" action="/setname" class="start-game-form">
+            <form id="start-game-form" method="POST" action="/new_game" class="start-game-form">
                 <input name="username" type="text" class="username-input" placeholder="Gib deinen Namen ein">
-                <input type = "submit" value = "Neues Spiel" class="start-game-button"/>
+                <input type="submit" value="Neues Spiel" class="start-game-button"/>
             </form>
             
         </div>
