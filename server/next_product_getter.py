@@ -2,8 +2,6 @@ import json
 from os import path
 import random
 
-from git import DiffIndex
-from pandas.core.ops.missing import dispatch_fill_zeros
 
 
 class Difficulty:
