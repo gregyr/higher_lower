@@ -7,6 +7,11 @@ import selenium
 # Praktisch: py scraper_via_cli.py (cat categories)
 
 def main():
+
+    """
+    Execute the script via the CLI when in the scripts directory: <br>
+    py scraper_via_cli.py (cat categories)
+    """
     
     categories = sys.argv[1:] 
 
