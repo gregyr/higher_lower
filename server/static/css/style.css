@@ -283,7 +283,7 @@ p {
 }
 
 .game-over{
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 700;
     display: none;
 }
@@ -301,17 +301,37 @@ p {
         gap: 50px;
     }
 
+    .center-container{
+        max-height: 100px;
+        display:flex;
+        flex-direction: row;
+    }
+
     .arrow-container {
         transform: rotate(90deg);
     }
 
+    .score-container {
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+
     .product-box {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         overflow: hidden;
         width: auto;
         height: 250px;
         padding: 20px
+    }
+
+    .product-box img{
+        max-width:100px
+    }
+
+    .arrow_red {
+        height: 60px;
+        width: 60px;
     }
 
     .meta {

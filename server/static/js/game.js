@@ -11,9 +11,8 @@ var return_button = document.getElementsByClassName('return-button')[0]
 var game_over_display = document.getElementsByClassName('game-over')[0]
 
 var overrideCheckmark = true
-
-
-
+var correctAudio = new Audio('/static/sounds/mixkit-correct-answer-tone-2870.wav');
+var wrongAudio = new Audio('/static/sounds/mixkit-wrong-answer-fail-notification-946.wav');
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -45,10 +44,12 @@ async function send_guess() {
             let offset = pos1 - pos2
             displayCorrect(offset);
             animateNewProduct(offset, response);
+            correctAudio.play();
             
         }
         else {
             displayWrong();
+            wrongAudio.play();
             game_over(response);
         }
     });
