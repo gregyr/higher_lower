@@ -138,6 +138,8 @@ def guess():
          return redirect(url_for('new_game'))
       else:
          currentGame = games[session['sessionID']]
+         if currentGame.gameOver:
+            return redirect(url_for("index"))
          user_guess = request.json['guess']
          guessed_correctly = currentGame.checkGuess(user_guess)
          currentGame.nextProduct()
