@@ -14,7 +14,6 @@ class Difficulty:
         self.relative = relative
         self.relation_base = relation_base
 
-
 Difficulty.normal = Difficulty(1.2, 0.05, 120, 1, 0.2)
 Difficulty.hard = Difficulty(1.1, 0.03, 120, 1.5, 0.25)
 Difficulty.extreme = Difficulty(1, 0, 120, 1.5, 0.25)
