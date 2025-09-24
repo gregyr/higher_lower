@@ -38,22 +38,22 @@
                 {% for idx in range(5) %}
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">{{idx + 1}}.</span>
-                    <span class="leaderboard-name">{{leaderBoardData[difficulty][idx][0]}} {%if leaderBoardData["own_position"] == (idx+1) and leaderBoardData[difficulty][idx][0] == leaderBoardData["own_name"] %} (Du) {%endif%}</span>
+                    <span class="leaderboard-name">{{leaderBoardData[difficulty][idx][0]}} {%if leaderBoardData["own_position"] == (idx+1) and leaderBoardData[difficulty][idx][0] == leaderBoardData["own_name"] and leaderBoardData["own_difficulty"] == difficulty %} (Du) {%endif%}</span>
                     <span class="leaderboard-score">{{leaderBoardData[difficulty][idx][1]}}</span>
                 </div>
                 {%endfor%}
-                
+            </div>
+            {%endfor%}
+
                 {%if not firstGame%}
-                    {% if own_position >= 5 %}
-                <div class="leaderboard-element-player">
-                    <span class="leaderboard-place">{{own_position}}.</span>
-                    <span class="leaderboard-name">{{own_name}} (Du)</span>
-                    <span class="leaderboard-score">{{own_score}}</span>
+                    {% if leaderBoardData["own_position"] >= 5 %}
+                <div class="leaderboard-element-player" data-name={{leaderBoardData["own_difficulty"]}}>
+                    <span class="leaderboard-place">{{leaderBoardData["own_position"]}}.</span>
+                    <span class="leaderboard-name">{{leaderBoardData["own_name"]}} (Du)</span>
+                    <span class="leaderboard-score">{{leaderBoardData["own_score"]}}</span>
                 </div>
                     {%endif%}
                 {%endif%}
-            </div>
-            {%endfor%}
                
             <form id="start-game-form" method="POST" action="/new_game" class="start-game-form">
                 <input name="username" type="text" class="username-input" placeholder="Gib deinen Namen ein">
