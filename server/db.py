@@ -26,12 +26,12 @@ class leaderBoard:
         return self.cursor.fetchall()
     
     def get_top_scores_dict(self, difficulty, limit=5):
-        difficultys = []
-        if difficultys == "all": difficultys = ["normal","hard", "extreme"]
-        else: [difficulty]
+        difficulties = []
+        if difficulties == "all": difficulties = ["normal","hard", "extreme"]
+        else: difficulties = [difficulty]
 
         scoreDict = {}
-        for diff in difficultys:
+        for diff in difficulties:
             scores = self.get_top_scores(diff, limit)
             
             for i in range(len(scores)):

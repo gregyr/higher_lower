@@ -18,12 +18,12 @@ class Game:
       
       self.productLast = self.collection.next_product()
       self.productNext = self.collection.next_product()
-      self.nextProduct()
-
 
       self.LastParcelTime = generate_parceltime()
       self.NextParcelTime = generate_parceltime()
-      
+
+      self.nextProduct()
+
       self.gameOver = False
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=5) # game expires in 30 minutes
    
@@ -38,6 +38,8 @@ class Game:
       if self.difficulty == "normal" : diff = diff.normal
       if self.difficulty == "hard"   : diff = diff.hard
       if self.difficulty == "extreme": diff = diff.extreme
+
+      print(diff.base)
 
       self.productLast = self.productNext
       self.productNext = self.collection.next_product(self.productLast, difficulty=diff)
@@ -120,6 +122,8 @@ def index():
 
       difficulties = {k:v for k, v in zip(["difficulty_" + str(i) for i in range(1,4)], ["normal", "hard", "extreme"])}
       difficulty_names = {k:v for k, v in zip(["difficulty_name_" + str(i) for i in range(1,4)], ["Normal", "Hard", "Extrem"])}
+
+      print(leaderBoardData)
 
       games.pop(session['sessionID'], None) # remove old game if exists
       return render_template("index.html", firstGame = firstgame, **leaderBoardData, **difficulties, **difficulty_names)
