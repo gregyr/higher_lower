@@ -191,11 +191,15 @@ main {
 /* Der sichtbare "Kachel"-Look */
 .label-text {
     display: block;
-    padding: 20px;
-    background-color: gray;
+    padding: 15px;
+    background-color: #d1cfcf;
     color: black;
     border-radius: 10px 10px 0 0;
 }
+/*
+[class*="difficulty normal"] .label-text {  Könnte man machen 
+  background-color: rgb(236, 214, 74);
+}*/
 
 /* Aktiver Zustand (einfacher, kein Animationseffekt) */
 .difficulty input:checked + .label-text {
@@ -209,6 +213,8 @@ main {
 .difficulty:has(+ .difficulty input:checked) .label-text {
     border-bottom-right-radius: 10px;
 }
+
+
 
 .hidden {
     display: none;
