@@ -11,13 +11,16 @@ from randomgenerator import generate_nickname, generate_parceltime
 dirname = str(Path(__file__).parent.parent)
 
 class Game:
-   def __init__(self, article_file_path = None):
+   def __init__(self, difficulty, article_file_path = None):
       self.score = 0
+      self.difficulty = difficulty
       self.collection = ProductCollection((dirname + r'/scraper/articles.json') if article_file_path is None else article_file_path)
+      
       self.productLast = self.collection.next_product()
       self.productNext = self.collection.next_product(self.productLast)
       self.LastParcelTime = generate_parceltime()
       self.NextParcelTime = generate_parceltime()
+      
       self.gameOver = False
       self.expiresAt = datetime.datetime.now() + datetime.timedelta(minutes=5) # game expires in 30 minutes
    
@@ -30,6 +33,7 @@ class Game:
    def nextProduct(self):
       self.productLast = self.productNext
       self.productNext = self.collection.next_product(self.productLast)
+
       self.LastParcelTime = self.NextParcelTime
       self.NextParcelTime = generate_parceltime()
    
@@ -93,34 +97,47 @@ def index():
       
       #leaderboard logic
       if not firstgame: #leaderboard update
-         leaderBoard.add_score(session.get('name'), lastScore)
-      leaderBoardData = leaderBoard.get_top_scores_dict(5) # get leaderboard from leaderboard.db
+         currentgame = games[session['sessionID']]
+         leaderBoard.add_score(currentgame.difficulty, session.get('name'), lastScore)
+
+      leaderBoardData = leaderBoard.get_top_scores_dict("all", 5) # get all leaderboards from leaderboard.db
 
       if not firstgame: # adding own score and name to leaderboard data if not first game
+         difficulty = games[session['sessionID']].difficulty
+
          leaderBoardData["own_name"] = session.get('name')
          leaderBoardData["own_score"] = lastScore
-         leaderBoardData["own_position"] = leaderBoard.get_position(lastScore)
-      
+         leaderBoardData["own_difficulty"] = difficulty
+         leaderBoardData["own_position"] = leaderBoard.get_position(difficulty, lastScore)
+
       games.pop(session['sessionID'], None) # remove old game if exists
       return render_template("index.html", firstGame = firstgame, **leaderBoardData)
 
-@app.route("/new_game")
+
+@app.route("/new_game", methods = ["POST"])
 def new_game():
    if session["sessionID"] is None:
       return redirect(url_for("index"))
-   else:    
-      game = Game()
-      with games_lock:
-         games[session['sessionID']] = game
+   else:  
+      #set player name
+      name = request.form['username']
+      session['name'] = name if name != "" else generate_nickname(dirname + r"/server/words.json")
+
+      #set game difficulty
+      difficutly = request.form["difficulty"]
+
+      #create new game and add to list of games: games
+      game = Game(difficulty=difficutly)
+      with games_lock: games[session['sessionID']] = game   
+     
       return redirect(url_for('game'))
+
 
 @app.route("/game")
 def game():
    with games_lock:
-      if "sessionID" not in session:
+      if "sessionID" not in session or session['sessionID'] not in games:
          return redirect(url_for('index'))
-      elif session['sessionID'] not in games:
-         return redirect(url_for('new_game'))
       else:
          currentGame = games[session['sessionID']]
          if currentGame.gameOver:
@@ -131,10 +148,8 @@ def game():
 def guess():
    with games_lock:
       #Check if session and game exist
-      if "sessionID" not in session:
+      if "sessionID" not in session or session['sessionID'] not in games:
          return redirect(url_for('index'))
-      elif session['sessionID'] not in games:
-         return redirect(url_for('new_game'))
       else:
          currentGame = games[session['sessionID']]
          user_guess = request.json['guess']
@@ -151,14 +166,6 @@ def guess():
             dict['correct'] = False
             currentGame.gameOver = True
             return jsonify(dict)
-
-@app.route("/setname", methods = ['POST'])
-def setname():
-   name = request.form['username']
-   session['name'] = name
-   if(name == ""):
-      session['name'] = generate_nickname(dirname + r"/server/words.json")
-   return redirect(url_for('new_game'))
 
 @app.route("/test")
 def test():
