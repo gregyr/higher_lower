@@ -23,7 +23,15 @@ class leaderBoard:
     
     def get_top_scores(self, difficulty, limit=5):
         self.cursor.execute(f"SELECT name, score FROM leaderboard_{difficulty} ORDER BY score DESC LIMIT ?", (limit,))
-        return self.cursor.fetchall()
+        data = self.cursor.fetchall()
+        #ensures that if less entrys than limit empty tuples are created
+        if len(data) < limit:
+            missing = limit - len(data)
+            for i in range(missing):
+                data.append(("",""))
+        return data
+            
+
     
     def get_top_scores_dict(self, difficulty, limit=5):
         difficulties = []
