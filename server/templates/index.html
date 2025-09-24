@@ -38,7 +38,7 @@
                 {% for idx in range(5) %}
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">{{idx + 1}}.</span>
-                    <span class="leaderboard-name">{{leaderBoardData[difficulty][idx][0]}} {%if leaderBoardData["own_position"] == (idx+1) and leaderBoardData[difficulty][idx][0] == leaderBoardData["own_name"] and leaderBoardData["own_difficulty"] == difficulty %} (Du) {%endif%}</span>
+                    <span class="leaderboard-name">{{leaderBoardData[difficulty][idx][0]}} {%if leaderBoardData["own_score"] == leaderBoardData[difficulty][idx][1] and leaderBoardData[difficulty][idx][0] == leaderBoardData["own_name"] and leaderBoardData["own_difficulty"] == difficulty %} (Du) {%endif%}</span>
                     <span class="leaderboard-score">{{leaderBoardData[difficulty][idx][1]}}</span>
                 </div>
                 {%endfor%}
