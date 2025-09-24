@@ -206,6 +206,10 @@ main {
     border-bottom-left-radius: 10px;
 }
 
-.difficulty:has(+ .difficulty:has(input:checked)) .label-text {
+.difficulty:has(+ .difficulty input:checked) .label-text {
     border-bottom-right-radius: 10px;
+}
+
+.display-none {
+    display: none;
 }

@@ -120,13 +120,13 @@ def index():
          leaderBoardData["own_difficulty"] = difficulty
          leaderBoardData["own_position"] = leaderBoard.get_position(difficulty, lastScore)
 
-      difficulties = {k:v for k, v in zip(["difficulty_" + str(i) for i in range(1,4)], ["normal", "hard", "extreme"])}
-      difficulty_names = {k:v for k, v in zip(["difficulty_name_" + str(i) for i in range(1,4)], ["Normal", "Hard", "Extrem"])}
+      difficulties = ["normal", "hard", "extreme"]
+      difficulty_names = ["Normal", "Hard", "Extrem"]
 
       print(leaderBoardData)
 
       games.pop(session['sessionID'], None) # remove old game if exists
-      return render_template("index.html", firstGame = firstgame, **leaderBoardData, **difficulties, **difficulty_names)
+      return render_template("index.html", firstGame = firstgame, difficulties=difficulties, difficulty_names=difficulty_names, **leaderBoardData)
 
 
 @app.route("/new_game", methods = ["POST"])
