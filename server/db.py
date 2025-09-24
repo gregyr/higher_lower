@@ -9,27 +9,43 @@ class leaderBoard:
             pass
         self.conn = sqlite3.connect(dbPath, check_same_thread=False)
         self.cursor = self.conn.cursor()
-        self.cursor.execute("CREATE TABLE IF NOT EXISTS leaderboard (name TEXT, score INTEGER)")
+        self.create_leaderboard("normal")
+        self.create_leaderboard("hard")
+        self.create_leaderboard("extreme")
+
+    def create_leaderboard(self, name):
+        self.cursor.execute(f"CREATE TABLE IF NOT EXISTS leaderboard_{name} (name TEXT, score INTEGER)")
+        self.conn.commit()
+
+    def add_score(self, difficulty, name, score):
+        self.cursor.execute(f"INSERT INTO leaderboard_{difficulty} (name, score) VALUES (?, ?)", (name, score))
         self.conn.commit()
     
-    def add_score(self, name, score):
-        self.cursor.execute("INSERT INTO leaderboard (name, score) VALUES (?, ?)", (name, score))
-        self.conn.commit()
+    def get_top_scores(self, difficulty, limit=5):
+        self.cursor.execute(f"SELECT name, score FROM leaderboard_{difficulty} ORDER BY score DESC LIMIT ?", (limit,))
+        data = self.cursor.fetchall()
+        #ensures that if less entrys than limit empty tuples are created
+        if len(data) < limit:
+            missing = limit - len(data)
+            for i in range(missing):
+                data.append(("",""))
+        return data
+            
+
     
-    def get_top_scores(self, limit=5):
-        self.cursor.execute("SELECT name, score FROM leaderboard ORDER BY score DESC LIMIT ?", (limit,))
-        return self.cursor.fetchall()
-    
-    def get_top_scores_dict(self, limit=5):
-        scores = self.get_top_scores(limit)
+    def get_top_scores_dict(self, difficulty, limit=5):
+        difficulties = []
+        if difficulty == "all": difficulties = ["normal","hard", "extreme"]
+        else: difficulties = [difficulty]
+
         scoreDict = {}
-        for i in range(len(scores)):
-            scoreDict[f"name_{i+1}"] = scores[i][0]
-        for i in range(len(scores)):
-            scoreDict[f"score_{i+1}"] = scores[i][1]
+        for diff in difficulties:
+            scores = self.get_top_scores(diff, limit)
+            scoreDict[diff] = scores
+            
         return scoreDict
     
-    def get_position(self, score):
-        self.cursor.execute("SELECT COUNT(*) FROM leaderboard WHERE score > ?", (score,))
+    def get_position(self, difficulty, score):
+        self.cursor.execute(f"SELECT COUNT(*) FROM leaderboard_{difficulty} WHERE score > ?", (score,))
         return self.cursor.fetchone()[0] + 1
     

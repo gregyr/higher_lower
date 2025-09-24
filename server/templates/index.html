@@ -6,6 +6,7 @@
     <title>Higher or Lower</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/index_style.css">
+    <script src="/static/js/index_script.js"></script>
     
 </head>
 <body class = "index-body">
@@ -19,32 +20,44 @@
     
         <main class = "index-main">
         <div class="index-container">
+            <div class="difficulty-bar">
+                {% set difficulty_list = difficulties %}
+                {% set difficulty_name_list = difficulty_names %}
+
+                {% for idx in range(3) %}
+                <label class="difficulty {{ difficulty_list[idx] }}" data-name="{{ difficulty_list[idx] }}">
+                    <input type="radio" name="difficulty" value="{{ difficulty_list[idx] }}" form="start-game-form" {% if idx == 0 %}checked{% endif %}>
+                    <span class="label-text">{{ difficulty_name_list[idx] }}</span>
+                </label>
+                {%endfor%}
+            </div>
+
+            {% for difficulty in difficulty_list %}
             <div class="leaderboard-container">
-                {% set name_list = [name_1, name_2, name_3, name_4, name_5] %}
-                {% set score_list = [score_1, score_2, score_3, score_4, score_5] %}
                 
                 {% for idx in range(5) %}
                 <div class="leaderboard-element">
                     <span class="leaderboard-place">{{idx + 1}}.</span>
-                    <span class="leaderboard-name">{{name_list[idx]}} {%if own_position == (idx+1) and name_list[idx] == own_name %} (Du) {%endif%}</span>
-                    <span class="leaderboard-score">{{score_list[idx]}}</span>
+                    <span class="leaderboard-name">{{leaderBoardData[difficulty][idx][0]}} {%if leaderBoardData["own_position"] == (idx+1) and leaderBoardData[difficulty][idx][0] == leaderBoardData["own_name"] and leaderBoardData["own_difficulty"] == difficulty %} (Du) {%endif%}</span>
+                    <span class="leaderboard-score">{{leaderBoardData[difficulty][idx][1]}}</span>
                 </div>
                 {%endfor%}
-                
+            </div>
+            {%endfor%}
+
                 {%if not firstGame%}
-                    {% if own_position >= 5 %}
-                <div class="leaderboard-element-player">
-                    <span class="leaderboard-place">{{own_position}}.</span>
-                    <span class="leaderboard-name">{{own_name}} (Du)</span>
-                    <span class="leaderboard-score">{{own_score}}</span>
+                    {% if leaderBoardData["own_position"] >= 5 %}
+                <div class="leaderboard-element-player" data-name={{leaderBoardData["own_difficulty"]}}>
+                    <span class="leaderboard-place">{{leaderBoardData["own_position"]}}.</span>
+                    <span class="leaderboard-name">{{leaderBoardData["own_name"]}} (Du)</span>
+                    <span class="leaderboard-score">{{leaderBoardData["own_score"]}}</span>
                 </div>
                     {%endif%}
                 {%endif%}
-            </div>
                
-            <form method="POST" action="/setname" class="start-game-form">
-                <input name="username" value="{{own_name}}" type="text" class="username-input" placeholder="Gib deinen Namen ein">
-                <input type = "submit" value = "Neues Spiel" class="start-game-button"/>
+            <form id="start-game-form" method="POST" action="/new_game" class="start-game-form">
+                <input name="username" type="text" class="username-input" placeholder="Gib deinen Namen ein">
+                <input type="submit" value="Neues Spiel" class="start-game-button"/>
             </form>
             
         </div>

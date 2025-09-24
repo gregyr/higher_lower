@@ -3,6 +3,7 @@ from os import path
 import random
 
 
+
 class Difficulty:
     def __init__(self, threshold = 1.2, base = 0.05, absolute = 120, relative = 1.0, relation_base = 0.2):
         self.threshold = threshold
@@ -11,10 +12,9 @@ class Difficulty:
         self.relative = relative
         self.relation_base = relation_base
 
-
 Difficulty.normal = Difficulty(1.2, 0.05, 120, 1, 0.2)
-Difficulty.hard = Difficulty(1.1, 0.03, 120, 1.5, 0.25)
-Difficulty.extreme = Difficulty(1, 0, 120, 1.5, 0.25)
+Difficulty.hard = Difficulty(1.1, 0.03, 80, 1.5, 0.25)
+Difficulty.extreme = Difficulty(1, 0, 60, 1.5, 0.25)
 
 class Product:
     def __init__(self,brand, name, price, img, link = None, high_q_img = None, alt="product"):
