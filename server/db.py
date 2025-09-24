@@ -27,7 +27,7 @@ class leaderBoard:
     
     def get_top_scores_dict(self, difficulty, limit=5):
         difficulties = []
-        if difficulties == "all": difficulties = ["normal","hard", "extreme"]
+        if difficulty == "all": difficulties = ["normal","hard", "extreme"]
         else: difficulties = [difficulty]
 
         scoreDict = {}
@@ -38,7 +38,7 @@ class leaderBoard:
                 scoreDict[f"{diff}_name_{i+1}"] = scores[i][0]
             for i in range(len(scores)):
                 scoreDict[f"{diff}_score_{i+1}"] = scores[i][1]
-                
+
         return scoreDict
     
     def get_position(self, difficulty, score):
