@@ -33,12 +33,8 @@ class leaderBoard:
         scoreDict = {}
         for diff in difficulties:
             scores = self.get_top_scores(diff, limit)
+            scoreDict[diff] = scores
             
-            for i in range(len(scores)):
-                scoreDict[f"{diff}_name_{i+1}"] = scores[i][0]
-            for i in range(len(scores)):
-                scoreDict[f"{diff}_score_{i+1}"] = scores[i][1]
-
         return scoreDict
     
     def get_position(self, difficulty, score):
