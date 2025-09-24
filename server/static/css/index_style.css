@@ -108,7 +108,6 @@ main {
     display:flex;
     justify-content: space-between;
     padding: 5px 20px;
-    margin-block: 1vh;
     margin-inline: 1vh;
     margin-top: 30px;
     background-color: #e6e6e6;
