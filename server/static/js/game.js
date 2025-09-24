@@ -36,6 +36,8 @@ async function send_guess() {
         return response.json();
     }).then(response => {
         document.querySelectorAll('.price')[1].textContent = `Preis: ${response.productLast_price} €`
+        product2.childNodes[3].childNodes[3].href = response.productLast_link
+        product2.childNodes[3].childNodes[3].title = 'Gehe zum Produkt'
         //console.log(response)
         if (response.correct) {
             overrideCheckmark = false
@@ -61,7 +63,6 @@ function load_next_product(response) {
     product2.removeEventListener('mouseenter', enter_rotate);
     product2.removeEventListener('mouseleave', leave_rotate);
     product2.removeEventListener('click', send_guess);
-    product2.childNodes[3].childNodes[3].href = response.productLast_link
     score.innerHTML = response.score + 1
 
     document.querySelector('.product-container').insertAdjacentHTML('beforeend', `<div class="product-box">
@@ -145,8 +146,6 @@ function game_over(response) {
     product2.removeEventListener('mouseenter', enter_rotate);
     product2.removeEventListener('mouseleave', leave_rotate);
     product2.removeEventListener('click', send_guess);
-    
-    product2.childNodes[3].childNodes[3].href = response.productNext_link
 }
 
 function displayCorrect(offset){
